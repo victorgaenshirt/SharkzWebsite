@@ -15,9 +15,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
                 {navLinks.map((nav) => (
                     <li key={nav.id} >
                         <Link to={nav.id} smooth={true} duration={500}>
-                        <a className=" m-5 text-indigo-50 font-poppins">
                             {nav.title}
-                        </a>
                         </Link>
                     </li>))}
             </ul>

@@ -16,16 +16,16 @@ const App = () => {
                 <div className="h-24 flex bg-blue-950">
                     <Navbar  wrapperClasses="flex flex-1 items-center m-10"/>
                 </div>
-                    <div className="overflow-y-auto flex flex-col items-center">
-                        <Home id={"home"} wrapperClasses={contentStyle}/>
-                        <Dienstleistungen id={"dienstleistungen"} wrapperClasses={contentStyle}/>
-                        <Pakete id={"pakete"} wrapperClasses={contentStyle}/>
-                        <Studio id={"studio"} wrapperClasses={contentStyle}/>
-                        <Team  id={"team"} wrapperClasses={contentStyle}/>
-                        <Portfolio id={"portfolio"} wrapperClasses={contentStyle}/>
-                        <Produktionsprozess id={"produktionsprozess"} wrapperClasses={contentStyle}/>
-                        <Kontakt />
-                        <BottomBar wrapperClasses="flex flex-row"/>
+                <div className="overflow-y-auto flex flex-col items-center">
+                    <Home id={"home"} wrapperClasses={contentStyle}/>
+                    <Dienstleistungen id={"dienstleistungen"} wrapperClasses={contentStyle}/>
+                    <Pakete id={"pakete"} wrapperClasses={contentStyle}/>
+                    <Studio id={"studio"} wrapperClasses={contentStyle}/>
+                    <Team  id={"team"} wrapperClasses={contentStyle}/>
+                    <Portfolio id={"portfolio"} wrapperClasses={contentStyle}/>
+                    <Produktionsprozess id={"produktionsprozess"} wrapperClasses={contentStyle}/>
+                    <Kontakt />
+                    <BottomBar wrapperClasses="flex flex-1 flex-row m-10"/>
                 </div>
            </div>
 

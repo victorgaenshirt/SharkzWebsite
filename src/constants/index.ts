@@ -27,19 +27,19 @@ export const navLinks = [
         id: "produktionsprozess",
         title: "Produktionsprozess"
     },
-]
+];
 
 export const bottomLinks = [
     {
-        id: "",
+        id: "checkliste",
         title: "Checkliste"
     },
     {
-        id: "",
+        id: "faq",
         title: "FAQ"
     },
     {
-        id: "",
+        id: "ablauf",
         title: "Ablauf"
     },
     {

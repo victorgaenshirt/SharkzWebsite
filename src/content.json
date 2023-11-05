@@ -1,0 +1,56 @@
+{
+
+  "FAQ": [
+    {
+      "question": "Was ist das Hauptziel Ihrer Firma oder Webseite?",
+      "answer": "Unser Hauptziel ist es, unseren Kunden hochwertige Dienstleistungen/Produkte anzubieten, die dazu beitragen, die Reichweite ihres Unternehmens zu erweitern und die Bindung zu ihren Kunden nachhaltig zu stärken."
+    },
+    {
+      "question": "Welche Dienstleistungen/Produkte bieten Sie an?",
+      "answer": "Wir bieten [Liste der Dienstleistungen/Produkte] an. Details dazu finden Sie auf unserer Dienstleistungs-/Produktseite."
+    },
+    {
+      "question": "Wo ist Ihr Unternehmen ansässig?",
+      "answer": "Unser Unternehmen hat seinen Sitz in Rastatt, Deutschland, und unsere Dienstleistungen/Produkte stehen Kunden europaweit zur Verfügung."
+    },
+    {
+      "question": "Wie kann ich mit Ihrem Kundendienst in Kontakt treten?",
+      "answer": "Sie können uns über unser Kontaktformular, per E-Mail unter [sharkzmediagroup@gmail.com] oder telefonisch unter [015234222959] erreichen. Wir stehen Ihnen gerne zur Verfügung."
+    },
+    {
+      "question": "Wie erfolgt die Bezahlung für Ihre Dienstleistungen/Produkte?",
+      "answer": "Wir akzeptieren [Paypal und Direktüberweisung]. Weitere Details zur Bezahlung finden Sie während des Bestellvorgangs."
+    },
+    {
+      "question": "Gibt es eine Rückerstattungsrichtlinie?",
+      "answer": "Leider bieten wir derzeit keine Rückerstattungsrichtlinie an. Für weitere Informationen zu unseren Geschäftsbedingungen stehen wir Ihnen gerne zur Verfügung."
+    },
+    {
+      "question": "Welche Sicherheitsmaßnahmen haben Sie getroffen, um meine persönlichen Daten zu schützen?",
+      "answer": "Die Sicherheit Ihrer Daten hat für uns oberste Priorität. Wir setzen modernste Sicherheitsmaßnahmen ein, um Ihre Daten zu schützen. Weitere Details finden Sie in unserer Datenschutzrichtlinie."
+    },
+    {
+      "question": "Wie funktioniert der Bestellvorgang?",
+      "answer": "Der Bestellvorgang ist einfach und benutzerfreundlich. Auf unserer 'Ablauf'-Seite finden Sie weitere Informationen zum Bestellvorgang."
+    },
+    {
+      "question": "Bieten Sie Pakete an, mit denen Kunden Geld sparen können?",
+      "answer": "Ja, wir bieten spezielle Pakete an, die es Kunden ermöglichen, Geld zu sparen. Bitte besuchen Sie unsere Paketangebote, um die aktuellen Kombinationsmöglichkeiten zu erkunden."
+    }
+  ],
+"checkliste" : {
+
+  },
+  "ablauf" : {
+
+  },
+  "impressum" : {
+
+  },
+  "datenschutz" : {
+
+  },
+  "agb" : {
+
+  }
+}
