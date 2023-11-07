@@ -1,5 +1,4 @@
 {
-
   "FAQ": [
     {
       "question": "Was ist das Hauptziel Ihrer Firma oder Webseite?",
@@ -38,12 +37,57 @@
       "answer": "Ja, wir bieten spezielle Pakete an, die es Kunden ermöglichen, Geld zu sparen. Bitte besuchen Sie unsere Paketangebote, um die aktuellen Kombinationsmöglichkeiten zu erkunden."
     }
   ],
-"checkliste" : {
-
-  },
-  "ablauf" : {
-
-  },
+  "checkliste" : [
+    {
+      "Was": "Hier geht es darum, die Kernidee und das Hauptziel Ihres Films zu klären. Was möchten Sie mit dem Film vermitteln?"
+    },
+    {
+      "Ziel": "Welche konkreten Ziele sollen durch den Film erreicht werden? Geht es um Neukundengewinnung, die Bewerbung eines Produkts oder die Vorstellung Ihres Unternehmens?"
+    },
+    {
+      "Checkliste": "Diese Checkliste hilft Ihnen, die entscheidenden Aspekte für Ihr Projekt zu klären:"
+    },
+    {
+      "Kunden": "Definieren Sie Ihre Zielgruppe - Alter, Branche und andere relevante Merkmale, um sicherzustellen, dass der Film diese anspricht."
+    },
+    {
+      "Infos": "Gibt es bereits vorhandene Informationen oder Materialien, wie Storyboards, Videos, Bilder oder Skizzen, die in die Filmproduktion einfließen können?"
+    },
+    {
+      "Special": "Welche besonderen Elemente sollen in Ihrem Film hervorstechen, sei es die Botschaft, die Handlung oder der visuelle Stil?"
+    },
+    {
+      "Inspiration": "Gibt es bereits existierende Filme, deren Stil und Umsetzung als Inspiration für Ihre eigene Produktion dienen können?"
+    },
+    {
+      "Länge": "Bestimmen Sie die optimale Länge des Films. Benötigen Sie nur einen kurzen 30-Sekunden-Trailer oder ist eine längere Laufzeit von mehr als 3 Minuten notwendig?"
+    },
+    {
+      "Format": "Klären Sie, auf welchen Plattformen der Film veröffentlicht wird, sei es auf Ihrer Webseite, Instagram, Facebook oder YouTube."
+    },
+    {
+      "International": "Soll der Film auch auf dem internationalen Markt funktionieren? Überlegen Sie, ob Untertitel oder grafische Anpassungen erforderlich sind."
+    },
+    {
+      "Zeitplan": "Definieren Sie einen realistischen Zeitrahmen für die Fertigstellung des Films und legen Sie fest, wann die finale Umsetzung spätestens abgeschlossen sein sollte."
+    }
+  ],
+  "Ablauf": [
+    "Bedarfsanalyse durch den Shop",
+    "Kostenvoranschlag (Angebot)",
+    "Virtuelles Erstgespräch",
+    "Terminvereinbarungen",
+    "Werkvertrag unterzeichnen",
+    "Die ersten 50% der Vergütung sind fällig",
+    "Austausch von notwendigen Daten",
+    "Übermittlung und Bestätigung des Exposes",
+    "Übermittlung und Bestätigung des Drehbuchs und Shotliste",
+    "Produktionsbeginn",
+    "Übermittlung zur Abnahme des Produkts.",
+    "Rechnung",
+    "Zahlung der restlichen 50%",
+    "Übergabe des Werkes"
+  ],
   "impressum" : {
 
   },
@@ -52,5 +96,162 @@
   },
   "agb" : {
 
-  }
+  },
+  "Produktionsprozesse": {
+    "Vorproduktion": "Sharkz Media unterstützt Sie von Anfang an. Wir planen mit Storyboards, visuellen Konzepten, Talent-Casting und visuellen Hilfsmitteln, um Ihre Botschaft gezielt an Ihre Zielgruppe zu vermitteln. Unsere akribische Planung liefert wirtschaftliche und visuell beeindruckende Konzepte, die Ihren Vorstellungen entsprechen.",
+    "Dreharbeiten": "Unser eingespieltes Team aus Fachleuten sorgt für reibungslose Abläufe und die Umsetzung Ihrer Vision. Mit unserem stetig wachsenden Netzwerk von Talenten und Experten aus der Film- und Kunstwelt arbeiten Sie nur mit Spezialisten.",
+    "Nachbearbeitung": "Nach Abschluss der Dreharbeiten bearbeiten wir das Rohmaterial präzise nach Ihren Vorstellungen. Unsere professionellen Dienstleistungen umfassen Schnitt, visuelle Effekte, Farbkorrektur, Grafikdesign, Sounddesign und Audioproduktion."
+  },
+  "Team": [
+    {
+      "Name": "Joshua Jung",
+      "Position": "Geschäftsführer/Regie"
+    },
+    {
+      "Name": "Nicolai Strack",
+      "Position": "Kameramann / Maschinenbau"
+    },
+    {
+      "Name": "Marco Zacharias",
+      "Position": "Tonmann / Sounddesign"
+    },
+    {
+      "Name": "Alex Heck",
+      "Position": "Elektriker / Kameraassistent"
+    },
+    {
+      "Name": "Sebastian Karcher",
+      "Position": "Drohnenbediener / Kameraassistent"
+    }
+  ],
+  "Ausstattung": [
+    "360 Drehtisch",
+    "Werkbank",
+    "Kamerahelm",
+    "Autobefestigung",
+    "Kamerawagen",
+    "Leinwand / Greenscreen",
+    "Gerüst"
+  ],
+  "Pakete": [
+    {
+      "Name": "Socialmedia Story 1",
+      "Preis": "620,00€",
+      "Inklusive": [
+        "Beratung & Planung",
+        "3h Kameramann",
+        "5h Nachbearbeitung",
+        "Kamera",
+        "Länge max. 15sec.",
+        "Lizenzfreie Musik"
+      ]
+    },
+    {
+      "Name": "Starterpaket 2",
+      "Preis": "1.200,00€",
+      "Inklusive": [
+        "Beratung & Planung",
+        "5h Kameramann",
+        "10h Nachbearbeitung",
+        "Kameraequipment",
+        "Länge max. 1 min.",
+        "Lizenzfreie Musik"
+      ]
+    },
+    {
+      "Name": "Standardpaket 3",
+      "Preis": "5.000,00€",
+      "Inklusive": [
+        "Beratung & Planung",
+        "2 Tage x 8h Kameramann",
+        "40h Nachbearbeitung",
+        "Kameraequipment & Lichtequipment",
+        "Länge 1-2 min.",
+        "Lizenzfreie Musik",
+        "Socialmedia Anpassung & Trailer"
+      ]
+    },
+    {
+      "Name": "Profipaket 4",
+      "Preis": "9.000,00€",
+      "Inklusive": [
+        "Beratung & Planung",
+        "2 Tage x 10h zwei Kameramann",
+        "10h Tontechniker",
+        "60h Nachbearbeitung",
+        "Kameraequipment & Lichtequipment",
+        "Länge 3-4 min.",
+        "Lizenzfreie Musik",
+        "Socialmedia Anpassung & Trailer",
+        "4h Drohnenaufnahmen",
+        "BTS Fotos"
+      ]
+    }
+  ],
+  "Zusätzliche Optionen": [
+    "Make-Up Artistin",
+    "FPV Drohne",
+    "Studio",
+    "Synchronsprecher"
+  ],
+  "Dienstleistungen": [
+    {
+      "Name": "Imagevideo",
+      "Beschreibung": "Ein eindrucksvolles Video, das die Unternehmenskultur und -identität einfängt."
+    },
+    {
+      "Name": "Werbespot",
+      "Beschreibung": "Kurze, prägnante Videos, die Produkte oder Dienstleistungen effektiv bewerben."
+    },
+    {
+      "Name": "Produktvideo",
+      "Beschreibung": "Detaillierte Darstellungen von Produkten, um Kunden einen umfassenden Einblick zu ermöglichen."
+    },
+    {
+      "Name": "Social Media Video",
+      "Beschreibung": "Speziell zugeschnittene Videos für die Verwendung auf Social-Media-Plattformen."
+    },
+    {
+      "Name": "Recruiting Video",
+      "Beschreibung": "Ansprechende Videos, die potenzielle Mitarbeiter ansprechen und die Arbeitgebermarke stärken."
+    },
+    {
+      "Name": "Musikvideo",
+      "Beschreibung": "Kreative Musikvideos, die die Botschaft eines Künstlers oder einer Band visuell zum Leben erwecken."
+    },
+    {
+      "Name": "Eventvideos",
+      "Beschreibung": "Dokumentation und Highlights von Veranstaltungen, Konferenzen und Feiern."
+    },
+    {
+      "Name": "Hochzeitvideos",
+      "Beschreibung": "Gefühlvolle Erinnerungen an den schönsten Tag im Leben."
+    }
+  ],
+  "Kundennutzen": [
+    {
+      "Beschreibung": "Effiziente Informationsvermittlung: Videos vermitteln komplexe Informationen in kurzer Zeit."
+    },
+    {
+      "Beschreibung": "Aufbau enger Kundenbeziehungen: Videos schaffen eine starke Bindung zur Zielgruppe."
+    },
+    {
+      "Beschreibung": "Authentizität und Glaubwürdigkeit: Authentische Produktionen steigern das Vertrauen."
+    },
+    {
+      "Beschreibung": "Einblick hinter die Kulissen: Imagefilme fördern Transparenz und Vertrauen."
+    },
+    {
+      "Beschreibung": "Steigerung des Kundenengagements: Sozialvideos erhöhen die Reichweite und den Umsatz."
+    },
+    {
+      "Beschreibung": "Erhöhte Verweildauer: Videos steigern die Verweildauer auf Ihrer Plattform."
+    },
+    {
+      "Beschreibung": "Digitale Filiale rund um die Uhr: Videos bieten konstante Kundenbindung."
+    },
+    {
+      "Beschreibung": "Messbare Erfolge: Digitales Marketing ermöglicht Echtzeit-Analysen und Optimierung von Kampagnen."
+    }
+  ]
 }

@@ -2,30 +2,123 @@ import {
     BottomBar,
     Dienstleistungen,
     Kontakt,
-    Navbar,
-    Pakete,
-    Portfolio, Produktionsprozess,
+    Pakete, Portfolio,
+    Produktionsprozess,
     Studio,
     Team
 } from "./components";
 import {Home} from "./components/Home.tsx";
+import React, {useEffect} from "react";
+import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import logo from "./assets/logo_transparent.png";
 
 const App = () => {
+    useEffect(() => {
+
+        // Registering the 'begin' event and logging it to the console when triggered.
+        Events.scrollEvent.register('begin', (to, element) => {
+            console.log('begin', to, element);
+        });
+
+        // Registering the 'end' event and logging it to the console when triggered.
+        Events.scrollEvent.register('end', (to, element) => {
+            console.log('end', to, element);
+        });
+
+        // Updating scrollSpy when the component mounts.
+        scrollSpy.update();
+
+        // Returning a cleanup function to remove the registered events when the component unmounts.
+        return () => {
+            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove('end');
+        };
+    }, []);
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
+    const scrollToBottom = () => {
+        scroll.scrollToBottom();
+    };
+
+    const scrollTo = () => {
+        scroll.scrollTo(100); // Scrolling to 100px from the top of the page.
+    };
+
+    const scrollMore = () => {
+        scroll.scrollMore(100); // Scrolling an additional 100px from the current scroll position.
+    };
+
+    // Function to handle the activation of a link.
+    const handleSetActive = (to) => {
+        console.log(to);
+    };
+
+
     return (
-            <div className="h-screen w-screen flex flex-col  bg-primary overflow-y-auto">
+            <div className="h-screen w-screen flex flex-col bg-primary overflow-y-auto">
                 <div className="h-24 flex bg-blue-950">
-                    <Navbar  wrapperClasses="flex flex-1 items-center m-10"/>
+                    <nav className="flex flex-1 items-center">
+                        <ul className="sm:flex justify-evenly flex-1">
+                            <Link className="cursor-pointer" activeClass="active" to="dienstleistungen" spy={true} smooth={true} duration={500}>
+                                Dienstleistungen
+                            </Link>
+                            <Link to="pakete" className="cursor-pointer" activeClass="active" spy={true} smooth={true} duration={500}>
+                                Pakete
+                            </Link>
+                            <Link className="cursor-pointer" activeClass="active" to="studio" spy={true} smooth={true} duration={500}>
+                                Studio
+                            </Link>
+                        </ul>
+                        <Link className="cursor-pointer" activeClass="active" to="home" spy={true} smooth={true} duration={500}>
+                            <img src={logo} width="50" height="50" alt="sharkzLogo" className="m-10 justify-self-start flex"/>
+                        </Link>
+                        <ul className="sm:flex justify-evenly flex-1">
+                            <Link className="cursor-pointer" activeClass="active" to="team" spy={true} smooth={true} duration={500}>
+                                Team
+                            </Link>
+                            <Link className="cursor-pointer" activeClass="active" to="portfolio" spy={true} smooth={true} duration={50}>
+                                Portfolio
+                            </Link>
+                            <Link className="cursor-pointer" activeClass="active" to="produktionsprozess" spy={true} smooth={true} duration={500}>
+                                Produktionsprozess
+                            </Link>
+                        </ul>
+                    </nav>
                 </div>
                 <div className="overflow-y-auto flex flex-col items-center">
-                    <Home id={"home"} wrapperClasses={contentStyle}/>
-                    <Dienstleistungen id={"dienstleistungen"} wrapperClasses={contentStyle}/>
-                    <Pakete id={"pakete"} wrapperClasses={contentStyle}/>
-                    <Studio id={"studio"} wrapperClasses={contentStyle}/>
-                    <Team  id={"team"} wrapperClasses={contentStyle}/>
-                    <Portfolio id={"portfolio"} wrapperClasses={contentStyle}/>
-                    <Produktionsprozess id={"produktionsprozess"} wrapperClasses={contentStyle}/>
+                    <Element name="home" className="element">
+                        <Home />
+                    </Element>
+                    <Element name="pakete" className="element">
+                        <Dienstleistungen id={"dienstleistungen"} wrapperClasses={contentStyle}/>
+                    </Element>
+                    <Element name="pakete" className="element">
+                        <Pakete id={"pakete"} wrapperClasses={contentStyle}/>
+                    </Element>
+                    <Element name="studio" className="element">
+                        <Studio id={"studio"} wrapperClasses={contentStyle}/>
+                    </Element>
+                    <Element name="team" className="element">
+                        <Team  id={"team"} wrapperClasses={contentStyle}/>
+                    </Element>
+                    <Element name="portfolio" className="element">
+                        <Portfolio />
+                    </Element>
+                    <Element name="produktionsprozess" className="element">
+                        <Produktionsprozess id={"produktionsprozess"} wrapperClasses={contentStyle}/>
+                    </Element>
                     <Kontakt />
-                    <BottomBar wrapperClasses="flex flex-1 flex-row m-10"/>
+                    <BottomBar wrapperClasses="sm:flex justify-evenly flex-1 m-10"/>
+                <a onClick={scrollToTop}>To the top!</a>
+                <br/>
+                <a onClick={scrollToBottom}>To the bottom!</a>
+                <br/>
+                <a onClick={scrollTo}>Scroll to 100px from the top</a>
+                <br/>
+                <a onClick={scrollMore}>Scroll 100px more from the current position!</a>
                 </div>
            </div>
 
@@ -33,5 +126,4 @@ const App = () => {
         }
 export default App
 
-const contentStyle = "m-10 items-center"
-
+const contentStyle = "items-center my-40"
