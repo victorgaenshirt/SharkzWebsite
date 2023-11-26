@@ -8,9 +8,10 @@ import {
     Team
 } from "./components";
 import {Home} from "./components/Home.tsx";
-import React, {useEffect} from "react";
-import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+
+import { Link, Element, Events, animateScroll, scrollSpy } from 'react-scroll';
 import logo from "./assets/logo_transparent.png";
+import {useEffect} from "react";
 
 const App = () => {
     useEffect(() => {
@@ -35,20 +36,26 @@ const App = () => {
         };
     }, []);
 
+    const options = {
+        // your options here, for example:
+        duration: 500,
+        smooth: true,
+    };
+
     const scrollToTop = () => {
-        scroll.scrollToTop();
+        animateScroll.scrollToTop(options);
     };
 
     const scrollToBottom = () => {
-        scroll.scrollToBottom();
+        animateScroll.scrollToBottom();
     };
 
     const scrollTo = () => {
-        scroll.scrollTo(100); // Scrolling to 100px from the top of the page.
+        animateScroll.scrollTo(100); // Scrolling to 100px from the top of the page.
     };
 
     const scrollMore = () => {
-        scroll.scrollMore(100); // Scrolling an additional 100px from the current scroll position.
+        animateScroll.scrollMore(100); // Scrolling an additional 100px from the current scroll position.
     };
 
     // Function to handle the activation of a link.
@@ -89,25 +96,25 @@ const App = () => {
                     </nav>
                 </div>
                 <div className="overflow-y-auto flex flex-col items-center">
-                    <Element name="home" className="element">
-                        <Home />
+                    <Element name="home" className="element snap-start">
+                        <Home  wrapperClasses="col"/>
                     </Element>
-                    <Element name="pakete" className="element">
+                    <Element name="dienstleistungen" className="element snap-start">
                         <Dienstleistungen id={"dienstleistungen"} wrapperClasses={contentStyle}/>
                     </Element>
-                    <Element name="pakete" className="element">
+                    <Element name="pakete" className="element snap-start">
                         <Pakete id={"pakete"} wrapperClasses={contentStyle}/>
                     </Element>
-                    <Element name="studio" className="element">
+                    <Element name="studio" className="element snap-start">
                         <Studio id={"studio"} wrapperClasses={contentStyle}/>
                     </Element>
-                    <Element name="team" className="element">
+                    <Element name="team" className="element snap-start">
                         <Team  id={"team"} wrapperClasses={contentStyle}/>
                     </Element>
-                    <Element name="portfolio" className="element">
+                    <Element name="portfolio" className="element snap-start">
                         <Portfolio />
                     </Element>
-                    <Element name="produktionsprozess" className="element">
+                    <Element name="produktionsprozess" className="element snap-start">
                         <Produktionsprozess id={"produktionsprozess"} wrapperClasses={contentStyle}/>
                     </Element>
                     <Kontakt />

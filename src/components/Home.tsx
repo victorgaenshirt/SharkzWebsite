@@ -1,8 +1,6 @@
 import React from 'react'
 import videoFile from '../assets/Webseitettrailer_13(14bitVBR2).mp4';
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 interface HomeProps {
     wrapperClasses? : string;
@@ -14,7 +12,7 @@ export const Home: React.FC<HomeProps> = (props) => {
         "Text 1",
         "Text 2",
         "Text 3",
-        // Weitere Texte hier
+        // Kundennutzen von content.json
     ];
 
     const sliderSettings = {
