@@ -25,8 +25,8 @@ const App = () => {
     return (
             <div className="flex flex-col">
                 <div className="h-24 flex bg-blue-950">
-                    <nav className="flex flex-1 items-center">
-                        <ul className="sm:flex justify-evenly flex-1">
+                    <nav className="flex flex-1 items-center w-full">
+                        <ul className="flex justify-evenly flex-1">
                             <Link
                                   activeClass="active"
                                   to="dienstleistungen"
@@ -118,7 +118,7 @@ const App = () => {
                 </div>
                 <div id={"containerElement"} className=" flex flex-col items-center ">
                     <Element name="home" className="element">
-                        <Home  wrapperClasses="col cursor-pointer"/>
+                        <Home  wrapperClasses="w-full"/>
                     </Element>
                     <Element name="dienstleistungen" className="element">
                         <Dienstleistungen wrapperClasses={contentStyle}/>
