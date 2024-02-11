@@ -1,22 +1,34 @@
-
 import {bottomLinks} from "../../constants";
 import React from "react";
 import {Link} from "react-router-dom";
 
-interface BottomBarProps {
-    wrapperClasses? : string;
-}
 
-export const BottomBar: React.FC<BottomBarProps> = (props) => {
-    const {wrapperClasses} = props;
+export const BottomBar: React.FC = () => {
     return (
-            <ul className={wrapperClasses}>
+        <div className={"bg-white"}>
+            <ul className={"tablet:flex flex-1 justify-evenly hidden p-5"}>
                 {bottomLinks.map((nav) => (
-                    <li key={nav.id}  >
-                        <Link className="m-10" to={"/" + nav.id}>
+                        <Link to={"/" + nav.id}>
                                 {nav.title}
                         </Link>
-                    </li>))}
+                    ))}
             </ul>
+            <div className="tablet:hidden flex justify-evenly  p-5">
+                <ul className="flex flex-1 flex-col justify-center">
+                    {bottomLinks.slice(0, Math.ceil(bottomLinks.length / 2)).map((nav) => (
+                            <Link to={"/" + nav.id}>
+                                {nav.title}
+                            </Link>
+                    ))}
+                </ul>
+                <ul className="flex flex-1 flex-col">
+                    {bottomLinks.slice(Math.ceil(bottomLinks.length / 2)).map((nav) => (
+                            <Link to={"/" + nav.id}>
+                                {nav.title}
+                            </Link>
+                    ))}
+                </ul>
+            </div>
+        </div>
     )
 }
