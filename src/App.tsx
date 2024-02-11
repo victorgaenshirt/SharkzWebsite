@@ -2,37 +2,25 @@ import {
     BottomBar,
     Dienstleistungen,
     Kontakt, Navbar,
-    Pakete, Portfolio,
+    Portfolio,
     Produktionsprozess,
-    Studio,
-    Team
+    Team, Vorteile,
 } from "./components";
 import { Element} from 'react-scroll';
+import {navLinks} from "./constants";
 const App = () => {
-
-    const HeaderMenu: {id: string, title: string}[] = [
-        {id: "dienstleistungen", title:"Dienstleistungen"},
-        {id: "pakete", title:"Pakete"},
-        {id: "studio", title:"Studio"},
-        {id: "team", title:"Team"},
-        {id: "portfolio", title:"Portfolio"},
-        {id: "produktionsprozess", title:"Produktionsprozess"},
-    ];
 
     return (
             <div>
-                <Navbar links={HeaderMenu}/>
+                <Navbar links={navLinks}/>
                 {/*<Element name="home" className="element">
-                    <Home  wrapperClasses="w-full"/>
+                    <Home />
                 </Element>*/}
+                <Element name="vorteile">
+                    <Vorteile/>
+                </Element>
                 <Element name="dienstleistungen">
                     <Dienstleistungen/>
-                </Element>
-                <Element name="pakete">
-                    <Pakete/>
-                </Element>
-                <Element name="studio">
-                    <Studio/>
                 </Element>
                 <Element name="team">
                     <Team/>
@@ -41,11 +29,12 @@ const App = () => {
                     <Portfolio />
                 </Element>
                 <Element
-                    name="produktionsprozess"
-                    id="produktionsprozess">
+                    name="produktionsprozess" >
                     <Produktionsprozess/>
                 </Element>
-                <Kontakt />
+                <Element name={"kontakt"} >
+                    <Kontakt />
+                </Element>
                 <BottomBar/>
            </div>
 

@@ -1,32 +1,9 @@
 export const navLinks = [
-    {
-        id: "home",
-        title: "Home"
-    },
-    {
-        id: "dienstleistungen",
-        title: "Dienstleistungen"
-    },
-    {
-        id: "pakete",
-        title: "Pakete"
-    },
-    {
-        id: "studio",
-        title: "Studio"
-    },
-    {
-        id: "team",
-        title: "Team"
-    },
-    {
-        id: "portfolio",
-        title: "Portfolio"
-    },
-    {
-        id: "produktionsprozess",
-        title: "Produktionsprozess"
-    },
+    {id: "dienstleistungen", title:"Dienstleistungen"},
+    {id: "team", title:"Team"},
+    {id: "portfolio", title:"Portfolio"},
+    {id: "produktionsprozess", title:"Produktionsprozess"},
+    {id: "kontakt", title:"Kontakt"},
 ];
 
 export const bottomLinks = [

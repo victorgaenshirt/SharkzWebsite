@@ -2,24 +2,23 @@ import React, {useState} from 'react'
 import videoFile from '../assets/Webseitettrailer_13(14bitVBR2).mp4';
 import {SoundOutlined} from "@ant-design/icons";
 
-interface HomeProps {
-    wrapperClasses? : string;
-    id?: string;
-}
-export const Home: React.FC<HomeProps> = (props) => {
-    const { wrapperClasses, id} = props;
+export const Home: React.FC = () => {
     const [muted, setMuted] = useState(true);
 
 
     return (
-        <div className={wrapperClasses} id={id}>
-            <div className="absolute top-30 left-1 w-screen" onClick={() => {setMuted(!muted)}} >
-                <SoundOutlined />
+        <div>
+            <div>
+                <div className="absolute top-35 left-5" onClick={() => {setMuted(!muted)}} >
+                    <SoundOutlined />
+                </div>
+                <video autoPlay loop muted={muted} >
+                    <source src={videoFile} type="video/mp4" />
+                </video>
             </div>
-            <video autoPlay loop muted={muted}>
-                <source src={videoFile} type="video/mp4" />
-            </video>
-            Home Kundennutzen showcase Video
+            <div>
+                <img src={"/assets/"} width="50" height="50" alt="sharkzLogo" className="m-10 justify-self-start flex"/>
+            </div>
         </div>
     );
 };

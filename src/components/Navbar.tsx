@@ -32,9 +32,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
                 </ul>
             </nav>
             <div className={"flex flex-col tablet:hidden"}>
-                <div className={"flex flex-1 bg-primary  p-5"}>
-                        <MenuOutlined className={"justify-start"}  onClick={toggleBMenu}/>
-                </div>
+                    <MenuOutlined className={"justify-self-end bg-primary p-5"}  onClick={toggleBMenu}/>
                     {isOpen ?
                             <ul className="flex flex-1 flex-col justify-evenly bg-white p-5">
                                 {links.map((link) => (
