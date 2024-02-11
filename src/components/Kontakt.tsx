@@ -1,5 +1,5 @@
 import React from 'react'
-export const Kontakt = () => {
+export const Kontakt: React.FC = () => {
     return (
         <div>
             Kontakt

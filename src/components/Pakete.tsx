@@ -1,13 +1,9 @@
 import React from 'react'
 
-interface PacketsProps {
-    wrapperClasses? : string;
-    id?: string;
-}
-export const Pakete: React.FC<PacketsProps> = (props) => {
-    const { wrapperClasses, id} = props;
+
+export const Pakete: React.FC = () => {
     return (
-        <div className={wrapperClasses} id={id}>
+        <div className="m-40">
             Pakete
         </div>
     );

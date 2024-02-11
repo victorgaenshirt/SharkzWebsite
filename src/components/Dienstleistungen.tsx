@@ -1,13 +1,8 @@
 import React from 'react'
 
-interface ServicesProps {
-    wrapperClasses? : string;
-    id?: string;
-}
-export const Dienstleistungen: React.FC<ServicesProps> = (props) => {
-    const { wrapperClasses, id} = props;
+export const Dienstleistungen: React.FC = () => {
     return (
-        <div className={wrapperClasses} id={id}>
+        <div className="m-40">
             Dienstleistungen
         </div>
     );

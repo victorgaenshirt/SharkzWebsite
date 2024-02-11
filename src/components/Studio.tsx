@@ -1,13 +1,8 @@
 import React from 'react'
 
-interface HomeProps {
-    wrapperClasses? : string;
-    id?: string;
-}
-export const Studio: React.FC<HomeProps> = (props) => {
-    const { wrapperClasses, id} = props;
+export const Studio: React.FC = () => {
     return (
-        <div className={wrapperClasses} id={id}>
+        <div className="m-40">
             Studio
         </div>
     );

@@ -1,13 +1,7 @@
 import React from 'react'
-
-interface ProductionProps {
-    wrapperClasses? : string;
-    id?: string;
-}
-export const Produktionsprozess: React.FC<ProductionProps> = (props) => {
-    const { wrapperClasses, id} = props;
+export const Produktionsprozess: React.FC = () => {
     return (
-        <div className={wrapperClasses} id={id}>
+        <div>
             Produktionsprozess
         </div>
     );

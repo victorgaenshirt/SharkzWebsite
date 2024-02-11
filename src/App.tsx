@@ -25,25 +25,25 @@ const App = () => {
                 {/*<Element name="home" className="element">
                     <Home  wrapperClasses="w-full"/>
                 </Element>*/}
-                <Element name="dienstleistungen" className="element">
-                    <Dienstleistungen wrapperClasses={contentStyle}/>
+                <Element name="dienstleistungen">
+                    <Dienstleistungen/>
                 </Element>
-                <Element name="pakete" className="element ">
-                    <Pakete wrapperClasses={contentStyle}/>
+                <Element name="pakete">
+                    <Pakete/>
                 </Element>
-                <Element name="studio" className="element ">
-                    <Studio wrapperClasses={contentStyle}/>
+                <Element name="studio">
+                    <Studio/>
                 </Element>
-                <Element name="team" className="element ">
-                    <Team wrapperClasses={contentStyle}/>
+                <Element name="team">
+                    <Team/>
                 </Element>
-                <Element name="portfolio" className="element ">
+                <Element name="portfolio">
                     <Portfolio />
                 </Element>
                 <Element
                     name="produktionsprozess"
                     id="produktionsprozess">
-                    <Produktionsprozess  wrapperClasses={contentStyle}/>
+                    <Produktionsprozess/>
                 </Element>
                 <Kontakt />
                 <BottomBar/>
@@ -52,5 +52,3 @@ const App = () => {
     )
         }
 export default App
-
-const contentStyle = "items-center my-40"

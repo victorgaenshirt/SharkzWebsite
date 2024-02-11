@@ -1,13 +1,7 @@
 import React from 'react'
-
-interface TeamProps {
-    wrapperClasses? : string;
-    id?: string;
-}
-export const Team: React.FC<TeamProps> = (props) => {
-    const { wrapperClasses, id} = props;
+export const Team: React.FC = () => {
     return (
-        <div className={wrapperClasses} id={id}>
+        <div>
             Team
         </div>
     );
