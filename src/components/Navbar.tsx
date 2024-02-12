@@ -13,13 +13,13 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
     }
     return (
         <div>
-            <nav className="hidden tablet:flex flex-1">
-                <ul className="flex flex-1 justify-evenly bg-white p-5">
+            <nav className="hidden sm:flex flex-1">
+                <ul className="flex flex-1 justify-evenly bg-primary p-10">
                     {links.map((link) => (
                             <Link
                                 activeClass="active"
                                 to={link.id}
-                                className="cursor-pointer"
+                                className="cursor-pointer text-dimWhite text-xl font-poppins"
                                 spy={true}
                                 smooth={true}
                                 duration={100}
@@ -31,15 +31,15 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
                     ))}
                 </ul>
             </nav>
-            <div className={"flex flex-col tablet:hidden"}>
-                    <MenuOutlined className={"justify-self-end bg-primary p-5"}  onClick={toggleBMenu}/>
+            <div className={"flex flex-col sm:hidden bg-primary"}>
+                    <MenuOutlined className={"flex p-3 align text-dimWhite"}  onClick={toggleBMenu}/>
                     {isOpen ?
-                            <ul className="flex flex-1 flex-col justify-evenly bg-white p-5">
+                            <ul className="flex flex-col p-3">
                                 {links.map((link) => (
                                     <Link
                                         activeClass="active"
                                         to={link.id}
-                                        className="cursor-pointer"
+                                        className="cursor-pointer text-dimWhite"
                                         spy={true}
                                         smooth={true}
                                         duration={100}

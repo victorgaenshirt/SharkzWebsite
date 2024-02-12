@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import '../index.css'
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import App from "./App.tsx";
-import {Ablauf, AGB, Checkliste, Datenschutz, FAQ, Impressum} from "./components";
-import ErrorPage from "./ErrorPage.tsx";
+import App from "../App.tsx";
+import {Ablauf, AGB, Checkliste, Datenschutz, FAQ, Impressum, Portfolio} from "../components";
+import ErrorPage from "../ErrorPage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +43,11 @@ const router = createBrowserRouter([
     {
         path: "/agb",
         element: <AGB />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/portfolio",
+        element: <Portfolio />,
         errorElement: <ErrorPage />
     },
 ]);

@@ -1,7 +1,6 @@
 export const navLinks = [
     {id: "dienstleistungen", title:"Dienstleistungen"},
     {id: "team", title:"Team"},
-    {id: "portfolio", title:"Portfolio"},
     {id: "produktionsprozess", title:"Produktionsprozess"},
     {id: "kontakt", title:"Kontakt"},
 ];

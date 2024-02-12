@@ -1,32 +1,32 @@
 import {
     BottomBar,
-    Dienstleistungen,
+    Dienstleistungen, Home,
     Kontakt, Navbar,
-    Portfolio,
     Produktionsprozess,
     Team, Vorteile,
 } from "./components";
 import { Element} from 'react-scroll';
 import {navLinks} from "./constants";
+import coverFoto from "./assets/coverFoto.jpg";
 const App = () => {
 
     return (
             <div>
                 <Navbar links={navLinks}/>
-                {/*<Element name="home" className="element">
-                    <Home />
-                </Element>*/}
+                <img src={coverFoto} alt="sharkzLogo"
+                     className="justify-self-start flex w-full"/>
                 <Element name="vorteile">
                     <Vorteile/>
                 </Element>
+                <Element name="home" className="element">
+                    <Home />
+                </Element>
+
                 <Element name="dienstleistungen">
                     <Dienstleistungen/>
                 </Element>
                 <Element name="team">
                     <Team/>
-                </Element>
-                <Element name="portfolio">
-                    <Portfolio />
                 </Element>
                 <Element
                     name="produktionsprozess" >
