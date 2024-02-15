@@ -1,8 +1,8 @@
 import React from 'react'
-export const Team: React.FC = () => {
+export const AGB: React.FC = () => {
     return (
         <div>
-            Team
+            AGB
         </div>
     );
 };

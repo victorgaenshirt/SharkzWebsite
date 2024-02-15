@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import content from '../content.json'
+import content from '../../content.json'
 export const Vorteile: React.FC = () => {
 
     const vorteileArr = content.Kundennutzen
@@ -13,7 +13,7 @@ export const Vorteile: React.FC = () => {
     }, [vorteileArr.length])
 
     return (
-        <div className="flex flex-col p-5 align-middle justify-center bg-dimWhite h-48">
+        <div className="flex flex-col p-5 align-middle justify-center bg-dimWhite h-48 max-w-7xl mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {vorteileArr.map((text, index) => (
                     index === currentIndex ?
                         <div key={index}

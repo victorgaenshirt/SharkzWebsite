@@ -1,12 +1,12 @@
 
-export * from './Dienstleistungen.tsx';
+export * from './home/Dienstleistungen.tsx';
 export * from './Navbar.tsx';
-export * from './Portfolio.tsx';
-export * from './Produktionsprozess.tsx';
-export * from './Team.tsx';
-export * from './bottom';
-export * from './Home.tsx';
-export * from './Vorteile.tsx';
+export * from './sites/Portfolio.tsx';
+export * from './sites/Produktionsprozess.tsx';
+export * from './home/Team.tsx';
+export * from './sites';
+export * from './home/Home.tsx';
+export * from './home/Vorteile.tsx';
 
 
 

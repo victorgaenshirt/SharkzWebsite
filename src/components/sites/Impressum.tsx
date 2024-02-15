@@ -1,8 +1,8 @@
 import React from 'react'
-export const Datenschutz = () => {
+export const Impressum: React.FC = () => {
     return (
         <div>
-            Datenschutz
+            Impressum
         </div>
     );
 };

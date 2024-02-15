@@ -8,6 +8,7 @@ import {
 import App from "../App.tsx";
 import {Ablauf, AGB, Checkliste, Datenschutz, FAQ, Impressum, Portfolio} from "../components";
 import ErrorPage from "../ErrorPage.tsx";
+import {Pakete} from "../components/home/Pakete.tsx";
 
 const router = createBrowserRouter([
     {
@@ -46,7 +47,12 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/portfolio",
+        path: "/pakete",
+        element: <Pakete />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/workshop",
         element: <Portfolio />,
         errorElement: <ErrorPage />
     },

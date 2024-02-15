@@ -1,8 +1,8 @@
 import React from 'react'
-export const AGB = () => {
+export const Checkliste: React.FC = () => {
     return (
         <div>
-            AGB
+            Checkliste
         </div>
     );
 };

@@ -4,5 +4,5 @@ export * from './Checkliste.tsx';
 export * from './Datenschutz.tsx';
 export * from './FAQ.tsx';
 export * from './Impressum.tsx';
-export * from '../Kontakt.tsx';
-export * from './BottomBar.tsx'
+export * from '../home/Kontakt.tsx';
+export * from '../BottomBar.tsx'
