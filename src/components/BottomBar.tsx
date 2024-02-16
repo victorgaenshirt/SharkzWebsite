@@ -9,7 +9,7 @@ export const BottomBar: React.FC = () => {
             <ul className={"sm:flex flex-1 justify-evenly hidden p-5"}>
                 {bottomLinks.map((nav) => (
                         <Link to={"/" + nav.id}
-                              className={"text-dimWhite"}>
+                              className={"text-dimWhite hover:text-offBlue"}>
                                 {nav.title}
                         </Link>
                     ))}
@@ -18,7 +18,7 @@ export const BottomBar: React.FC = () => {
                 <ul className="flex flex-col flex-1">
                     {bottomLinks.slice(0, Math.ceil(bottomLinks.length / 2)).map((nav) => (
                             <Link to={"/" + nav.id}
-                                  className={"flex justify-center text-dimWhite text-xs m-1"}>
+                                  className={"flex justify-center text-dimWhite hover:text-offBlue text-xs m-1"}>
                                 {nav.title}
                             </Link>
                     ))}
@@ -26,7 +26,7 @@ export const BottomBar: React.FC = () => {
                 <ul className="flex flex-col flex-1">
                     {bottomLinks.slice(Math.ceil(bottomLinks.length / 2)).map((nav) => (
                             <Link to={"/" + nav.id}
-                                className={"flex justify-center text-dimWhite text-xs m-1"}>
+                                className={"flex justify-center text-dimWhite hover:text-offBlue text-xs m-1"}>
                                 {nav.title}
                             </Link>
                     ))}

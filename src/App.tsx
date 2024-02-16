@@ -1,34 +1,15 @@
-
-import { Element} from 'react-scroll';
-import {navLinks} from "./constants";
-import {BottomBar, Dienstleistungen, Home, Kontakt, Navbar, Team, Vorteile} from "./components";
-import {Pakete} from "./components/home/Pakete.tsx";
-import {SocialBar} from "./components/SocialBar.tsx";
-const App = () => {
+import {Dienstleistungen, Home, Kontakt, Pakete, Team, Vorteile} from "./components";
+import React from "react";
+const App:React.FC = () => {
 
     return (
             <div>
-                <Navbar links={navLinks}/>
-                <Element name="home" className="element">
-                    <Home />
-                </Element>
-                <Element name="vorteile">
-                    <Vorteile/>
-                </Element>
-                <Element name="team">
-                    <Team/>
-                </Element>
-                <Element name="dienstleistungen">
-                    <Dienstleistungen/>
-                </Element>
-                <Element name={"pakete"} >
-                    <Pakete />
-                </Element>
-                <Element name={"kontakt"} >
-                    <Kontakt />
-                </Element>
-                <BottomBar/>
-                <SocialBar />
+                <Home />
+                <Vorteile/>
+                <Team/>
+                <Dienstleistungen/>
+                <Pakete />
+                <Kontakt />
            </div>
 
     )

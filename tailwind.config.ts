@@ -9,7 +9,10 @@ export default {
         primary: "#00040f",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         blue: "#103d98",
+        offBlue: "#5777b6",
+        lightBlue: "#b7c4e0",
         red: "#831b1b",
+        lightRosa: "#fff2f4",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

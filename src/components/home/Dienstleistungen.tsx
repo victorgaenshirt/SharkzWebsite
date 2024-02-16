@@ -1,14 +1,14 @@
 import React from 'react'
 import business from "../../assets/Business02.jpg"
 import produkt from "../../assets/Produkte.jpg"
-import fotografie from "../../assets/Fotografie.jpg"
 import hochzeit from "../../assets/Hochzeit01.jpg"
 import musikVideo from "../../assets/musicvid.jpg"
 import social from "../../assets/Social Media.jpg"
+import workshops from "../../assets/Workshop01.jpg"
 
 const callouts = [
     {
-        name: 'Social Media',
+        name: 'social Media Content',
         description: 'Social Media Videos und Reels',
         imageSrc: social,
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
@@ -28,15 +28,6 @@ const callouts = [
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
     },
-
-    {
-        name: 'Fotografie',
-        description: 'Portrait- und Paarfotografie',
-        imageSrc: fotografie,
-        imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-        href: '#',
-    },
-
     {
         name: 'Hochzeit',
         description: 'Hochzeitsvideos',
@@ -48,6 +39,13 @@ const callouts = [
         name: 'Musikvideo',
         description: '',
         imageSrc: musikVideo,
+        imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+        href: '#',
+    },
+    {
+        name: 'Workshops',
+        description: '',
+        imageSrc: workshops,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
     },

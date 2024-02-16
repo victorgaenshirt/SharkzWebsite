@@ -5,16 +5,16 @@ import marco from "../../assets/Marcox720p.jpg";
 
 const people = [
     {
-        name: 'Nicolai Strack',
-        role: 'Kameramann / Maschinenbau',
-        imageUrl:
-            nicolai,
-    },
-    {
         name: 'Joshua Jung',
         role: 'Geschäftsführung / Regie',
         imageUrl:
         joshua,
+    },
+    {
+        name: 'Nicolai Strack',
+        role: 'Kameramann / Maschinenbau',
+        imageUrl:
+            nicolai,
     },
     {
         name: 'Marco Zacharias',
