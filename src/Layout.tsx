@@ -1,7 +1,7 @@
 import {ReactNode, useEffect} from 'react';
-import {BottomBar, Navbar, SocialBar} from "./components";
-import {navLinks} from "./constants";
+import {BottomBar} from "./components";
 import {useLocation} from "react-router-dom";
+import {Header} from "./components/Header.tsx";
 
 interface LayoutProps {
     children: ReactNode;
@@ -15,11 +15,10 @@ const Layout = ({ children }: LayoutProps) => {
     }, [location]);
 
     return (
-        <div>
-            <Navbar links={navLinks} />
+        <div className={"min-h-screen"}>
+            <Header />
             {children}
             <BottomBar />
-            <SocialBar />
         </div>
     );
 };

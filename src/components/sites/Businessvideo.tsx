@@ -7,9 +7,9 @@ import tester from "../../assets/typ.jpg"
 import converse from "../../assets/Kampagnenwerbung_02.jpg"
 import ddd from "../../assets/DDD.jpg"
 import enbw from "../../assets/ENBW.jpg"
-import mashody from "../../assets/mashody.jpg"
 import hb from "../../assets/hellbegeistert.jpg"
 import tvbw from "../../assets/tv-bw.jpg"
+import nuno from "../../assets/Nuno.jpg"
 
 export const Businessvideo = () => {
 
@@ -105,11 +105,11 @@ export const Businessvideo = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-20 py-10 px-6 lg:px-32 bg-gray-100">
+            <div className="mt-20 py-10 px-6 lg:px-32 bg-gray-100 rounded-lg">
                 <div className="lg:max-w-7xl">
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Du hast schon ein aktuelles Imagevideo ?</h1>
+                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tiefere Einblicke in die Prozesse</h1>
                     <p className="my-6 text-xl leading-8 text-gray-700">
-                        Lass dich von unseren weiteren Optionen überzeugen
+                        Videos statt lange Erklärungen
                     </p>
                 </div>
                 <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
@@ -134,16 +134,15 @@ export const Businessvideo = () => {
                     <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                         <img
                             className="col-span-2 w-full object-contain lg:col-span-1"
-                            src={ddd}
-                            alt="Transistor"
+                            src={nuno}
+                            alt="Tuple"
                             width={158}
                         />
                         <img
                             className="col-span-2 w-full object-contain lg:col-span-1"
-                            src={mashody}
-                            alt="Tuple"
+                            src={ddd}
+                            alt="Transistor"
                             width={158}
-                            height={48}
                         />
                         <img
                             className="col-span-2 w-full object-contain lg:col-span-1"
@@ -153,16 +152,16 @@ export const Businessvideo = () => {
                             height={48}
                         />
                         <img
-                            className="col-span-2 w-full object-contain sm:col-start-2 lg:col-span-1"
-                            src={tvbw}
-                            alt="SavvyCal"
+                            className="col-span-2 col-start-2 w-full object-contain sm:col-start-auto lg:col-span-1"
+                            src={hb}
+                            alt="Statamic"
                             width={158}
                             height={48}
                         />
                         <img
-                            className="col-span-2 col-start-2 w-full object-contain sm:col-start-auto lg:col-span-1"
-                            src={hb}
-                            alt="Statamic"
+                            className="col-span-2 w-full object-contain sm:col-start-2 lg:col-span-1"
+                            src={tvbw}
+                            alt="SavvyCal"
                             width={158}
                             height={48}
                         />

@@ -7,10 +7,7 @@ import {
 } from "react-router-dom";
 import App from "../App.tsx";
 import {
-    Ablauf,
     Workshops,
-    Checkliste,
-    Datenschutz,
     FAQ,
     Impressum,
      Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView
@@ -26,33 +23,13 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/checkliste",
-        element: <Checkliste />,
-        errorElement: <ErrorPage />
-    },
-    {
         path: "/faq",
         element: <Layout><FAQ /></Layout>,
         errorElement: <ErrorPage />
     },
     {
-        path: "/ablauf",
-        element: <Ablauf />,
-        errorElement: <ErrorPage />
-    },
-    {
         path: "/impressum",
-        element: <Impressum />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/datenschutz",
-        element: <Datenschutz />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/agb",
-        element: <Workshops />,
+        element: <Layout><Impressum /></Layout>,
         errorElement: <ErrorPage />
     },
     {
@@ -72,17 +49,17 @@ const router = createBrowserRouter([
     },
     {
         path: "/social",
-        element: <SocialMedia />,
+        element: <Layout><SocialMedia /></Layout>,
         errorElement: <ErrorPage />
     },
     {
         path: "/produkte",
-        element: <Produktvideo />,
+        element: <Layout><Produktvideo /></Layout>,
         errorElement: <ErrorPage />
     },
     {
         path: "/workshop",
-        element: <Workshops />,
+        element: <Layout><Workshops /></Layout>,
         errorElement: <ErrorPage />
     },
 ]);

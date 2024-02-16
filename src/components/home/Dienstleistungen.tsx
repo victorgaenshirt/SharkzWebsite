@@ -5,6 +5,7 @@ import hochzeit from "../../assets/Hochzeit01.jpg"
 import musikVideo from "../../assets/musicvid.jpg"
 import social from "../../assets/Social Media.jpg"
 import workshops from "../../assets/Workshop01.jpg"
+import {Link} from "react-router-dom";
 
 const callouts = [
     {
@@ -13,6 +14,7 @@ const callouts = [
         imageSrc: social,
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
         href: '#',
+        id: "/social",
     },
     {
         name: 'Business',
@@ -20,6 +22,7 @@ const callouts = [
         imageSrc: business,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
+        id: "/business",
     },
     {
         name: 'Produkte',
@@ -27,6 +30,7 @@ const callouts = [
         imageSrc: produkt,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
+        id: "/produkte",
     },
     {
         name: 'Hochzeit',
@@ -34,6 +38,7 @@ const callouts = [
         imageSrc: hochzeit,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
+        id: "/hochzeit",
     },
     {
         name: 'Musikvideo',
@@ -41,6 +46,7 @@ const callouts = [
         imageSrc: musikVideo,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
+        id: "",
     },
     {
         name: 'Workshops',
@@ -48,6 +54,7 @@ const callouts = [
         imageSrc: workshops,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
+        id: "/workshop",
     },
 ]
 export const Dienstleistungen: React.FC = () => {
@@ -60,11 +67,13 @@ export const Dienstleistungen: React.FC = () => {
                         {callouts.map((callout) => (
                             <div key={callout.name} className="group relative">
                                 <div className="cursor-pointer relative sm:h-96 overflow-hidden rounded-lg bg-white lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
+                                    <Link to={callout.id}>
                                     <img
                                         src={callout.imageSrc}
                                         alt={callout.imageAlt}
                                         className="h-full w-full object-cover object-center"
                                     />
+                                    </Link>
                                 </div>
                                 <h3 className="mt-3">
                                     <a href={callout.href} className="text-blue hover:text-primary">

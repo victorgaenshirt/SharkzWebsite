@@ -5,7 +5,6 @@ const App:React.FC = () => {
     return (
             <div>
                 <Home />
-                <Vorteile/>
                 <Team/>
                 <Dienstleistungen/>
                 <Pakete />

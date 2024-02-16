@@ -1,10 +1,13 @@
 import React from 'react'
 import hz1 from "../../assets/Hochzeit_01_02.jpg"
-import hz2 from "../../assets/Hochzeit_02.jpg"
-import hz3 from "../../assets/Hochzeit_03.jpg"
+import hz2 from "../../assets/Hochzeit_13.jpg"
+import hz3 from "../../assets/Hochzeit_12.jpg"
 import hz4 from "../../assets/Hochzeit_04.jpg"
-import hz5 from "../../assets/Hochzeit_05.jpg"
+import hz5 from "../../assets/Hochzeit_10.jpg"
 import hz6 from "../../assets/Hochzeit_06.jpg"
+import hz7 from "../../assets/hochzeit.jpg"
+import hz9 from "../../assets/blumenm.jpg"
+
 export const Hochzeitsvideo: React.FC = () => {
     return (
         <div className="bg-lightRosa py-24 sm:py-32" id="team">
@@ -20,14 +23,18 @@ export const Hochzeitsvideo: React.FC = () => {
                         Vertrauen Sie uns, um Ihre Liebe und Ihren Glanz in bewegenden Bildern festzuhalten und sie zu zeitlosen Erinnerungen zu machen.
                     </p>
                 </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 grid-flow-dense gap-4">
-                            <img className="rounded-lg sm:w-96 " src={hz1} alt="" />
-                            <img className="rounded-lg sm:w-96" src={hz2} alt="" />
-                            <img className="rounded-lg sm:w-96" src={hz3} alt="" />
-                            <img className="rounded-lg sm:w-96" src={hz4} alt="" />
-                            <img className="rounded-lg sm:w-96" src={hz5} alt="" />
-                            <img className="rounded-lg sm:w-96" src={hz6} alt="" />
-                        </div>
+                <div className={"flex max-w-4xl mx-auto"}>
+                    <div className={"flex-col w-3/5 pr-6"}>
+                        <img className=" pb-6" src={hz9} alt="" />
+                        <img className="" src={hz7} alt="" />
+                    </div>
+                    <div className={"w-2/5"}>
+                        <img className="flex flex-1" src={hz3} alt="" />
+                    </div>
+                </div>
+                <video autoPlay muted controls={true} className={"mt-6 w-1/2 mx-auto flex flex-grow"}>
+                    <source src={hochzeitVideo} type="video/mp4" />
+                </video>
             </div>
         </div>
     );

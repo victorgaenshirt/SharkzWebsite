@@ -8,6 +8,7 @@ export default {
       colors: {
         primary: "#00040f",
         dimWhite: "rgba(255, 255, 255, 0.7)",
+        darkBlue: "#081e4c",
         blue: "#103d98",
         offBlue: "#5777b6",
         lightBlue: "#b7c4e0",
