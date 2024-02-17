@@ -1,11 +1,12 @@
 import React from 'react'
 import business from "../../assets/Business02.jpg"
-import produkt from "../../assets/Produkte.jpg"
-import hochzeit from "../../assets/Hochzeit01.jpg"
+import produkt from "../../assets/Produkt_19.jpg"
+import hochzeit from "../../assets/Hochzeit_07.jpg"
 import musikVideo from "../../assets/musicvid.jpg"
 import social from "../../assets/Social Media.jpg"
 import workshops from "../../assets/Workshop01.jpg"
 import {Link} from "react-router-dom";
+import {FAQ} from "../sites";
 
 const callouts = [
     {

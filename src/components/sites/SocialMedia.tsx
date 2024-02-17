@@ -1,36 +1,48 @@
-import React from 'react'
-import hz9 from "../../assets/blumenm.jpg";
-import hz7 from "../../assets/hochzeit.jpg";
-import hz3 from "../../assets/Hochzeit_12.jpg";
-import hochzeitVideo from "../../assets/Hochzeit.mp4";
-export const SocialMedia: React.FC = () => {
-    return (
-        <div className="bg-lightRosa py-24 sm:py-32" id="team">
-            <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8">
-                <div className="max-w-6xl">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Hochzeitsvideo</h2>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Tauchen Sie ein in die emotionale Welt der Liebe und Romantik, während wir die schönsten Momente Ihres besonderen Tages einfangen und in zeitlose Erinnerungen verwandeln.
+import React from "react";
 
+import shoes from "../../assets/Convers_Abspann_Hochformat_2.mp4"
+import yasmin from "../../assets/Yasmin_02.jpg"
+import b2 from "../../assets/brigitte.mp4"
+import b1 from "../../assets/Birg_02.jpg"
+
+
+export const SocialMedia:React.FC = () => {
+    return (
+        <div className="bg-gray-100 py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-3xl lg:text-center">
+                    <p className="mb-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Social Media Content
                     </p>
-                    <p className="text-lg leading-8 text-gray-600">
-                        Unsere Hochzeitsvideos sind mehr als nur Aufnahmen - sie sind gefühlvolle Erinnerungen an den schönsten Tag in Ihrem Leben. Mit professioneller Produktion und einem erfahrenen Team erfassen wir jeden Augenblick, damit Sie ihn immer wieder erleben können.
-                        Vertrauen Sie uns, um Ihre Liebe und Ihren Glanz in bewegenden Bildern festzuhalten und sie zu zeitlosen Erinnerungen zu machen.
+                    <p className="mx-auto max-w-xl text-2xl leading-8">
+                        Entdecke mit Sharkz Media die Kraft effektiver Social Media Videos!
                     </p>
-                </div>
-                <div className={"flex max-w-4xl mx-auto"}>
-                    <div className={"flex-col w-3/5 pr-6"}>
-                        <img className=" pb-6" src={hz9} alt="" />
-                        <img className="" src={hz7} alt="" />
+                    <div className="my-8 mx-auto grid grid-cols-2 gap-x-8 gap-y-10 max-w-xl lg:gap-y-16">
+                        <img src={yasmin} className={""}></img>
+                        <video autoPlay muted loop={true} >
+                            <source src={shoes} type="video/mp4" />
+                        </video>
                     </div>
-                    <div className={"w-2/5"}>
-                        <img className="flex flex-1" src={hz3} alt="" />
+                    <div className="max-w-xl mx-auto">
+                    <p className="text-2xl leading-8">
+                        Unsere maßgeschneiderten Inhalte sind darauf ausgerichtet, deine Zielgruppe anzusprechen und
+                        deine Botschaft effektiv zu verbreiten.</p>
+                    </div>
+                    <div className="my-8 mx-auto grid grid-cols-2 gap-x-8 gap-y-10 max-w-xl lg:gap-y-16">
+                        <video autoPlay muted loop={true} >
+                            <source src={b2} type="video/mp4" />
+                        </video>
+                        <img src={b1} className={""}></img>
+                    </div>
+                    <div className="max-w-xl mx-auto">
+                        <p className="text-2xl leading-8">
+                        Von unterhaltsamen Kurzvideos bis hin zu informativen
+                        Clips - bringen deine Marke auf Social Media zum Strahlen. Lass uns gemeinsam deine Präsenz
+                        in den sozialen Medien stärken und deine Inhalte zum Leben erwecken!
+                        </p>
                     </div>
                 </div>
-                <video autoPlay muted controls={true} className={"mt-6 w-1/2 mx-auto flex flex-grow"}>
-                    <source src={hochzeitVideo} type="video/mp4" />
-                </video>
             </div>
         </div>
-    );
-};
+    )
+}

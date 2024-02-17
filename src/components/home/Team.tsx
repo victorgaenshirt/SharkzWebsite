@@ -1,6 +1,6 @@
 import React from 'react'
 import joshua from "../../assets/Joshuax720p.jpg";
-import nicolai from "../../assets/Nicolaix720p.jpg";
+import nicolai from "../../assets/Nicolaix720p_02.jpg";
 import marco from "../../assets/Marcox720p.jpg";
 
 const people = [

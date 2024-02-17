@@ -6,7 +6,7 @@ export const FAQ:React.FC = () => {
     return (
     <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 lg:py-32">
         <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-6">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-6">Häufig gestellte Fragen</h2>
             {content.FAQ.map((item, index) => (
                 <Disclosure key={index} as="div" className="mt-2">
                     {({ open }) => (
