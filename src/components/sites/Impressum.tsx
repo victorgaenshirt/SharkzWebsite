@@ -1,8 +1,16 @@
 import React from 'react'
+import content from '../../content.json'
+
+
 export const Impressum: React.FC = () => {
     return (
         <div>
-            Impressum
+        <h2>
+            {content.impressum.impressum}
+        </h2>
+        <div>
+            {content.impressum.datenschutz}
+        </div>
         </div>
     );
 };
