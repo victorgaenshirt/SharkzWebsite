@@ -5,7 +5,6 @@ import testtinte3 from "../../assets/testtinte3.jpg";
 import halsband1 from "../../assets/halsband1.jpg";
 import halsband2 from "../../assets/halsband2.jpg";
 import halsband3 from "../../assets/halsband3.jpg";
-import drink from "../../assets/drink.jpg";
 import studio1 from "../../assets/studio1.jpg";
 import studio2 from "../../assets/studio2.jpg";
 import studio3 from "../../assets/studio3.jpg";

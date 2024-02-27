@@ -19,7 +19,7 @@ const navigation = [
     { id: "workshop", name: 'Workshop', href: '#', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
 }
 

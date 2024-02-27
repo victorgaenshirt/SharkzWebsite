@@ -6,7 +6,6 @@ import musikVideo from "../../assets/musicvid.jpg"
 import social from "../../assets/Social Media.jpg"
 import workshops from "../../assets/Workshop01.jpg"
 import {Link} from "react-router-dom";
-import {FAQ} from "../sites";
 
 const callouts = [
     {

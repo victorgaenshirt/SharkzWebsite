@@ -1,10 +1,6 @@
 import React from 'react'
-import hz1 from "../../assets/Hochzeit_01_02.jpg"
-import hz2 from "../../assets/Hochzeit_13.jpg"
+
 import hz3 from "../../assets/Hochzeit_12.jpg"
-import hz4 from "../../assets/Hochzeit_04.jpg"
-import hz5 from "../../assets/Hochzeit_10.jpg"
-import hz6 from "../../assets/Hochzeit_06.jpg"
 import hz7 from "../../assets/hochzeit.jpg"
 import hz9 from "../../assets/blumenm.jpg"
 import hochzeitVideo from "../../assets/Hochzeit_02.mp4"

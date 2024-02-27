@@ -4,7 +4,7 @@ import { Switch } from '@headlessui/react'
 
 export const Kontakt: React.FC = () => {
     const [agreed, setAgreed] = useState(false)
-    const classNames = (...classes) => {
+    const classNames = (...classes: any[]) => {
         return classes.filter(Boolean).join(' ')
     }
 
