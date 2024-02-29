@@ -13,7 +13,7 @@ export default {
         offBlue: "#5777b6",
         lightBlue: "#b7c4e0",
         red: "#831b1b",
-        lightRosa: "#fff2f4",
+        lightRosa: "#FFF8F9",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

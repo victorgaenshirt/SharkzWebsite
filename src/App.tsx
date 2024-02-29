@@ -4,9 +4,9 @@ const App:React.FC = () => {
 
     return (
             <div>
-                <Team/>
                 <Dienstleistungen/>
                 <Pakete />
+                <Team/>
                 <Kontakt />
                 <FAQ />
            </div>

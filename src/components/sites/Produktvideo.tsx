@@ -8,8 +8,8 @@ import halsband3 from "../../assets/halsband3.jpg";
 import studio1 from "../../assets/studio1.jpg";
 import studio2 from "../../assets/studio2.jpg";
 import studio3 from "../../assets/studio3.jpg";
-import studioVideo from "../../assets/Studiovideo_02.mp4"
 import produktVideo from "../../assets/Produktvideo.mp4"
+import studioVideo from "../../assets/Studiovideo_03.mp4"
 
 const produkte1 = [
     {image: testtinte2},
@@ -48,8 +48,8 @@ export const Produktvideo:React.FC = () => {
                     </p>
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
                         <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
-                            {produkte1.map((produkt) => (
-                                <img src={produkt.image} className={""}></img>
+                            {produkte1.map((produkt, index) => (
+                                <img src={produkt.image} alt={"produkt" + index} className={""}></img>
                             ))}
                         </dl>
                     </div>
@@ -58,8 +58,8 @@ export const Produktvideo:React.FC = () => {
                     </video>
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
                         <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
-                            {produkte2.map((produkt) => (
-                                <img src={produkt.image} className={""}></img>
+                            {produkte2.map((produkt, index) => (
+                                <img src={produkt.image}  alt={"produkt2" + index} className={""}></img>
                             ))}
                         </dl>
                     </div>
@@ -76,8 +76,8 @@ export const Produktvideo:React.FC = () => {
                     </p>
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-16 sm:max-w-4xl">
                         <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
-                            {studio.map((stu) => (
-                                <img src={stu.image} ></img>
+                            {studio.map((stu, index) => (
+                                <img src={stu.image} alt={"studio" + index} ></img>
                             ))}
                         </dl>
                     </div>

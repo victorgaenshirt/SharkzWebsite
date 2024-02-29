@@ -2,6 +2,7 @@ import React from 'react'
 import joshua from "../../assets/Joshuax720p.jpg";
 import nicolai from "../../assets/Nicolaix720p_02.jpg";
 import marco from "../../assets/Marcox720p.jpg";
+import ueberUns from "../../assets/ÜberunsVideo_02.mp4";
 
 const people = [
     {
@@ -50,6 +51,9 @@ export const Team: React.FC = () => {
                         </li>
                     ))}
                 </ul>
+                <video autoPlay muted controls={true} className={"max-w-7xl mt-6 w-full mx-auto"}>
+                    <source src={ueberUns} type="video/mp4" />
+                </video>
             </div>
         </div>
     );

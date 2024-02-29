@@ -1,11 +1,12 @@
 import React from 'react'
-import business from "../../assets/Business02.jpg"
+import business from "../../assets/Businessfoto_02.jpg"
 import produkt from "../../assets/Produkt_19.jpg"
 import hochzeit from "../../assets/Hochzeit_07.jpg"
 import musikVideo from "../../assets/musicvid.jpg"
 import social from "../../assets/Social Media.jpg"
 import workshops from "../../assets/Workshop01.jpg"
 import {Link} from "react-router-dom";
+import startseiteReel from "../../assets/Startseite-Reel_08.mp4";
 
 const callouts = [
     {
@@ -60,6 +61,9 @@ const callouts = [
 export const Dienstleistungen: React.FC = () => {
     return (
         <div className="bg-white">
+            <video autoPlay muted controls={true} className={"max-w-7xl mt-6 w-full mx-auto"}>
+                <source src={startseiteReel} type="video/mp4" />
+            </video>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsere Dienstleistungen</h2>
