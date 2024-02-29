@@ -22,34 +22,30 @@ const stats = [
 
 export const Workshops:React.FC = () => {
     return (
-        <div className="relative isolate overflow-hidden bg-gray-100 py-24 sm:py-32">
-
-
+        <div className="bg-gray-100 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Der Sharkz Media Workshop</h2>
-                    <p className="mt-6 text-2xl leading-8 text-gray-800">
+                <div className="mx-auto max-w-3xl lg:text-center">
+                    <h2 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Der Sharkz Media Workshop</h2>
+                    <p className="text-sm sm:text-2xl leading-relaxed text-left text-gray-600 my-6">
                         Buche unseren Workshop, um professionelles Wissen zur Videoproduktion<br/> aus erster Hand zu erhalten und sofort praktische Erfahrungen zu sammeln.
                     </p>
-                </div>
-                <img className={"mt-10"} src={workshop}></img>
-                <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                    <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                        {links.map((link) => (
-                            <div className={"text-gray-600 text-lg"}>
-                                {link.name}
-                            </div>
-                        ))}
-                    </div>
-                    <h2 className="mt-32 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Unsere Themen</h2>
-                    <dl className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                        {stats.map((stat) => (
-                            <div key={stat.name} className="flex flex-col bg-white shadow-xl border-gray-700 rounded-lg p-3">
-                                <dd className="text-xl font-bold leading-9 tracking-tight text-gray-900">{stat.value}</dd>
-                                <dt className="text-base leading-7 text-gray-600">{stat.name}</dt>
-                            </div>
-                        ))}
-                    </dl>
+                    <img className={"my-10"} src={workshop}></img>
+                        <div className="grid grid-cols-1 gap-5 text-base font-semibold text-white sm:grid-cols-2 ">
+                            {links.map((link) => (
+                                <div className={"text-left sm:text-xl text-blue text-sm"}>
+                                    {link.name}
+                                </div>
+                            ))}
+                        </div>
+                        <h2 className="text-left mt-16 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Unsere Themen</h2>
+                        <dl className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                            {stats.map((stat) => (
+                                <div key={stat.name} className="flex flex-col bg-white shadow-xl border-gray-700 rounded-lg p-3">
+                                    <dd className="text-left text-xl font-bold leading-relaxed tracking-tight text-gray-900">{stat.value}</dd>
+                                    <dt className="text-left text-base leading-relaxed text-gray-600">{stat.name}</dt>
+                                </div>
+                            ))}
+                        </dl>
                 </div>
             </div>
         </div>
