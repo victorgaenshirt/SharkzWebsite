@@ -10,7 +10,7 @@ import startseiteReel from "../../assets/Startseite-Reel_08.mp4";
 
 const callouts = [
     {
-        name: 'social Media Content',
+        name: 'Social Media Content',
         description: 'Social Media Videos und Reels',
         imageSrc: social,
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
@@ -46,7 +46,7 @@ const callouts = [
         description: '',
         imageSrc: musikVideo,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-        href: '#',
+        href: '',
         id: "",
     },
     {
@@ -60,34 +60,34 @@ const callouts = [
 ]
 export const Dienstleistungen: React.FC = () => {
     return (
-        <div className="bg-white">
-            <video autoPlay muted controls={true} className={"max-w-7xl mt-6 w-full mx-auto"}>
-                <source src={startseiteReel} type="video/mp4" />
-            </video>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsere Dienstleistungen</h2>
-                    <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-                        {callouts.map((callout) => (
-                            <div key={callout.name} className="group relative">
-                                <div className="cursor-pointer relative sm:h-96 overflow-hidden rounded-lg bg-white lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
-                                    <Link to={callout.id}>
-                                    <img
-                                        src={callout.imageSrc}
-                                        alt={callout.imageAlt}
-                                        className="h-full w-full object-cover object-center"
-                                    />
-                                    </Link>
+        <div className="bg-white py-10 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-3xl lg:text-center">
+                    <video autoPlay muted controls={true} className={"max-w-7xl mt-6 w-full mx-auto"}>
+                        <source src={startseiteReel} type="video/mp4" />
+                    </video>
+                    <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+                        <h2 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsere Dienstleistungen</h2>
+                        <div className="grid sm:grid-cols-2 grid-cols-1 gap-3">
+                            {callouts.map((callout) => (
+                                <div>
+                                        <Link to={callout.id}>
+                                            <img
+                                                src={callout.imageSrc}
+                                                alt={callout.imageAlt}
+                                                className="h-full w-full object-cover object-center"
+                                            />
+                                        </Link>
+                                        <div>
+                                            <div className="flex items-center mx-auto mt-3 text-xl font-bold leading-9 tracking-tight text-gray-900">
+                                                {callout.name}
+                                            </div>
+                                            <div className="flex text-left items-center mx-auto leading-7 text-lg text-blue">{callout.description}</div>
+                                        </div>
                                 </div>
-                                <h3 className="mt-3">
-                                    <a href={callout.href} className="text-blue hover:text-primary">
-                                        {callout.name}
-                                    </a>
-                                </h3>
-                                <p className="text-xs mb-6 font-semibold">{callout.description}</p>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>

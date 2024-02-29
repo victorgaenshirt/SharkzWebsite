@@ -23,6 +23,14 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: 'CustomFont'; /* Der Name, den Sie in Ihrer tailwind.config.js definiert haben */
+  src: url('../public/fonts/Naville-Regular DEMO.ttf') format('truetype'); /* Der Pfad zu Ihrer Schriftartdatei */
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;
