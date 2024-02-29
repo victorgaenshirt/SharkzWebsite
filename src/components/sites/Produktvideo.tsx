@@ -31,15 +31,14 @@ const studio = [
 
 export const Produktvideo:React.FC = () => {
     return (
-
+    <div>
         <div className="bg-gray-100 py-24 sm:py-32">
-
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <p className="text-left mt-2 text-3xl font-bold tracking-tight text-gray-900">
                         Produktfotos und -videos
                     </p>
-                    <p className="mt-6 text-lg leading-8">
+                    <p className="text-left mt-6 text-lg leading-8">
                         Unser erfahrenes Team ist mit unterschiedlichen Materialeigenschaften von Produkten vertraut
                         und beherrscht die Techniken, um diese gekonnt in Szene zu setzen und die besten Aufnahmen zu erzielen.
                         <br/>
@@ -63,10 +62,16 @@ export const Produktvideo:React.FC = () => {
                             ))}
                         </dl>
                     </div>
-                    <p className="mt-2 text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                </div>
+            </div>
+        </div>
+        <div className="bg-white py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="mx-auto max-w-3xl lg:text-center">
+                <p className="text-left mt-6 text-3xl font-bold tracking-tight text-gray-900">
                         Sharkz Media Studio
                     </p>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <p className="text-left my-6 text-lg leading-8 text-gray-600">
                         Unser neues Studio ist für uns eine Art Werkstatt der Kreativität.  Spezialisierung Maschinenbau.
                         Wir haben uns auch eine stabile Werkbank errichtet, mit der wir unsere eigenen Kameravorrichtungen
                         vor Ort bauen können. Mit unserem Gerüst aus Aluprofilen ist es nicht nur möglich Lampen über der
@@ -74,14 +79,14 @@ export const Produktvideo:React.FC = () => {
                         der Kulisse fallen lassen können.
 
                     </p>
-                    <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-16 sm:max-w-4xl">
+                    <div className="mx-auto max-w-xs sm:max-w-4xl">
                         <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
                             {studio.map((stu, index) => (
                                 <img src={stu.image} alt={"studio" + index} ></img>
                             ))}
                         </dl>
                     </div>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <p className="text-left my-6 text-lg leading-8 text-gray-600">
                         Unsere 360-Grad-Kameradrehmaschine bietet vielfältige Vorteile um Produkte aus verschiedenen
                         Perspektiven zu verfilmen. Die Kamera dreht sich um einen festen Punkt, angetrieben von einem
                         Drehstrommotor, der es ermöglicht eine konstant bleibende Geschwindigkeit aufrecht zu erhalten.
@@ -90,11 +95,12 @@ export const Produktvideo:React.FC = () => {
                         bewegt werden. Dies eröffnet eine Vielzahl von Gestaltungsmöglichkeiten für außergewöhnliche
                         Kamerafahrten und visuelle Effekte.
                     </p>
+                    <video autoPlay muted controls={true} className={"w-full mx-auto"}>
+                        <source src={studioVideo} type="video/mp4" />
+                    </video>
                 </div>
-                <video autoPlay muted controls={true} className={"mt-6 w-full md:w-2/3 mx-auto"}>
-                    <source src={studioVideo} type="video/mp4" />
-                </video>
             </div>
         </div>
+    </div>
     )
 }

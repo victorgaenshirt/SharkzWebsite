@@ -11,6 +11,7 @@ import hb from "../../assets/partner_logos/hellbegeistert.jpg"
 import tvbw from "../../assets/partner_logos/tv-bw.jpg"
 import nuno from "../../assets/partner_logos/Nuno.jpg"
 import businessVid from "../../assets/Business_03.mp4"
+import React from "react";
 
 export const Businessvideo = () => {
 
@@ -53,123 +54,105 @@ export const Businessvideo = () => {
         },
     ]
 
+    const benefits = [
+        {
+            heading: "Alles aus einer Hand",
+            text: "Unser besonderer Vorteil liegt darin, dass wir die Produktion von Videos und Fotos nahtlos miteinander verbinden können. Dadurch bieten wir dir eine ganzheitliche Lösung aus einer Hand",
+        },
+        {
+            heading: "Wir kennen deine Bedürfnisse",
+            text: "Nachdem wir schon viele Firmen mit profesionellem Videomaterial versorgt haben, wissen wir genau worauf es ankommt.",
+        },
+        {
+            heading: "Innovative Konzepte",
+            text: "Wir setzen auf kreative Ansätze, um einzigartige Videos zu gestalten, die sich deutlich von anderen abheben und einen bleibenden Eindruck hinterlassen.",
+        },
+    ]
+
+    const benefitIcons: { [key: string]: JSX.Element } = {
+        "Alles aus einer Hand": <BankOutlined />,
+        "Wir kennen deine Bedürfnisse": <CommentOutlined />,
+        "Innovative Konzepte": <BulbOutlined />
+    };
+
+    const partners = [
+        nuno,
+        ddd,
+        enbw,
+        hb,
+        tvbw
+    ]
+
     return (
-        <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-                <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                    <div className="lg:pr-4">
-                        <div className="lg:max-w-lg">
-                            {/*<p className="text-base font-semibold leading-7 text-indigo-600">Präsentieren sie sich im besten Licht</p>*/}
-                            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Businessvideo</h1>
-                            <p className="mt-6 text-xl leading-8 text-gray-700">
-                                Wir versorgen dein Unternehmen mit dem passenden Videomaterial.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                    <video
-                        autoPlay muted loop controls={true}
-                        className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                    >
-                        <source src={businessVid}/>
-                    </video>
-                </div>
-                <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                    <div className="lg:pr-4">
-                        <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                            <p>
-                                Das Imagevideo fungiert als digitale Visitenkarte des Unternehmens. Es präsentiert Produkte und Dienstleistungen,
-                                transportiert die Unternehmenswerte und vermittelt einen Eindruck vom Betriebsklima. Dadurch werden Kunden effektiv angesprochen und neue Bewerber angezogen.
-                            </p>
-                            <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                                <li className="flex gap-x-3">
-                                    <BankOutlined className="mt-1 h-5 w-5 flex-none text-blue" aria-hidden="true" />
-                                    <span>
-                    <strong className="font-semibold text-gray-900">Alles aus einer Hand</strong> dass wir ähm dass der vorteil oah des müsst ich nommal schön formuliert bekomme dass der vorteil darin besteht dasss wir halt videos und fotos gleichzeitig für die produziern
-                  </span>
-                                </li>
-                                <li className="flex gap-x-3">
-                                    <CommentOutlined className="mt-1 h-5 w-5 flex-none text-blue" aria-hidden="true" />
-                                    <span>
-                    <strong className="font-semibold text-gray-900">Wir kennen deine Bedürfnisse</strong> Nachdem wir schon viele Firmen mit profesionellem Videomaterial versorgt haben, wissen wir genau worauf es ankommt.
-                  </span>
-                                </li>
-                                <li className="flex gap-x-3">
-                                    <BulbOutlined className="mt-1 h-5 w-5 flex-none text-blue" aria-hidden="true" />
-                                    <span>
-                    <strong className="font-semibold text-gray-900">Innovative Konzepte</strong> Wir unterstützen dich mit unserer Kreativität, um für sie
-                                        ein Video zu kreieren, dass sich von der Masse abhebt.
-                  </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="mt-20 py-10 px-6 lg:px-32 bg-gray-100 rounded-lg">
-                <div className="lg:max-w-7xl">
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tiefere Einblicke in die Prozesse</h1>
-                    <p className="my-6 text-xl leading-8 text-gray-700">
-                        Videos statt lange Erklärungen
-                    </p>
-                </div>
-                <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                    {options.map((person) => (
-                        <li key={person.name}>
-                            <div className="flex items-center gap-x-6">
-                                <img className="h-20 w-20 sm:h-32 sm:w-32 rounded-lg" src={person.imageUrl} alt="" />
-                                <div>
-                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                    <p className="text-sm font-semibold leading-6 text-blue">{person.role}</p>
-                                </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className="bg-white pt-24">
+        <div>
+            <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-                       Mit diesen Unternehmen durften wir bereits zusammenarbeiten
-                    </h2>
-                    <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                        <img
-                            className="col-span-2 w-full object-contain lg:col-span-1"
-                            src={nuno}
-                            alt="Tuple"
-                            width={158}
-                        />
-                        <img
-                            className="col-span-2 w-full object-contain lg:col-span-1"
-                            src={ddd}
-                            alt="Transistor"
-                            width={158}
-                        />
-                        <img
-                            className="col-span-2 w-full object-contain lg:col-span-1"
-                            src={enbw}
-                            alt="Reform"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 col-start-2 w-full object-contain sm:col-start-auto lg:col-span-1"
-                            src={hb}
-                            alt="Statamic"
-                            width={158}
-                            height={48}
-                        />
-                        <img
-                            className="col-span-2 w-full object-contain sm:col-start-2 lg:col-span-1"
-                            src={tvbw}
-                            alt="SavvyCal"
-                            width={158}
-                            height={48}
-                        />
+                    <div className="mx-auto max-w-3xl lg:text-center">
+                    <h1 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Businessvideo</h1>
+                        <p className="text-left mt-6 text-lg leading-8">
+                            Das Imagevideo fungiert als digitale Visitenkarte des Unternehmens. Es präsentiert Produkte und Dienstleistungen,
+                            transportiert die Unternehmenswerte und vermittelt einen Eindruck vom Betriebsklima. Dadurch werden Kunden effektiv angesprochen und neue Bewerber angezogen.
+                        </p>
+                        <video
+                        autoPlay muted loop controls={true}
+                        className="mt-6 w-full mx-auto">
+                        <source src={businessVid}/>
+                        </video>
+                        <dl className="mt-10 grid grid-cols-1 gap-3 lg:grid-cols-3">
+                            {benefits.map((benefit) => (
+                                <div className="flex flex-col bg-white px-3 shadow-xl border-gray-700 rounded-lg p-3">
+                                    <div className={"flex items-center mx-auto mt-3 text-xl font-bold leading-9 tracking-tight text-gray-900"}>
+                                        <div className="flex items-center mr-2 text-blue">{benefitIcons[benefit.heading]}</div>
+                                        <div>{benefit.heading}</div>
+                                    </div>
+                                    <dt className="text-base leading-7 m-3 text-gray-600">{benefit.text}</dt>
+                                </div>
+                            ))}
+                        </dl>
+
                     </div>
                 </div>
             </div>
+            <div className="bg-gray-100 py-24 sm:py-32">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="mx-auto max-w-3xl lg:text-center">
+                        <h1 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Wir versorgen dein Unternehmen mit dem passenden Videomaterial.</h1>
+                        <p className="text-left my-6 mb-16 text-lg leading-8">
+                            Das sind nur einige unserer Möglichkeiten
+                        </p>
+                        <ul role="list" className="mt-10 grid grid-cols-1 gap-16 sm:grid-cols-2">
+                            {options.map((option) => (
+                                    <div >
+                                        <img className="" src={option.imageUrl} alt="" />
+                                        <div className="">
+                                            <div className={"flex items-center mx-auto mt-3 text-xl font-bold leading-9 tracking-tight text-gray-900"}>{option.name}</div>
+                                            <div  className="flex text-left items-center mx-auto leading-7 text-lg text-blue">{option.role}</div>
+                                        </div>
+                                    </div>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-white py-24 sm:py-32">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="mx-auto max-w-3xl lg:text-center">
+                        <h2 className="text-center text-xl font-semibold leading-8 text-gray-900">
+                            Mit diesen Unternehmen durften wir bereits zusammenarbeiten
+                        </h2>
+                        <div className="mx-auto mt-10 grid grid-cols-5 place-items-center">
+                            {partners.map((partner) => (
+                                <img
+                                    className="mx-1 w-full"
+                                    src={partner}
+                                    alt="Tuple"
+                                    width={158}
+                                />
+                            ))}
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     )
 }
