@@ -20,7 +20,7 @@ const navigation = [
     { id: "musikvideo", name: 'Musikvideo', href: '#', current: false },
 ]
 
-function classNames(...classes: []) {
+function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
 }
 
@@ -61,8 +61,8 @@ export const Header: React.FC = () => {
                                             <Link
                                                 to={"/" + item.id}
                                                 className={classNames(
-                                                    item.current ? 'font-customFont bg-gray-900 text-white' : 'font-customFont text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                    'rounded-md px-3 py-2 text-sm font-medium'
+                                                    item.current ? 'font-customFont bg-gray-900 text-white tracking-wider' : 'font-customFont text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                    'rounded-md px-3 py-2 text-sm font-medium tracking-wider'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
@@ -102,8 +102,8 @@ export const Header: React.FC = () => {
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'font-customFont bg-gray-900 text-white' : 'font-customFont text-gray-300 hover:bg-gray-700 hover:text-white',
-                                        'block rounded-md px-3 py-2 text-base font-medium'
+                                        item.current ? 'font-customFont bg-gray-900 text-white tracking-wider' : 'font-customFont text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        'block rounded-md px-3 py-2 text-base font-medium tracking-wider'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
                                 >

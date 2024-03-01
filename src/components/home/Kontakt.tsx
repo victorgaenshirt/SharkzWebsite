@@ -2,27 +2,39 @@ import React from 'react'
 import { useState } from 'react'
 import { Switch } from '@headlessui/react'
 import {Link} from "react-router-dom";
+import emailjs from "@emailjs/browser"
 
 export const Kontakt: React.FC = () => {
     const [agreed, setAgreed] = useState(false)
-    const classNames = (...classes: []) => {
+    emailjs.init({publicKey: "vEHMM5ADGL8HVvsyN"})
+
+
+    const classNames = (...classes: any[]) => {
         return classes.filter(Boolean).join(' ')
     }
 
-    const sendMessage = () => {}
+    const sendMessage = (e: any) => {
+        e.preventDefault();
+        const form = document.getElementById('contact_form') as HTMLFormElement;
+        emailjs.sendForm('service_8ircu5b', 'template_alauk12', form).then(() => {
+            console.log('SUCCESS!');
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+    }
 
     return (
-        <div className="isolate bg-white px-6 py-16 sm:py-24 lg:py-32 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
+        <div className="bg-white py-16 sm:py-24 lg:py-32">
+            <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide">Schreib uns!</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
                     Kontaktiere uns jetzt und erhalte einen Gratis Kostenvoranschlag
                 </p>
             </div>
-            <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form action="" id={"contact_form"} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
-                        <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                        <label htmlFor="first-name" aria-required={true} className="block text-sm font-semibold leading-6 text-gray-900">
                             Vorname
                         </label>
                         <div className="mt-2.5">
@@ -71,7 +83,7 @@ export const Kontakt: React.FC = () => {
                             <input
                                 type="email"
                                 name="email"
-                                id="email"
+                                id="{{from_name}}"
                                 autoComplete="email"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />

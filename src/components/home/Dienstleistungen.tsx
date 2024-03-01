@@ -61,7 +61,7 @@ const callouts = [
 export const Dienstleistungen: React.FC = () => {
     return (
         <div className="bg-white">
-            <div className=" max-w-3xl text-center mx-auto py-10 sm:py-16">
+            <div className=" max-w-4xl text-center mx-auto py-10 sm:py-16">
                 <video autoPlay muted controls={true} className={"w-full text-center mx-auto"}>
                     <source src={startseiteReel} type="video/mp4" />
                 </video>

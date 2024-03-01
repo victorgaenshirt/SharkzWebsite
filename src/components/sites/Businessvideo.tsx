@@ -120,7 +120,7 @@ export const Businessvideo = () => {
                         <p className="text-left my-6 mb-16 text-lg leading-8">
                             Das sind nur einige unserer Möglichkeiten
                         </p>
-                        <ul role="list" className="mt-10 grid grid-cols-1 gap-16 sm:grid-cols-2">
+                        <ul role="list" className="mt-10 grid grid-cols-1 gap-x-6 gap-y-14 sm:grid-cols-2">
                             {options.map((option) => (
                                     <div >
                                         <img className="" src={option.imageUrl} alt="" />

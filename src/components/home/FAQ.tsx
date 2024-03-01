@@ -4,8 +4,8 @@ import {Disclosure} from "@headlessui/react";
 import {UpOutlined} from "@ant-design/icons";
 export const FAQ:React.FC = () => {
     return (
-        <div className={"bg-gray-100"}>
-    <div className="max-w-3xl mx-auto py-16 px-4 sm:py-24">
+<div className={"bg-gray-100"}>
+    <div className="max-w-3xl mx-auto py-16 sm:py-24">
         <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide my-6">FAQ</h2>
             {content.FAQ.map((item, index) => (
@@ -29,6 +29,6 @@ export const FAQ:React.FC = () => {
             ))}
         </div>
     </div>
-        </div>
+</div>
     );
 };

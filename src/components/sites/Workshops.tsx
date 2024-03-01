@@ -4,7 +4,7 @@ import workshop from "../../assets/Workshop_13.jpg";
 const links = [
     { name: 'Für Einzelpersonen oder Gruppen', href: '#', info: "bis zu 10 Teilnehmer" },
     { name: '20 Stunden', href: '#', info:"pro Thema 2 Stunden" },
-    { name: 'Flexibler Zeitraum', href: '#', info:"von drei bis zehn Tagen" },
+    { name: 'Flexibler Zeitraum', href: '#', info:"von 3 bis 10 Tagen" },
     { name: '75 € / Stunde ', href: '#', info: "zzgl. 19% MwSt. und Anfahrtskosten 75 ct/km" },
 ]
 const stats = [
