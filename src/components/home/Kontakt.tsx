@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import { Switch } from '@headlessui/react'
+import {Link} from "react-router-dom";
 
 export const Kontakt: React.FC = () => {
     const [agreed, setAgreed] = useState(false)
-    const classNames = (...classes: any[]) => {
+    const classNames = (...classes: []) => {
         return classes.filter(Boolean).join(' ')
     }
 
@@ -13,7 +14,7 @@ export const Kontakt: React.FC = () => {
     return (
         <div className="isolate bg-white px-6 py-16 sm:py-24 lg:py-32 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Schreib uns!</h2>
+                <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide">Schreib uns!</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
                     Kontaktiere uns jetzt und erhalte einen Gratis Kostenvoranschlag
                 </p>
@@ -125,21 +126,22 @@ export const Kontakt: React.FC = () => {
                             </Switch>
                         </div>
                         <Switch.Label className="text-sm leading-6 text-gray-600">
-                            By selecting this, you agree to our{' '}
-                            <a href="#" className="font-semibold text-blue">
-                                privacy&nbsp;policy
-                            </a>
-                            .
+                            Durch die Auswahl dieser Option erklären Sie sich mit unserer{' '}
+                            <Link to={"/impressum"}className="font-semibold text-blue">
+                                Datenschutzerklärung&nbsp;
+                            </Link>
+                            einverstanden.
                         </Switch.Label>
                     </Switch.Group>
                 </div>
                 <div className="mt-10">
                     <button
                         type="submit"
-                        className="block w-full rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue"
+                        className="block w-full disabled:bg-lightBlue rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue"
+                        disabled={!agreed}
                         onClick={sendMessage}
                     >
-                        Let's talk
+                        Senden
                     </button>
                 </div>
             </form>

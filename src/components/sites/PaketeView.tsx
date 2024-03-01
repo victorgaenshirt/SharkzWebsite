@@ -42,7 +42,7 @@ export const PaketeView = () => {
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
-                    <h2 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Pakete</h2>
+                    <h2 className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Pakete</h2>
                     <p className="text-left mt-6 text-lg leading-8 text-gray-600">
                         Mit unseren festen Preispaketen behalten Sie den klaren Überblick über die Kosten.
                     </p>
@@ -73,14 +73,14 @@ export const PaketeView = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="-mt-2 p-2 lg:flex-shrink-0">
+                            <div className="m-1 p-1 lg:flex-shrink-0">
                                 <div className=" h-full rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                                     <div className="mx-auto max-w-xs px-8">
                                         <p className="mt-6 flex items-baseline justify-center gap-x-2">
                                             <span className="text-5xl font-bold tracking-tight text-gray-900">{paket.preis}</span>
                                             <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">EUR</span>
                                         </p>
-                                        <p className="text-base font-semibold text-gray-600">zzgl. MwSt. und Anfahrt</p>
+                                        <p className="text-xs font-semibold text-gray-600">zzgl. 19% MwSt. <br/> und Anfahrtskosten 75 ct/km</p>
                                     </div>
                                 </div>
                             </div>

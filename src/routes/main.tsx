@@ -10,7 +10,7 @@ import {
     Workshops,
     FAQ,
     Impressum,
-     Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView
+    Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo
 } from "../components";
 import ErrorPage from "../ErrorPage.tsx";
 import Layout from "../Layout.tsx";
@@ -60,6 +60,11 @@ const router = createBrowserRouter([
     {
         path: "/workshop",
         element: <Layout><Workshops /></Layout>,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/musikvideo",
+        element: <Layout><Musikvideo /></Layout>,
         errorElement: <ErrorPage />
     },
 ]);

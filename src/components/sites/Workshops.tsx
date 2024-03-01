@@ -2,10 +2,10 @@ import React from "react";
 import workshop from "../../assets/Workshop_13.jpg";
 
 const links = [
-    { name: 'Für Einzelpersonen oder Gruppen von bis zu 10 Teilnehmern', href: '#' },
-    { name: '10 x 2 Stunden', href: '#' },
-    { name: 'Zeitraum von 3 - 10 Tagen', href: '#' },
-    { name: 'Kosten: 75EUR / Stunde', href: '#' },
+    { name: 'Für Einzelpersonen oder Gruppen', href: '#', info: "bis zu 10 Teilnehmer" },
+    { name: '20 Stunden', href: '#', info:"pro Thema 2 Stunden" },
+    { name: 'Flexibler Zeitraum', href: '#', info:"von drei bis zehn Tagen" },
+    { name: '75 € / Stunde ', href: '#', info: "zzgl. 19% MwSt. und Anfahrtskosten 75 ct/km" },
 ]
 const stats = [
     { name: 'Erfahre, warum Videomarketing so wichtig ist, welche Ziele damit erreicht werden können und erhalte anhand von Beispielen einen Einblick in erfolgreiche Videomarketingstrategien.', value: 'Einführung in Videomarketing' },
@@ -25,24 +25,29 @@ export const Workshops:React.FC = () => {
         <div className="bg-gray-100 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
-                    <h2 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Der Sharkz Media Workshop</h2>
-                    <p className="text-sm sm:text-2xl leading-relaxed text-left text-gray-600 my-6">
+                    <h2 className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Der Sharkz Media Workshop</h2>
+                    <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
                         Buche unseren Workshop, um professionelles Wissen zur Videoproduktion<br/> aus erster Hand zu erhalten und sofort praktische Erfahrungen zu sammeln.
                     </p>
                     <img className={"my-10"} src={workshop}></img>
-                        <div className="grid grid-cols-1 gap-5 text-base font-semibold text-white sm:grid-cols-2 ">
+                        <div className="grid grid-cols-1 gap-8 text-base sm:grid-cols-2">
                             {links.map((link) => (
-                                <div className={"text-left sm:text-xl text-blue text-sm"}>
-                                    {link.name}
+                                <div>
+                                    <div className={"text-center sm:text-lg text-blue text-sm"}>
+                                        {link.name}
+                                    </div>
+                                    <div className={"text-center sm:text-sm text-blue text-xs"}>
+                                        {link.info}
+                                    </div>
                                 </div>
                             ))}
                         </div>
-                        <h2 className="text-left mt-16 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Unsere Themen</h2>
+                        <h2 className="text-left mt-16 text-2xl tracking-wide text-gray-900 sm:text-3xl font-customFont">Unsere Themen</h2>
                         <dl className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
                             {stats.map((stat) => (
                                 <div key={stat.name} className="flex flex-col bg-white shadow-xl border-gray-700 rounded-lg p-3">
-                                    <dd className="text-left text-xl font-bold leading-relaxed tracking-tight text-gray-900">{stat.value}</dd>
-                                    <dt className="text-left text-base leading-relaxed text-gray-600">{stat.name}</dt>
+                                    <dd className="text-left sm:text-xl text-lg font-bold leading-relaxed tracking-tight text-gray-900">{stat.value}</dd>
+                                    <dt className="text-left my-1 text-sm sm:text-lg leading-relaxed">{stat.name}</dt>
                                 </div>
                             ))}
                         </dl>

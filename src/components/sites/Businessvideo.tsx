@@ -88,7 +88,7 @@ export const Businessvideo = () => {
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl lg:text-center">
-                    <h1 className="text-left text-3xl font-customFont tracking-tight text-gray-900 sm:text-4xl">Businessvideo</h1>
+                    <h1 className="text-left text-3xl font-customFont text-gray-900 sm:text-4xl tracking-wide">Businessvideo</h1>
                         <p className="text-left mt-6 text-lg leading-8">
                             Das Imagevideo fungiert als digitale Visitenkarte des Unternehmens. Es präsentiert Produkte und Dienstleistungen,
                             transportiert die Unternehmenswerte und vermittelt einen Eindruck vom Betriebsklima. Dadurch werden Kunden effektiv angesprochen und neue Bewerber angezogen.
@@ -116,7 +116,7 @@ export const Businessvideo = () => {
             <div className="bg-gray-100 py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl lg:text-center">
-                        <h1 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Wir versorgen dein Unternehmen mit dem passenden Videomaterial.</h1>
+                        <h1 className="text-left text-3xl font-bold text-gray-900 sm:text-4xl tracking-wide font-customFont">Wir versorgen dein Unternehmen mit dem passenden Videomaterial</h1>
                         <p className="text-left my-6 mb-16 text-lg leading-8">
                             Das sind nur einige unserer Möglichkeiten
                         </p>

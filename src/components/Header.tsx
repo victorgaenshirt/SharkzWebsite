@@ -17,9 +17,10 @@ const navigation = [
     { id: "social", name: 'Social Media Content', href: '#', current: false },
     { id: "produkte", name: 'Produkte', href: '#', current: false },
     { id: "workshop", name: 'Workshop', href: '#', current: false },
+    { id: "musikvideo", name: 'Musikvideo', href: '#', current: false },
 ]
 
-function classNames(...classes: any[]) {
+function classNames(...classes: []) {
     return classes.filter(Boolean).join(' ')
 }
 

@@ -61,18 +61,15 @@ const callouts = [
 export const Dienstleistungen: React.FC = () => {
     return (
         <div className="bg-white">
-            <div className="bg-white py-24 sm:py-32">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-3xl lg:text-center">
-                        <video autoPlay muted controls={true} className={"max-w-7xl mt-6 w-full mx-auto"}>
-                            <source src={startseiteReel} type="video/mp4" />
-                        </video>
-                    </div>
-                </div>
+            <div className=" max-w-3xl text-center mx-auto py-10 sm:py-16">
+                <video autoPlay muted controls={true} className={"w-full text-center mx-auto"}>
+                    <source src={startseiteReel} type="video/mp4" />
+                </video>
             </div>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsere Dienstleistungen</h2>
+            <div className={"bg-gray-100 py-10 sm:py-16"}>
+            <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 ">
+                <div className="mx-auto lg:max-w-none">
+                    <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide text-center">Unsere Dienstleistungen</h2>
                     <div className="mt-6 grid sm:grid-cols-2 grid-cols-1 gap-6">
                         {callouts.map((callout) => (
                             <div key={callout.name} className="group relative">
@@ -95,6 +92,7 @@ export const Dienstleistungen: React.FC = () => {
                         ))}
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

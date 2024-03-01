@@ -4,15 +4,15 @@ import {Link} from "react-router-dom";
 
 export const BottomBar: React.FC = () => {
     return (
-            <div className={"bg-primary  w-full py-4"}>
-                <ul className={"flex flex-1 justify-evenly"}>
-                    {bottomLinks.map((nav) => (
-                        <Link to={"/" + nav.id}
-                              className={"text-white text-sm font-medium t hover:text-offBlue"}>
-                            {nav.title}
+            <div className={"bg-primary  w-full py-4 mx-auto"}>
+                <div className={"grid-cols-2 sm:grid-cols-1 mx-auto text-center"}>
+                        <Link to={"/" + bottomLinks[0].id}>
+                            <p className={"text-white font-customFont hover:text-offBlue"}>{bottomLinks[0].title}</p>
                         </Link>
-                    ))}
-                </ul>
+                        <p className="text-offBlue font-customFont text-sm">
+                            Copyright © by Sharkz Media
+                        </p>
+                </div>
             </div>
     )
 }

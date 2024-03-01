@@ -2,7 +2,6 @@ import React from "react";
 import testtinte1 from "../../assets/testtinte1.jpg";
 import testtinte2 from "../../assets/testtinte2.jpg";
 import testtinte3 from "../../assets/testtinte3.jpg";
-import halsband1 from "../../assets/halsband1.jpg";
 import halsband2 from "../../assets/halsband2.jpg";
 import halsband3 from "../../assets/halsband3.jpg";
 import studio1 from "../../assets/studio1.jpg";
@@ -10,6 +9,7 @@ import studio2 from "../../assets/studio2.jpg";
 import studio3 from "../../assets/studio3.jpg";
 import produktVideo from "../../assets/Produktvideo.mp4"
 import studioVideo from "../../assets/Studiovideo_03.mp4"
+import schuessel from "../../assets/schuessel.jpg"
 
 const produkte1 = [
     {image: testtinte2},
@@ -18,9 +18,9 @@ const produkte1 = [
 ]
 
 const produkte2 =  [
-    {image: halsband2},
-    {image: halsband1},
     {image: halsband3},
+    {image: schuessel},
+    {image: halsband2}
 ]
 
 const studio = [
@@ -35,10 +35,10 @@ export const Produktvideo:React.FC = () => {
         <div className="bg-gray-100 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
-                    <p className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <p className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">
                         Produktfotos und -videos
                     </p>
-                    <p className="text-left mt-6 text-lg leading-8">
+                    <p className="text-left mt-6 text-lg leading-relaxed">
                         Unser erfahrenes Team ist mit unterschiedlichen Materialeigenschaften von Produkten vertraut
                         und beherrscht die Techniken, um diese gekonnt in Szene zu setzen und die besten Aufnahmen zu erzielen.
                         <br/>
@@ -46,7 +46,7 @@ export const Produktvideo:React.FC = () => {
                         Bewegungen oder Effekte geht, um sicherzustellen, dass Dein Produkt optimal präsentiert wird.
                     </p>
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
-                        <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
+                        <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
                             {produkte1.map((produkt, index) => (
                                 <img src={produkt.image} alt={"produkt" + index} className={""}></img>
                             ))}
@@ -56,7 +56,7 @@ export const Produktvideo:React.FC = () => {
                         <source src={produktVideo} type="video/mp4" />
                     </video>
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
-                        <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
+                        <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
                             {produkte2.map((produkt, index) => (
                                 <img src={produkt.image}  alt={"produkt2" + index} className={""}></img>
                             ))}
@@ -68,7 +68,7 @@ export const Produktvideo:React.FC = () => {
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
-                <p className="text-left mt-6 text-3xl font-bold tracking-tight text-gray-900">
+                <p className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">
                         Sharkz Media Studio
                     </p>
                     <p className="text-left my-6 text-lg leading-8 text-gray-600">
