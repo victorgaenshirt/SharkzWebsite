@@ -14,7 +14,7 @@ const navigation = [
     { id: "pakete", name: 'Pakete', href: '#', current: false },
     { id: "business", name: 'Business', href: '#', current: false },
     { id: "hochzeit", name: 'Hochzeiten', href: '#', current: false },
-    { id: "social", name: 'Social Media Content', href: '#', current: false },
+    { id: "social", name: 'Social Media', href: '#', current: false },
     { id: "produkte", name: 'Produkte', href: '#', current: false },
     { id: "workshop", name: 'Workshop', href: '#', current: false },
     { id: "musikvideo", name: 'Musikvideo', href: '#', current: false },

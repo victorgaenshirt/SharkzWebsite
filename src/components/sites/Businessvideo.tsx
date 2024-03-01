@@ -10,6 +10,10 @@ import enbw from "../../assets/partner_logos/ENBW.jpg"
 import hb from "../../assets/partner_logos/hellbegeistert.jpg"
 import tvbw from "../../assets/partner_logos/tv-bw.jpg"
 import nuno from "../../assets/partner_logos/Nuno.jpg"
+import brigitte from "../../assets/partner_logos/Brigitte.jpg"
+import hwk from "../../assets/partner_logos/HWK.jpg"
+import schulz from "../../assets/partner_logos/Schulz.jpg"
+import oetigheim from "../../assets/partner_logos/Ötigheim.jpg"
 import businessVid from "../../assets/Business_03.mp4"
 import React from "react";
 
@@ -80,7 +84,11 @@ export const Businessvideo = () => {
         ddd,
         enbw,
         hb,
-        tvbw
+        tvbw,
+        brigitte,
+        hwk,
+        schulz,
+        oetigheim
     ]
 
     return (
@@ -136,11 +144,11 @@ export const Businessvideo = () => {
             </div>
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-3xl lg:text-center">
+                    <div className="mx-auto  lg:text-center">
                         <h2 className="text-center text-xl font-semibold leading-8 text-gray-900">
-                            Mit diesen Unternehmen durften wir bereits zusammenarbeiten
+                            Mit diesen Kunden haben wir bereits zusammengearbeitet
                         </h2>
-                        <div className="mx-auto mt-10 grid grid-cols-5 place-items-center">
+                        <div className="mx-auto mt-10 grid grid-cols-3 sm:grid-cols-9 gap-2  place-items-center">
                             {partners.map((partner) => (
                                 <img
                                     className="mx-1 w-full"
