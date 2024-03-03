@@ -4,10 +4,14 @@ import { Switch } from '@headlessui/react'
 import {Link} from "react-router-dom";
 import emailjs from "@emailjs/browser"
 
+
+const serviceId = import.meta.env.VITE_REACT_APP_SERVICE_ID
+const templateId = import.meta.env.VITE_REACT_APP_TEMPLATE_ID
+
 export const Kontakt: React.FC = () => {
     const [agreed, setAgreed] = useState(false)
+    const [messageSent, setMessageSent] = useState(false)
     emailjs.init({publicKey: "vEHMM5ADGL8HVvsyN"})
-
 
     const classNames = (...classes: any[]) => {
         return classes.filter(Boolean).join(' ')
@@ -15,13 +19,38 @@ export const Kontakt: React.FC = () => {
 
     const sendMessage = (e: any) => {
         e.preventDefault();
-        const form = document.getElementById('contact_form') as HTMLFormElement;
-        emailjs.sendForm('service_8ircu5b', 'template_alauk12', form).then(() => {
-            console.log('SUCCESS!');
-        }, (error) => {
+
+
+        const vornameHTML = document.getElementById('vorname_id') as HTMLInputElement;
+        const nachnameHTML = document.getElementById('nachname_id') as HTMLInputElement;
+        const unternehmenHTML = document.getElementById('unternehmen_id') as HTMLInputElement;
+        const mailHTML = document.getElementById('mail_id') as HTMLInputElement;
+        const telHTML = document.getElementById('tel_id') as HTMLInputElement;
+        const nachrichtHTML = document.getElementById('nachricht_id') as HTMLInputElement;
+        const templateParams = {
+            to_name: 'Sharkz Media!',
+            vorname: vornameHTML.value,
+            nachname: nachnameHTML.value,
+            unternehmen: unternehmenHTML.value,
+            mail: mailHTML.value,
+            tel: telHTML.value,
+            message: nachrichtHTML.value,
+        };
+
+        emailjs.send(serviceId!, templateId!, templateParams).then((res) => {
+            console.log('SUCCESS!', res.text, res.status);
+            // Textfelder leeren
+            vornameHTML.value = '';
+            nachnameHTML.value = '';
+            unternehmenHTML.value = '';
+            mailHTML.value = '';
+            telHTML.value = '';
+            nachrichtHTML.value = '';
+            setMessageSent(true);
+        }).catch((error) => {
             console.log('FAILED...', error);
         });
-    }
+        }
 
     return (
         <div className="bg-white py-16 sm:py-24 lg:py-32">
@@ -34,14 +63,14 @@ export const Kontakt: React.FC = () => {
             <form action="" id={"contact_form"} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
-                        <label htmlFor="first-name" aria-required={true} className="block text-sm font-semibold leading-6 text-gray-900">
+                        <label htmlFor="vorname" aria-required={true} className="block text-sm font-semibold leading-6 text-gray-900">
                             Vorname
                         </label>
                         <div className="mt-2.5">
                             <input
                                 type="text"
-                                name="first-name"
-                                id="first-name"
+                                name="from_name"
+                                id="vorname_id"
                                 autoComplete="given-name"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
@@ -55,7 +84,7 @@ export const Kontakt: React.FC = () => {
                             <input
                                 type="text"
                                 name="last-name"
-                                id="last-name"
+                                id="nachname_id"
                                 autoComplete="family-name"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
@@ -69,7 +98,7 @@ export const Kontakt: React.FC = () => {
                             <input
                                 type="text"
                                 name="company"
-                                id="company"
+                                id="unternehmen_id"
                                 autoComplete="organization"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
@@ -82,22 +111,22 @@ export const Kontakt: React.FC = () => {
                         <div className="mt-2.5">
                             <input
                                 type="email"
-                                name="email"
-                                id="{{from_name}}"
+                                name="mail_from"
+                                id="mail_id"
                                 autoComplete="email"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
                     <div className="sm:col-span-2">
-                        <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                        <label htmlFor="tel" className="block text-sm font-semibold leading-6 text-gray-900">
                             Telefon / Mobil
                         </label>
                         <div className="mt-2.5">
                             <input
                                 type="tel"
                                 name="phone-number"
-                                id="phone-number"
+                                id="tel_id"
                                 autoComplete="tel"
                                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
@@ -110,7 +139,7 @@ export const Kontakt: React.FC = () => {
                         <div className="mt-2.5">
               <textarea
                   name="message"
-                  id="message"
+                  id="nachricht_id"
                   rows={4}
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                   defaultValue={''}
@@ -149,12 +178,16 @@ export const Kontakt: React.FC = () => {
                 <div className="mt-10">
                     <button
                         type="submit"
-                        className="block w-full disabled:bg-lightBlue rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue"
+                        className="block w-full disabled:bg-lightBlue rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm
+                        transition-transform transform-gpu hover:scale-105 focus:outline-none duration-300 ease-in-out"
                         disabled={!agreed}
                         onClick={sendMessage}
                     >
                         Senden
                     </button>
+                    {messageSent ? <p className={"mt-2 text-lg leading-8 text-gray-600"}>
+                        Danke für deine Nachricht! Wir werden uns sobald wie möglich darum kümmern.
+                    </p> : null}
                 </div>
             </form>
         </div>

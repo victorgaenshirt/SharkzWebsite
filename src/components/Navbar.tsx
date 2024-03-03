@@ -15,8 +15,9 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
         <div>
             <nav className="hidden md:flex flex-1">
                 <ul className="flex flex-1 justify-evenly bg-primary p-10">
-                    {links.map((link) => (
+                    {links.map((link,index) => (
                             <Link
+                                key={index}
                                 to={"/" + link.id}
                                 className="cursor-pointer text-dimWhite text-xl font-poppins"
                             >
@@ -29,8 +30,9 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
                     <MenuOutlined className={"flex p-3 align text-dimWhite"}  onClick={toggleBMenu}/>
                     {isOpen ?
                             <ul className="flex flex-col p-3">
-                                {links.map((link) => (
+                                {links.map((link,index) => (
                                     <Link
+                                        key={index}
                                         to={link.id}
                                         className="cursor-pointer text-dimWhite"
                                     >

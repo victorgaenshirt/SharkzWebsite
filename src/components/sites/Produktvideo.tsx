@@ -48,7 +48,7 @@ export const Produktvideo:React.FC = () => {
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
                         <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
                             {produkte1.map((produkt, index) => (
-                                <img src={produkt.image} alt={"produkt" + index} className={""}></img>
+                                <img key={index} src={produkt.image} alt={"produkt" + index} className={""}></img>
                             ))}
                         </dl>
                     </div>
@@ -58,7 +58,7 @@ export const Produktvideo:React.FC = () => {
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
                         <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
                             {produkte2.map((produkt, index) => (
-                                <img src={produkt.image}  alt={"produkt2" + index} className={""}></img>
+                                <img key={index} src={produkt.image}  alt={"produkt2" + index} className={""}></img>
                             ))}
                         </dl>
                     </div>
@@ -82,7 +82,7 @@ export const Produktvideo:React.FC = () => {
                     <div className="mx-auto max-w-xs sm:max-w-4xl">
                         <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
                             {studio.map((stu, index) => (
-                                <img src={stu.image} alt={"studio" + index} ></img>
+                                <img key={index} src={stu.image} alt={"studio" + index} ></img>
                             ))}
                         </dl>
                     </div>

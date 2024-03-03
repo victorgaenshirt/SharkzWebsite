@@ -31,8 +31,8 @@ export const Workshops:React.FC = () => {
                     </p>
                     <img className={"my-10"} src={workshop}></img>
                         <div className="grid grid-cols-1 gap-8 text-base sm:grid-cols-2">
-                            {links.map((link) => (
-                                <div>
+                            {links.map((link, index) => (
+                                <div key={index}>
                                     <div className={"text-center sm:text-lg text-blue text-sm"}>
                                         {link.name}
                                     </div>
@@ -44,8 +44,8 @@ export const Workshops:React.FC = () => {
                         </div>
                         <h2 className="text-left mt-16 text-2xl tracking-wide text-gray-900 sm:text-3xl font-customFont">Unsere Themen</h2>
                         <dl className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                            {stats.map((stat) => (
-                                <div key={stat.name} className="flex flex-col bg-white shadow-xl border-gray-700 rounded-lg p-3">
+                            {stats.map((stat, index) => (
+                                <div key={index} className="flex flex-col bg-white shadow-xl border-gray-700 rounded-lg p-3">
                                     <dd className="text-left sm:text-xl text-lg font-bold leading-relaxed tracking-tight text-gray-900">{stat.value}</dd>
                                     <dt className="text-left my-1 text-sm sm:text-lg leading-relaxed">{stat.name}</dt>
                                 </div>

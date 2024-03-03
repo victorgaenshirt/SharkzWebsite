@@ -49,8 +49,8 @@ export const PaketeView = () => {
                     <p className="text-left mt-6 text-xl leading-8 text-blue">
                         Alle Pakete beinhalten die Beratung & Planung sowie Lizenzfreie Musik.
                     </p>
-                {Pakete.map((paket) =>
-                    <div>
+                {Pakete.map((paket, index) =>
+                    <div key={index}>
                         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                             <div className="p-8 sm:p-10 lg:flex-auto">
                                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">{paket.name}</h3>
@@ -65,8 +65,8 @@ export const PaketeView = () => {
                                     role="list"
                                     className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
                                 >
-                                    {paket.features.map((feature) => (
-                                        <li key={feature} className="flex gap-x-3">
+                                    {paket.features.map((feature, index) => (
+                                        <li key={index} className="flex gap-x-3">
                                             <CheckOutlined className="h-6 w-5 flex-none text-blue" aria-hidden="true" />
                                             {feature}
                                         </li>

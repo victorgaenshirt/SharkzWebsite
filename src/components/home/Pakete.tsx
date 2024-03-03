@@ -14,12 +14,12 @@ export const Pakete: React.FC = () => {
                         </p>
                         <div className="mt-10 flex items-center justify-center">
                             <Link to={"/pakete"}>
-                            <a
-                                href="#"
-                                className="rounded-md bg-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:text-red hover:bg-dimWhite focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            <div
+                                className={"block w-full disabled:bg-lightBlue rounded-md bg-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm" +
+                                    "transition-transform transform-gpu hover:scale-105 focus:outline-none duration-300 ease-in-out"}
                             >
                                 Erfahre mehr
-                            </a>
+                            </div>
                             </Link>
                         </div>
                     </div>
