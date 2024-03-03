@@ -1,30 +1,23 @@
 import React from 'react'
-import joshua from '../../assets/Joshuax720p.jpg'
-import nicolai from "../../assets/Nicolaix720p_02.jpg";
-import marco from "../../assets/Marcox720p.jpg";
-import ueberUns from "../../assets/ÜberunsVideo_02.mp4";
 
 const people = [
     {
         firstname: 'Joshua',
         surname: 'Jung',
         role: 'Geschäftsführung / Regie',
-        imageUrl:
-        joshua,
+        imageUrl: "assets/Joshuax720p.jpg",
     },
     {
         firstname: 'Nicolai',
         surname: 'Strack',
         role: 'Kameramann / Maschinenbau',
-        imageUrl:
-            nicolai,
+        imageUrl: "assets/Nicolaix720p_02.jpg",
     },
     {
         firstname: 'Marco',
         surname: 'Zacharias',
         role: 'Tonmann / Sounddesign',
-        imageUrl:
-            marco
+        imageUrl: "assets/ÜberunsVideo_02.mp4"
     }
 ]
 export const Team: React.FC = () => {
@@ -52,7 +45,7 @@ export const Team: React.FC = () => {
                 </ul>
             </div>
                 <video autoPlay muted controls={true} className={"max-w-3xl mt-24 w-full mx-auto"}>
-                    <source src={ueberUns} type="video/mp4" />
+                    <source src={"assets/ÜberunsVideo_02.mp4"} type="video/mp4" />
                 </video>
         </div>
         </div>

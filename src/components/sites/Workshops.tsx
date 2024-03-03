@@ -1,5 +1,4 @@
 import React from "react";
-import workshop from "../../assets/Workshop_13.jpg";
 
 const links = [
     { name: 'Für Einzelpersonen oder Gruppen', href: '#', info: "bis zu 10 Teilnehmer" },
@@ -29,7 +28,7 @@ export const Workshops:React.FC = () => {
                     <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
                         Buche unseren Workshop, um professionelles Wissen zur Videoproduktion<br/> aus erster Hand zu erhalten und sofort praktische Erfahrungen zu sammeln.
                     </p>
-                    <img className={"my-10"} src={workshop}></img>
+                    <img className={"my-10"} src={"assets/Workshop_13.jpg"}></img>
                         <div className="grid grid-cols-1 gap-8 text-base sm:grid-cols-2">
                             {links.map((link, index) => (
                                 <div key={index}>

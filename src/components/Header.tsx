@@ -8,7 +8,6 @@ import {
     YoutubeOutlined
 } from "@ant-design/icons";
 import {Link} from "react-router-dom";
-import logo from "../assets/jj_shark_logo_Vector-black.svg"
 
 const navigation = [
     { id: "pakete", name: 'Pakete', href: '#', current: false },
@@ -50,7 +49,7 @@ export const Header: React.FC = () => {
                                     <div className="flex flex-shrink-0 items-center">
                                         <img
                                             className="h-8 w-8 hover:fill-current fill-current text-blue-500"
-                                            src={logo}
+                                            src={"assets/jj_shark_logo_Vector-black.svg"}
                                             alt="sharkzMediaLogo"
                                         />
                                     </div>

@@ -1,11 +1,5 @@
 import React from "react";
 
-import shoes from "../../assets/Convers_Abspann_Hochformat_2.mp4"
-import yasmin from "../../assets/Yasmin_02.jpg"
-import b2 from "../../assets/brigitte.mp4"
-import b1 from "../../assets/Birg_02.jpg"
-
-
 export const SocialMedia:React.FC = () => {
     return (
         <div className="bg-white py-24 sm:py-32">
@@ -18,9 +12,9 @@ export const SocialMedia:React.FC = () => {
                         Entdecke mit Sharkz Media die Kraft effektiver Social Media Videos!
                     </p>
                     <div className="my-8 mx-auto grid grid-cols-2 gap-3">
-                        <img src={yasmin} className={""}></img>
+                        <img src={"assets/Yasmin_02.jpg"} className={""}></img>
                         <video autoPlay muted loop={true} >
-                            <source src={shoes} type="video/mp4" />
+                            <source src={"assets/Convers_Abspann_Hochformat_2.mp4"} type="video/mp4" />
                         </video>
                     </div>
                     <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
@@ -28,9 +22,9 @@ export const SocialMedia:React.FC = () => {
                         deine Botschaft effektiv zu verbreiten.</p>
                     <div className="my-8 mx-auto grid grid-cols-2 gap-3">
                         <video autoPlay muted loop={true} >
-                            <source src={b2} type="video/mp4" />
+                            <source src={"assets/brigitte.mp4"} type="video/mp4" />
                         </video>
-                        <img src={b1} className={""}></img>
+                        <img src={"assets/Birg_02.jpg"} className={""}></img>
                     </div>
                         <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
                         Von unterhaltsamen Kurzvideos bis hin zu informativen

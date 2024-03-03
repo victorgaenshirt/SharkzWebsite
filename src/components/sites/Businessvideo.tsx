@@ -1,60 +1,38 @@
 import {BankOutlined, BulbOutlined, CommentOutlined} from "@ant-design/icons";
-import bts from "../../assets/BTS.jpg"
-import interview from "../../assets/Interview.jpg"
-import erklaer from "../../assets/erklaer.jpg"
-import veranstaltung from "../../assets/Event_02.jpg"
-import tester from "../../assets/typ.jpg"
-import converse from "../../assets/Kampagnenwerbung_02.jpg"
-import ddd from "../../assets/partner_logos/DDD.jpg"
-import enbw from "../../assets/partner_logos/ENBW.jpg"
-import hb from "../../assets/partner_logos/hellbegeistert.jpg"
-import tvbw from "../../assets/partner_logos/tv-bw.jpg"
-import nuno from "../../assets/partner_logos/Nuno.jpg"
-import brigitte from "../../assets/partner_logos/Brigitte.jpg"
-import hwk from "../../assets/partner_logos/HWK.jpg"
-import schulz from "../../assets/partner_logos/Schulz.jpg"
-import oetigheim from "../../assets/partner_logos/Ötigheim.jpg"
-import businessVid from "../../assets/Business_03.mp4"
 import React from "react";
 
-export const Businessvideo = () => {
+export const Businessvideo: React.FC = () => {
 
     const options = [
         {
             name: 'Tiefere Einblicke in die Prozesse',
             role: 'Videos statt lange Erklärungen',
-            imageUrl:
-                bts,
+            imageUrl: "assets/BTS.jpg",
         },
         {
             name: 'Mitarbeiterinterviews',
             role: 'Glückliche Mitarbeiter ziehen weitere Bewerber an',
-            imageUrl:
-                interview,
+            imageUrl: "assets/Interview.jpg",
         },
         {
             name: 'Veranstaltung',
             role: 'Zeige deine Firmenveranstaltung / Messeauftritt etc.',
-            imageUrl:
-            veranstaltung,
+            imageUrl: "assets/Event_02.jpg",
         },
         {
             name: 'Erklärvideos',
             role: 'Erkläre Prozesse oder Produkte genauer',
-            imageUrl:
-                erklaer,
+            imageUrl: "assets/erklaer.jpg",
         },
         {
             name: 'Testimonials',
             role: 'Lass deine Kunden sprechen',
-            imageUrl:
-                tester,
+            imageUrl: "assets/typ.jpg",
         },
         {
             name: 'Kampagnenwerbung',
             role: 'Kurze auffällige Werbefilme',
-            imageUrl:
-            converse,
+            imageUrl: "assets/Kampagnenwerbung_02.jpg",
         },
     ]
 
@@ -80,15 +58,15 @@ export const Businessvideo = () => {
     };
 
     const partners = [
-        nuno,
-        ddd,
-        enbw,
-        hb,
-        tvbw,
-        brigitte,
-        hwk,
-        schulz,
-        oetigheim
+        "assets/partner_logos/Nuno.jpg",
+        "assets/partner_logos/DDD.jpg",
+        "assets/partner_logos/ENBW.jpg",
+        "assets/partner_logos/hellbegeistert.jpg",
+        "assets/partner_logos/tv-bw.jpg",
+        "assets/partner_logos/Brigitte.jpg",
+        "assets/partner_logos/HWK.jpg",
+        "assets/partner_logos/Schulz.jpg",
+        "assets/partner_logos/Ötigheim.jpg"
     ]
 
     return (
@@ -104,7 +82,7 @@ export const Businessvideo = () => {
                         <video
                         autoPlay muted loop controls={true}
                         className="mt-6 w-full mx-auto">
-                        <source src={businessVid}/>
+                        <source src={"assets/Business_03.mp4"}/>
                         </video>
                         <dl className="mt-10 grid grid-cols-1 gap-3 lg:grid-cols-3">
                             {benefits.map((benefit,index) => (

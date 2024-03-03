@@ -1,32 +1,21 @@
 import React from "react";
-import testtinte1 from "../../assets/testtinte1.jpg";
-import testtinte2 from "../../assets/testtinte2.jpg";
-import testtinte3 from "../../assets/testtinte3.jpg";
-import halsband2 from "../../assets/halsband2.jpg";
-import halsband3 from "../../assets/halsband3.jpg";
-import studio1 from "../../assets/studio1.jpg";
-import studio2 from "../../assets/studio2.jpg";
-import studio3 from "../../assets/studio3.jpg";
-import produktVideo from "../../assets/Produktvideo.mp4"
-import studioVideo from "../../assets/Studiovideo_03.mp4"
-import schuessel from "../../assets/schuessel.jpg"
 
 const produkte1 = [
-    {image: testtinte2},
-    {image: testtinte1},
-    {image: testtinte3},
+    {image: "assets/testtinte2.jpg"},
+    {image: "assets/testtinte1.jpg"},
+    {image: "assets/testtinte3.jpg"},
 ]
 
 const produkte2 =  [
-    {image: halsband3},
-    {image: schuessel},
-    {image: halsband2}
+    {image: "assets/halsband3.jpg"},
+    {image: "assets/schuessel.jpg"},
+    {image: "assets/halsband2.jpg"}
 ]
 
 const studio = [
-    {image: studio1},
-    {image: studio2},
-    {image: studio3},
+    {image: "assets/studio1.jpg"},
+    {image: "assets/studio2.jpg"},
+    {image: "assets/studio3.jpg"},
 ]
 
 export const Produktvideo:React.FC = () => {
@@ -53,7 +42,7 @@ export const Produktvideo:React.FC = () => {
                         </dl>
                     </div>
                     <video autoPlay muted loop={true} className={"w-full mx-auto"}>
-                        <source src={produktVideo} type="video/mp4" />
+                        <source src={"assets/Produktvideo.mp4"} type="video/mp4" />
                     </video>
                     <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
                         <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
@@ -96,7 +85,7 @@ export const Produktvideo:React.FC = () => {
                         Kamerafahrten und visuelle Effekte.
                     </p>
                     <video autoPlay muted controls={true} className={"w-full mx-auto"}>
-                        <source src={studioVideo} type="video/mp4" />
+                        <source src={"assets/Studiovideo_03.mp4"} type="video/mp4" />
                     </video>
                 </div>
             </div>
