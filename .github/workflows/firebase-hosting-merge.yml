@@ -17,8 +17,7 @@ jobs:
           node-version: 18
           cache: 'npm'
       - run: npm ci
-      - run: npm run build:tsc
-      - run: npm run build:vite
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
