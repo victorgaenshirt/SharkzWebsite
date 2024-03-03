@@ -10,7 +10,7 @@ import startseiteReel from "../../assets/Startseite-Reel_08.mp4";
 
 const callouts = [
     {
-        name: 'social Media Content',
+        name: 'Social Media Content',
         description: 'Social Media Videos und Reels',
         imageSrc: social,
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
@@ -47,7 +47,7 @@ const callouts = [
         imageSrc: musikVideo,
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
-        id: "",
+        id: "/musikvideo",
     },
     {
         name: 'Workshops',
@@ -71,9 +71,9 @@ export const Dienstleistungen: React.FC = () => {
                 <div className="mx-auto lg:max-w-none">
                     <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide text-center">Unsere Dienstleistungen</h2>
                     <div className="mt-6 grid sm:grid-cols-2 grid-cols-1 gap-6">
-                        {callouts.map((callout) => (
-                            <div key={callout.name} className="group relative">
-                                <div className="cursor-pointer relative sm:h-96 overflow-hidden rounded-lg bg-white lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
+                        {callouts.map((callout,index) => (
+                            <div key={index} className="group relative">
+                                <div className="cursor-pointer relative sm:h-96 overflow-hidden bg-white lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
                                     <Link to={callout.id}>
                                     <img
                                         src={callout.imageSrc}

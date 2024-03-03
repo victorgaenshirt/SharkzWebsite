@@ -8,7 +8,7 @@ import {
     YoutubeOutlined
 } from "@ant-design/icons";
 import {Link} from "react-router-dom";
-import logo from "../assets/Logo.png"
+import logo from "../assets/jj_shark_logo_Vector-black.svg"
 
 const navigation = [
     { id: "pakete", name: 'Pakete', href: '#', current: false },
@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
                                 <Link to={"/"}>
                                     <div className="flex flex-shrink-0 items-center">
                                         <img
-                                            className="h-8 w-auto"
+                                            className="h-8 w-8 hover:fill-current fill-current text-blue-500"
                                             src={logo}
                                             alt="sharkzMediaLogo"
                                         />
@@ -57,8 +57,9 @@ export const Header: React.FC = () => {
                                 </Link>
                                 <div className="hidden md:ml-6 md:block">
                                     <div className="flex space-x-4">
-                                        {navigation.map((item) => (
+                                        {navigation.map((item,index) => (
                                             <Link
+                                                key={index}
                                                 to={"/" + item.id}
                                                 className={classNames(
                                                     item.current ? 'font-customFont bg-gray-900 text-white tracking-wider' : 'font-customFont text-gray-300 hover:bg-gray-700 hover:text-white',
@@ -95,10 +96,10 @@ export const Header: React.FC = () => {
 
                     <Disclosure.Panel className="md:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
-                            {navigation.map((item) => (
-                                <Link to={"/" + item.id}>
+                            {navigation.map((item,index) => (
+                                <Link to={"/" + item.id} key={index}>
                                 <Disclosure.Button
-                                    key={item.name}
+                                    key={index}
                                     as="a"
                                     href={item.href}
                                     className={classNames(

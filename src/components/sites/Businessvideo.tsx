@@ -1,5 +1,5 @@
 import {BankOutlined, BulbOutlined, CommentOutlined} from "@ant-design/icons";
-import bts from "../../assets/BTS.jpg";
+import bts from "../../assets/BTS.jpg"
 import interview from "../../assets/Interview.jpg"
 import erklaer from "../../assets/erklaer.jpg"
 import veranstaltung from "../../assets/Event_02.jpg"
@@ -107,8 +107,8 @@ export const Businessvideo = () => {
                         <source src={businessVid}/>
                         </video>
                         <dl className="mt-10 grid grid-cols-1 gap-3 lg:grid-cols-3">
-                            {benefits.map((benefit) => (
-                                <div className="flex flex-col bg-white px-3 shadow-xl border-gray-700 rounded-lg p-3">
+                            {benefits.map((benefit,index) => (
+                                <div key={index} className="flex flex-col bg-white px-3 shadow-xl border-gray-700 rounded-lg p-3">
                                     <div className={"flex items-center mx-auto mt-3 text-xl font-bold leading-9 tracking-tight text-gray-900"}>
                                         <div className="flex items-center mr-2 text-blue">{benefitIcons[benefit.heading]}</div>
                                         <div>{benefit.heading}</div>
@@ -129,8 +129,8 @@ export const Businessvideo = () => {
                             Das sind nur einige unserer Möglichkeiten
                         </p>
                         <ul role="list" className="mt-10 grid grid-cols-1 gap-x-6 gap-y-14 sm:grid-cols-2">
-                            {options.map((option) => (
-                                    <div >
+                            {options.map((option, index) => (
+                                    <div key={index}>
                                         <img className="" src={option.imageUrl} alt="" />
                                         <div className="">
                                             <div className={"flex items-center mx-auto mt-3 text-xl font-bold leading-9 tracking-tight text-gray-900"}>{option.name}</div>
@@ -149,8 +149,9 @@ export const Businessvideo = () => {
                             Mit diesen Kunden haben wir bereits zusammengearbeitet
                         </h2>
                         <div className="mx-auto mt-10 grid grid-cols-3 sm:grid-cols-9 gap-2  place-items-center">
-                            {partners.map((partner) => (
+                            {partners.map((partner, index) => (
                                 <img
+                                    key={index}
                                     className="mx-1 w-full"
                                     src={partner}
                                     alt="Tuple"
