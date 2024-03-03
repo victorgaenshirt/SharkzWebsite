@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Musikvideo: React.FC = () => {
     return (
-        <div className="bg-lightRosa py-24 sm:py-32">
+        <div className="bg-lightestBlue py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
                     <h2 className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Musikvideo</h2>

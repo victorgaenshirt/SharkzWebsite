@@ -57,6 +57,7 @@ export const Businessvideo: React.FC = () => {
         "Innovative Konzepte": <BulbOutlined />
     };
 
+
     const partners = [
         "assets/partner_logos/Nuno.jpg",
         "assets/partner_logos/DDD.jpg",
@@ -71,7 +72,7 @@ export const Businessvideo: React.FC = () => {
 
     return (
         <div>
-            <div className="bg-white py-24 sm:py-32">
+            <div className="bg-gray-200 py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl lg:text-center">
                     <h1 className="text-left text-3xl font-customFont text-gray-900 sm:text-4xl tracking-wide">Businessvideo</h1>
@@ -99,7 +100,7 @@ export const Businessvideo: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-gray-100 py-24 sm:py-32">
+            <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl lg:text-center">
                         <h1 className="text-left text-3xl font-bold text-gray-900 sm:text-4xl tracking-wide font-customFont">Wir versorgen dein Unternehmen mit dem passenden Videomaterial</h1>
@@ -117,6 +118,20 @@ export const Businessvideo: React.FC = () => {
                                     </div>
                             ))}
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-gray-200 py-24 sm:py-32">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="mx-auto max-w-3xl lg:text-center">
+                        <h1 className="text-left text-3xl font-bold text-gray-900 sm:text-4xl tracking-wide font-customFont">Fotos</h1>
+                        <p className="text-left my-6 mb-16 text-lg leading-8">
+                            Zeigen sie sich in der Berufswelt im besten Licht
+                        </p>
+                        <div role="list" className="flex gap-3 justify-center flex-col sm:flex-row">
+                            <img className="flex max-h-96 mx-auto" src={"assets/Businessfoto_02-hoch.jpg"} alt="" />
+                            <img className="flex max-h-96" src={"assets/Businessfoto_01.jpg"} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

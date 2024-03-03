@@ -12,6 +12,7 @@ export default {
         blue: "#103d98",
         offBlue: "#5777b6",
         lightBlue: "#b7c4e0",
+        lightestBlue: "#e7ebf4",
         red: "#831b1b",
         lightRosa: "#FFF8F9",
       },

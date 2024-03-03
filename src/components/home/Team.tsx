@@ -17,7 +17,7 @@ const people = [
         firstname: 'Marco',
         surname: 'Zacharias',
         role: 'Tonmann / Sounddesign',
-        imageUrl: "assets/ÜberunsVideo_02.mp4"
+        imageUrl: "assets/Marcox720p.jpg"
     }
 ]
 export const Team: React.FC = () => {
