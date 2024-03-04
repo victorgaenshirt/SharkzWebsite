@@ -1,4 +1,50 @@
 {
+  "Checkliste": [
+    {
+      "Titel": "Was soll der Film vermitteln?",
+      "Text": "Definiere die Kernidee in ein bis zwei Sätzen."
+    },
+    {
+      "Titel": "Welche konkreten Ziele sollen durch den Film erreicht werden? ",
+      "Text": "Was ist der Use-Case des Videos? Beispiele sind Neukundengewinnung,  Mitarbeitersuche, die Bewerbung eines Produkts oder die Vorstellung Ihres Unternehmens."
+    },
+    {
+      "Titel": "Was ist die Zielgruppe?",
+      "Text": "Definiere die Zielgruppe - Alter, Branche, Geschlecht, Herkunft und andere relevante Merkmale."
+    },
+    {
+      "Titel": "Gibt es Informationen die in den Film einfließen sollen?",
+      "Text": "Lass uns die von dir gesammelten Materialien wie Storyboards, Videos, Bilder oder Skizzen zukommen. Einfach alles was relevante Informationen für das Video enthält und uns dabei hilft können schnell ans Ziel zu kommen."
+    },
+    {
+      "Titel": "Sind spezielle Effekte gewünscht?",
+      "Text": "Sollen bestimmte Elemente im Video durch visuelle Effekte hervorgehoben werden oder gibt es sonst bestimmte Wünsche zum visuelle Stil?"
+    },
+    {
+      "Titel": "Gibt es Inspirationsquellen?",
+      "Text": "Zeige uns bereits existierende Filme, deren Stil und Umsetzung als Inspiration für deine eigene Produktion dienen können"
+    },
+    {
+      "Titel": "Was ist die optimale Länge des Films?",
+      "Text": "Bestimme die optimale Länge des Videos. Benötigst du nur einen kurzen 15-Sekunden-Trailer oder eine längeres Video?"
+    },
+    {
+      "Titel": "Auf welchen Plattformen soll veröffentlicht werden?",
+      "Text": "Berücksichtige die Formatgröße deines Videos entsprechend den Anforderungen der Plattformen. Entscheide, ob ein Hochformat für Instagram Stories oder ein Querformat für deine Webseite, Instagram, Facebook oder YouTube geeignet ist. Vielleicht kannst du uns auch schon ein genaues Format nennen zum Beispiel 16:9 oder 4:3."
+    },
+    {
+      "Titel": "Wie soll der Film vertont werden?",
+      "Text": "Soll Musik, Sprache, oder Beides deinen Film untermalen? Sollen Soundeffekte eingebaut werden? Gibt es gewünschte O-Töne, sollen zum Beispiel Mitarbeiter im Video sprechen?"
+    },
+    {
+      "Titel": "Soll der Film international funktionieren?",
+      "Text": "Überlege ob Untertitel, grafische Anpassungen oder eine Synchronisation erforderlich sind, um das Video für den internationalen Markt optimal zu präsentieren."
+    },
+    {
+      "Titel": "Wann wird das Ergebnis benötigt?",
+      "Text": "Gibt es einen bestimmten Zeitpunkt an dem die finale Umsetzung spätestens abgeschlossen sein sollte oder gibt es keine zeitliche Begrenzung?"
+    }
+  ],
   "FAQ": [
     {
       "question": "Was zeichnet uns als Dienstleister aus?",

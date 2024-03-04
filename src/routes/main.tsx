@@ -10,7 +10,7 @@ import {
     Workshops,
     FAQ,
     Impressum,
-    Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo
+    Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo, Workflow
 } from "../components";
 import ErrorPage from "../ErrorPage.tsx";
 import Layout from "../Layout.tsx";
@@ -30,6 +30,11 @@ const router = createBrowserRouter([
     {
         path: "/impressum",
         element: <Layout><Impressum /></Layout>,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/workflow",
+        element: <Layout><Workflow /></Layout>,
         errorElement: <ErrorPage />
     },
     {

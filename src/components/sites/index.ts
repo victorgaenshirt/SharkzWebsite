@@ -1,4 +1,4 @@
-export * from './Ablauf.tsx';
+export * from './Workflow.tsx';
 export * from './Businessvideo.tsx';
 export * from './Checkliste.tsx';
 export * from './Datenschutz.tsx';

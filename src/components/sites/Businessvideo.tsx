@@ -67,7 +67,10 @@ export const Businessvideo: React.FC = () => {
         "assets/partner_logos/Brigitte.jpg",
         "assets/partner_logos/HWK.jpg",
         "assets/partner_logos/Schulz.jpg",
-        "assets/partner_logos/Ötigheim.jpg"
+        "assets/partner_logos/Ötigheim.jpg",
+        "assets/partner_logos/Idendica.jpg",
+        "assets/partner_logos/Mashody.jpg",
+        "assets/partner_logos/FDL.jpg"
     ]
 
     return (
@@ -87,7 +90,7 @@ export const Businessvideo: React.FC = () => {
                         </video>
                         <dl className="mt-10 grid grid-cols-1 gap-3 lg:grid-cols-3">
                             {benefits.map((benefit,index) => (
-                                <div key={index} className="flex flex-col bg-white px-3 shadow-xl border-gray-700 rounded-lg p-3">
+                                <div key={index} className="flex flex-col bg-white px-3 shadow-sm rounded-lg p-3">
                                     <div className={"flex items-center mx-auto mt-3 text-xl font-bold leading-9 tracking-tight text-gray-900"}>
                                         <div className="flex items-center mr-2 text-blue">{benefitIcons[benefit.heading]}</div>
                                         <div>{benefit.heading}</div>
@@ -130,7 +133,7 @@ export const Businessvideo: React.FC = () => {
                         </p>
                         <div role="list" className="flex gap-3 justify-center flex-col sm:flex-row">
                             <img className="flex max-h-96 mx-auto" src={"assets/Businessfoto_02-hoch.jpg"} alt="" />
-                            <img className="flex max-h-96" src={"assets/Businessfoto_01.jpg"} alt="" />
+                            <img className="flex max-h-96 mx-auto" src={"assets/Businessfoto_01.jpg"} alt="" />
                         </div>
                     </div>
                 </div>
@@ -141,7 +144,7 @@ export const Businessvideo: React.FC = () => {
                         <h2 className="text-center text-xl font-semibold leading-8 text-gray-900">
                             Mit diesen Kunden haben wir bereits zusammengearbeitet
                         </h2>
-                        <div className="mx-auto mt-10 grid grid-cols-3 sm:grid-cols-9 gap-2  place-items-center">
+                        <div className="mx-auto mt-10 grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 gap-2 place-items-center">
                             {partners.map((partner, index) => (
                                 <img
                                     key={index}

@@ -1,4 +1,4 @@
-import {Dienstleistungen, FAQ, Kontakt, Pakete, Team} from "./components";
+import {Dienstleistungen, FAQ, Kontakt, Pakete, Team, WorkflowTeaser} from "./components";
 import React from "react";
 const App:React.FC = () => {
 
@@ -8,6 +8,7 @@ const App:React.FC = () => {
                 <Pakete />
                 <Team/>
                 <Kontakt />
+                <WorkflowTeaser />
                 <FAQ />
            </div>
 

@@ -43,7 +43,7 @@ export const PaketeView = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
                     <h2 className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Pakete</h2>
-                    <p className="text-left mt-6 text-lg leading-8 text-gray-600">
+                    <p className="text-left mt-6 text-lg leading-8 text-gray-900">
                         Mit unseren festen Preispaketen behalten Sie den klaren Überblick über die Kosten.
                     </p>
                     <p className="text-left mt-6 text-xl leading-8 text-blue">
