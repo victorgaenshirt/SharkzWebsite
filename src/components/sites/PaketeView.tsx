@@ -2,38 +2,39 @@ import {CheckOutlined} from "@ant-design/icons";
 
 const Pakete = [
     {name: "Socialmedia Story",
-        beschreibung: "Ein maßgeschneiderter Kurzfilm für deinen Social-Media-Auftritt.",
+        beschreibung: "Knappe Aufmerksamkeit erfordert prägnante Storys für deine Markenbotschaft\n",
         preis: "500",
             features: ["3h Kameramann",
                         "5h Nachbearbeitung",
                         "Kameraequipment",
                         "Länge: bis zu 15 sec."]},
     {name: "Starterpaket / Reel",
-        beschreibung: "",
+        beschreibung: "Bleibe im Trend des schnellen Swipens mit 1-minütigen Reels bietest du deiner Zielgruppe zum " +
+            "Beispiel einen Mehrwert durch dein Fachwissen.\n",
         preis: "1000",
         features: ["5h Kameramann",
             "10h Nachbearbeitung",
             "Kameraequipment",
             "Länge bis zu 1 min."]},
-    {name: "Standardpaket",
-        beschreibung: "",
+    {name: "Komplettpaket",
+        beschreibung: "Präsentiere dich professionell mit unserem Komplettpaket für Imagevideos und beeindrucke deine Zielgruppe nachhaltig.\n",
         preis: "4500",
         features: ["2 x 8h Kameramann",
             "40h Nachbearbeitung",
             "Kameraequipment & Lichtequipment",
             "Länge: 1-2 min.",
             "Socialmedia Anpassung & Trailer"]},
-    {name: "Profipaket",
-        beschreibung: "",
+    {name: "Premiumpaket",
+        beschreibung: "Erreichen Sie mit unserem Premiumpaket ein neues Level und schöpfen Sie das volle Potenzial einer Produktion aus, um Ihre Marke optimal zu präsentieren und Ihre Zielgruppe zu begeistern.",
         preis: "8000",
         features: ["2 x 10h Kameramann",
             "10h Tontechniker",
             "60h Nachbearbeitung",
             "Kameraequipment & Lichtequipment",
-            "Länge: bis zu 4min.",
             "Socialmedia Anpassung & Trailer",
             "4h Drohnenaufnahmen",
             "Behind the scences Fotos",
+            "Länge: bis zu 4min.",
         ]},
 ]
 
@@ -66,7 +67,7 @@ export const PaketeView = () => {
                                     className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
                                 >
                                     {paket.features.map((feature, index) => (
-                                        <li key={index} className="flex gap-x-3">
+                                        <li key={index} className="flex gap-x-3 text-left">
                                             <CheckOutlined className="h-6 w-5 flex-none text-blue" aria-hidden="true" />
                                             {feature}
                                         </li>

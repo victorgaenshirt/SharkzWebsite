@@ -53,14 +53,14 @@ export const Kontakt: React.FC = () => {
         }
 
     return (
-        <div className="bg-white py-16 sm:py-24 lg:py-32">
+        <div className="bg-white py-16 sm:py-24 lg:py-32 mx-3">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide">Schreib uns!</h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
                     Kontaktiere uns jetzt und erhalte einen Gratis Kostenvoranschlag
                 </p>
             </div>
-            <form action="" id={"contact_form"} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form action="" id={"contact_form"} method="POST" className="mx-auto mt-3 max-w-xl sm:mt-6">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="vorname" aria-required={true} className="block text-sm font-semibold leading-6 text-gray-900">

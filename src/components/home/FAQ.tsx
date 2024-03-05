@@ -7,7 +7,8 @@ export const FAQ:React.FC = () => {
 <div className={"bg-white"}>
     <div className="max-w-3xl mx-auto py-16 sm:py-24">
         <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide my-6">FAQ</h2>
+            <h2 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">FAQ</h2>
+            <div className={"sm:m-6 m-3"}>
             {content.FAQ.map((item, index) => (
                 <Disclosure key={index} as="div" className="mt-2">
                     {({ open }) => (
@@ -27,6 +28,7 @@ export const FAQ:React.FC = () => {
                     )}
                 </Disclosure>
             ))}
+            </div>
         </div>
     </div>
 </div>

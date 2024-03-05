@@ -30,7 +30,7 @@ export const Workflow: React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Ablauf</h2>
-                    <p className="text-center my-3 sm:my-6 text-xl leading-8 text-gray-600 font-semibold">
+                    <p className="text-center my-3 sm:my-6 text-lg sm:text-xl leading-8 text-gray-600 font-semibold">
                         Unser Kundenprozess bietet dir eine strukturierte Vorstellung davon, wie wir Schritt für Schritt auf ein erfolgreiches Endergebnis hinarbeiten, um deine Zufriedenheit zu gewährleisten.
                     </p>
                     <div className="grid sm:grid-cols-2 grid-cols-1">
@@ -53,7 +53,7 @@ export const Workflow: React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Produktionsprozesse</h2>
-                    <p className="text-center my-3 sm:my-6 text-xl leading-8 text-gray-600 font-semibold">
+                    <p className="text-center my-3 sm:my-6 text-lg sm:text-xl leading-8 text-gray-600 font-semibold">
                         Das erwartet dich wenn du unsere Dienstleistungen in Anspruch nimmst.
                     </p>
                     <div className={"grid grid-cols-1 sm:grid-flow-row gap-1 sm:gap-6 sm:grid-cols-3 my-6"}>
@@ -98,7 +98,7 @@ export const Workflow: React.FC = () => {
                         Mit dieser umfassenden Projektüberlegung kannst du sicherstellen, dass dein Filmprojekt optimal vorbereitet ist und einen reibungslosen Start sowie eine erfolgreiche Umsetzung ermöglicht.
                     </p>
                     <div className="text-center max-w-2xl mx-auto">
-                    <p className="text-center my-3 sm:my-6 text-xl leading-8 text-gray-600 font-semibold">
+                    <p className="text-center my-3 sm:my-6 text-lg sm:text-xl leading-8 text-gray-600 font-semibold">
                        Dies sind wichtige Fragen die du als Kunde vor der Produktion beantworten solltest. Im nächsten Schritt werden wir deine Antworten einmal gemeinsam besprechen,
                         das hilft uns dabei, für dich die optimale Lösung zu finden.
                     </p>

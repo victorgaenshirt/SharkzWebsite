@@ -106,17 +106,17 @@ export const Businessvideo: React.FC = () => {
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl lg:text-center">
-                        <h1 className="text-left text-3xl font-bold text-gray-900 sm:text-4xl tracking-wide font-customFont">Wir versorgen dein Unternehmen mit dem passenden Videomaterial</h1>
+                        <div className="text-left text-2xl font-bold text-gray-900 sm:text-4xl tracking-wide font-customFont">Wir versorgen dein Unternehmen mit dem passenden Videomaterial</div>
                         <p className="text-left my-6 mb-16 text-lg leading-8">
                             Das sind nur einige unserer Möglichkeiten
                         </p>
-                        <ul role="list" className="mt-10 grid grid-cols-1 gap-x-6 gap-y-14 sm:grid-cols-2">
+                        <ul role="list" className="mt-10 grid grid-cols-2 gap-x-6 gap-y-14 sm:grid-cols-3">
                             {options.map((option, index) => (
                                     <div key={index}>
                                         <img className="" src={option.imageUrl} alt="" />
                                         <div className="">
-                                            <div className={"flex items-center mx-auto mt-3 text-xl font-bold leading-9 tracking-tight text-gray-900"}>{option.name}</div>
-                                            <div  className="flex text-left items-center mx-auto leading-7 text-lg text-blue">{option.role}</div>
+                                            <div className={"text-blue hover:text-primary font-light text-left"}>{option.name}</div>
+                                            <div  className="text-xs mb-6 font-semibold text-left">{option.role}</div>
                                         </div>
                                     </div>
                             ))}
@@ -129,7 +129,9 @@ export const Businessvideo: React.FC = () => {
                     <div className="mx-auto max-w-3xl lg:text-center">
                         <h1 className="text-left text-3xl font-bold text-gray-900 sm:text-4xl tracking-wide font-customFont">Fotos</h1>
                         <p className="text-left my-6 mb-16 text-lg leading-8">
-                            Zeigen sie sich in der Berufswelt im besten Licht
+                            Vertrauen auf den ersten Blick: Mit unseren Businessfotos verleihst du deinem Unternehmen
+                            Glaubwürdigkeit und Authentizität. Wir erfassen die Atmosphäre Ihrer Geschäftsräume und das
+                            Engagement deines Teams, um ein Bild zu schaffen, das Vertrauen und Sympathie weckt.
                         </p>
                         <div role="list" className="flex gap-3 justify-center flex-col sm:flex-row">
                             <img className="flex max-h-96 mx-auto" src={"assets/Businessfoto_02-hoch.jpg"} alt="" />
