@@ -29,7 +29,7 @@ const firebaseConfig = {
     measurementId: "G-CF9XT83V3F"
 };
 
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 
 const router = createBrowserRouter([
