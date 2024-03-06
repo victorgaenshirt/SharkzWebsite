@@ -8,17 +8,16 @@ import {
 import {
     Workshops,
     Impressum,
-    Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo, Workflow
+    Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo, Workflow, FAQ
 } from "../components";
 import ErrorPage from "../ErrorPage.tsx";
 import Layout from "../Layout.tsx";
 import {SocialMedia} from "../components/sites/SocialMedia.tsx";
 import Home from "../components/Home.tsx";
-import {FAQ} from "../components";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "",
         element: <Layout><Home/></Layout>,
         errorElement: <ErrorPage />
     },
