@@ -8,13 +8,13 @@ import {
 import {
     Workshops,
     Impressum,
-    FAQ,
     Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo, Workflow
 } from "../components";
 import ErrorPage from "../ErrorPage.tsx";
 import Layout from "../Layout.tsx";
 import {SocialMedia} from "../components/sites/SocialMedia.tsx";
 import Home from "../components/Home.tsx";
+import {FAQ} from "../components";
 
 const router = createBrowserRouter([
     {
@@ -76,6 +76,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-      <Home />
+      <RouterProvider router={router} />
   </React.StrictMode>,
 )
