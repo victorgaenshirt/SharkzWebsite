@@ -17,8 +17,7 @@ import Layout from "../Layout.tsx";
 import {SocialMedia} from "../components/sites/SocialMedia.tsx";
 
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import {getFirestore} from "firebase-admin/firestore";
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyDGFc8DhA-QS1Fh0Hp5uK6re6xP6NccZ_8",
@@ -31,8 +30,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const firestore = getFirestore();
 
 
 const router = createBrowserRouter([
