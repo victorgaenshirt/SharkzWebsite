@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "public",
+    "site": "sharkzwebsite",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
