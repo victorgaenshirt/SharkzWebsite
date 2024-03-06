@@ -5,21 +5,21 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import App from "../App.tsx";
 import {
     Workshops,
-    FAQ,
     Impressum,
+    FAQ,
     Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo, Workflow
 } from "../components";
 import ErrorPage from "../ErrorPage.tsx";
 import Layout from "../Layout.tsx";
 import {SocialMedia} from "../components/sites/SocialMedia.tsx";
+import Home from "../components/Home.tsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Layout><App/></Layout>,
+        element: <Layout><Home/></Layout>,
         errorElement: <ErrorPage />
     },
     {
