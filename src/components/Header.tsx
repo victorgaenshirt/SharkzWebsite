@@ -10,13 +10,14 @@ import {
 import {Link} from "react-router-dom";
 
 const navigation = [
-    { id: "pakete", name: 'Pakete', href: '#', current: false },
+    { id: "", name: 'Home', href: '#', current: false },
     { id: "business", name: 'Business', href: '#', current: false },
-    { id: "hochzeit", name: 'Hochzeiten', href: '#', current: false },
     { id: "social", name: 'Social Media', href: '#', current: false },
     { id: "produkte", name: 'Produkte', href: '#', current: false },
-    { id: "workshop", name: 'Workshop', href: '#', current: false },
     { id: "musikvideo", name: 'Musikvideo', href: '#', current: false },
+    { id: "hochzeit", name: 'Hochzeiten', href: '#', current: false },
+    { id: "workshop", name: 'Workshop', href: '#', current: false },
+    { id: "pakete", name: 'Pakete', href: '#', current: false },
 ]
 
 function classNames(...classes: any[]) {
@@ -27,10 +28,9 @@ export const Header: React.FC = () => {
     return (
         <Disclosure as="nav" className="bg-primary">
             {({ open }) => (
-                <>
-                    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                        <div className="relative flex h-16 items-center justify-between">
-                            <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
+                <div className="bg-primary mx-auto">
+                        <div className="relative flex h-16 items-center justify-between ml-6">
+                            <div className="absolute inset-y-0 left-0 flex items-center lgx:hidden">
                                 {/* Mobile menu button*/}
                                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md
                                 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2
@@ -44,17 +44,15 @@ export const Header: React.FC = () => {
                                     )}
                                 </Disclosure.Button>
                             </div>
-                            <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-                                <Link to={"/"}>
-                                    <div className="flex flex-shrink-0 items-center">
+                            <div className="flex flex-1 items-center lgx:items-stretch justify-start">
+                                    <div className="flex items-center ml-12">
                                         <img
                                             className="h-8 w-8 hover:fill-current fill-current text-blue-500"
                                             src={"assets/jj_shark_logo_Vector-black.svg"}
                                             alt="sharkzMediaLogo"
                                         />
                                     </div>
-                                </Link>
-                                <div className="hidden md:ml-6 md:block">
+                                <div className="hidden lgx:ml-6 lgx:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item,index) => (
                                             <Link
@@ -72,28 +70,26 @@ export const Header: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                            <div className="absolute inset-y-0 right-0 content-center flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <Link to={"https://www.instagram.com/sharkzmedia/"}
-                                      className={"text-dimWhite justify-self-center hover:text-offBlue"}>
-                                    <InstagramOutlined className={"text-lg sm:text-xl px-2 sm:px-4"}/>
+                                      className={"text-dimWhite hover:text-offBlue"}>
+                                    <InstagramOutlined className={"text-lg flex my-auto sm:text-xl px-3 sm:px-6"}/>
                                 </Link>
                                 <Link to={"https://www.tiktok.com/@sharkz.media"}
-                                      className={"text-dimWhite justify-self-center hover:text-offBlue"}>
-                                    <TikTokOutlined className={"text-lg sm:text-xl px-2 sm:px-4"}/>
+                                      className={"text-dimWhite hover:text-offBlue"}>
+                                    <TikTokOutlined className={"text-lg flex my-auto sm:text-xl px-3 sm:px-6"}/>
                                 </Link>
                                 <Link to={"https://www.linkedin.com/company/sharkz-media/"}
-                                      className={"text-dimWhite justify-self-center hover:text-offBlue"}>
-                                    <LinkedinOutlined className={"text-lg sm:text-xl px-2 sm:px-4"}/>
+                                      className={"text-dimWhite hover:text-offBlue"}>
+                                    <LinkedinOutlined className={"text-lg flex my-auto sm:text-xl px-3 sm:px-6"}/>
                                 </Link>
                                 <Link to={"https://www.youtube.com/@Sharkz-Media"}
-                                      className={"text-dimWhite justify-self-center hover:text-offBlue"}>
-                                    <YoutubeOutlined className={"text-lg sm:text-xl px-2 sm:px-4"}/>
+                                      className={"text-dimWhite hover:text-offBlue"}>
+                                    <YoutubeOutlined className={"text-lg flex my-auto sm:text-xl px-3 sm:px-6"}/>
                                 </Link>
                             </div>
                         </div>
-                    </div>
-
-                    <Disclosure.Panel className="md:hidden">
+                    <Disclosure.Panel className="lgx:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item,index) => (
                                 <Link to={"/" + item.id} key={index}>
@@ -113,7 +109,7 @@ export const Header: React.FC = () => {
                             ))}
                         </div>
                     </Disclosure.Panel>
-                </>
+                </div>
             )}
         </Disclosure>
     )

@@ -3,20 +3,20 @@ import {Link} from "react-router-dom";
 
 const callouts = [
     {
-        name: 'Social Media Content',
-        description: 'Angepasste Inhalte für Storys, Reels oder Posts',
-        imageSrc: "assets/Social Media.jpg",
-        imageAlt: '',
-        href: '#',
-        id: "/social",
-    },
-    {
         name: 'Business',
-        description: 'Imagevideos für Unternehmen',
+        description: 'Präsentiere dein Unternehmen professionell und zeitgemäß',
         imageSrc: "assets/Businessfoto_01.jpg",
         imageAlt: '',
         href: '#',
         id: "/business",
+    },
+    {
+        name: 'Social Media Content',
+        description: 'Angepasste Inhalte für Storys, Reels oder Posts',
+        imageSrc: "assets/Social Media_02.jpg",
+        imageAlt: '',
+        href: '#',
+        id: "/social",
     },
     {
         name: 'Produkte',
@@ -27,20 +27,20 @@ const callouts = [
         id: "/produkte",
     },
     {
-        name: 'Hochzeit',
-        description: 'Hochzeitsvideos',
-        imageSrc: "assets/Hochzeit_22.jpg",
-        imageAlt: '',
-        href: '#',
-        id: "/hochzeit",
-    },
-    {
         name: 'Musikvideo',
-        description: '',
+        description: 'Kreative Konzepte gemeinsam umsetzen',
         imageSrc: "assets/musicvid.jpg",
         imageAlt: '',
         href: '#',
         id: "/musikvideo",
+    },
+    {
+        name: 'Hochzeit',
+        description: 'Emotionale Momente perfekt eingefangen',
+        imageSrc: "assets/Hochzeit_22.jpg",
+        imageAlt: '',
+        href: '#',
+        id: "/hochzeit",
     },
     {
         name: 'Workshops',
@@ -75,12 +75,10 @@ export const Dienstleistungen: React.FC = () => {
                                     />
                                     </Link>
                                 </div>
-                                <h3 className="mt-3">
-                                    <a href={callout.href} className="text-blue hover:text-primary font-light">
+                                <h3 className="mt-3 text-blue font-light">
                                         {callout.name}
-                                    </a>
                                 </h3>
-                                <p className="text-xs mb-6 font-semibold">{callout.description}</p>
+                                <p className="text-gray-600 text-xs mb-6 font-semibold">{callout.description}</p>
                             </div>
                         ))}
                     </div>

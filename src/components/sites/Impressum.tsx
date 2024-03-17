@@ -7,7 +7,7 @@ export const Impressum: React.FC = () => {
     const datenschutzText = content.impressum.datenschutz.replace(/\n/g, '<br>');
 
     return (
-        <div>
+        <div className={"bg-gray-100"}>
             <h2 className={"text-lg font-medium p-6 max-w-4xl mx-auto leading-relaxed"}>
                 <span dangerouslySetInnerHTML={{ __html: impressumText }} />
                 <br/>

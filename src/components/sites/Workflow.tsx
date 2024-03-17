@@ -19,7 +19,7 @@ export const Workflow: React.FC = () => {
      {icon: <EuroOutlined />, name: "5. Anzahlung"},
      {icon: <FileDoneOutlined />, name: "6. Bestätigung des Konzepts und der Shot-Liste"},
      {icon: <ScheduleOutlined />, name: "7. Organisation (Termine, Location, etc.)"},
-     {icon: <VideoCameraOutlined />, name: "8. Beginn der Produktion (verlinkt) nach unten"},
+     {icon: <VideoCameraOutlined />, name: "8. Beginn der Produktion"},
      {icon: <CloudUploadOutlined />, name: "9. Revision & Abnahme des Werkes"},
      {icon: <FileDoneOutlined />, name: "10. Rechnung"},
      {icon: <UploadOutlined />, name: "11. Übergabe des Werkes"},
@@ -94,14 +94,10 @@ export const Workflow: React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Checkliste</h2>
-                    <p className="mx-auto text-center my-3 mb-6 sm:my-6 sm:mb-12 text-lg font-light sm:text-2xl leading-8 text-blue">
+                    <p className="mx-auto text-center my-3 sm:my-6 text-lg font-light sm:text-2xl leading-8 text-blue">
                         Mit dieser umfassenden Projektüberlegung kannst du sicherstellen, dass dein Filmprojekt optimal vorbereitet ist und einen reibungslosen Start sowie eine erfolgreiche Umsetzung ermöglicht.
                     </p>
                     <div className="text-center max-w-2xl mx-auto">
-                    <p className="text-center my-3 sm:my-6 text-lg sm:text-xl leading-8 text-gray-600 font-semibold">
-                       Dies sind wichtige Fragen die du als Kunde vor der Produktion beantworten solltest. Im nächsten Schritt werden wir deine Antworten einmal gemeinsam besprechen,
-                        das hilft uns dabei, für dich die optimale Lösung zu finden.
-                    </p>
                         {content.Checkliste.map((item, index) => (
                             <Disclosure key={index} as="div" className="mt-2">
                                 {({ open }) => (
@@ -121,6 +117,10 @@ export const Workflow: React.FC = () => {
                                 )}
                             </Disclosure>
                         ))}
+                        <p className="text-center my-3 sm:my-6 text-lg sm:text-xl leading-8 text-gray-600 font-semibold">
+                            Dies sind wichtige Fragen die du als Kunde vor der Produktion beantworten solltest. Im nächsten Schritt werden wir deine Antworten einmal gemeinsam besprechen,
+                            das hilft uns dabei, für dich die optimale Lösung zu finden.
+                        </p>
                     </div>
                 </div>
             </div>

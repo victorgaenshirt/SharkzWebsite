@@ -27,7 +27,7 @@ export const Team: React.FC = () => {
             <div className="mx-auto text-center max-w-4xl lg:max-w-6xl gap-x-8 gap-y-20 px-6 lg:px-8">
                 <h2 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Das ist Sharkz Media</h2>
                 <p className="my-10 sm:text-lg text-sm leading-relaxed text-gray-600 ">
-                    Sharkz Media ist ein aufstrebendes Videoproduktionsunternehmen aus Rastatt, das sich auf die Erstellung hochwertiger Videolösungen spezialisiert hat.
+                    Sharkz Media ist ein aufstrebendes Foto-/ Videoproduktionsunternehmen aus Rastatt, das sich auf die Erstellung hochwertiger Videolösungen spezialisiert hat.
                     Unsere Vision ist es, durch innovative Videoproduktionstechniken und kreative Ansätze Unternehmen zu helfen, ihre Markenpräsenz zu stärken und ihre Botschaft effektiv zu vermitteln.
                 </p>
                 <ul role="list" className="grid max-w-4xl gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-y-16 mx-auto text-center">

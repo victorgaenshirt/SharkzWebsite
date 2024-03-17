@@ -9,7 +9,7 @@ export const Musikvideo: React.FC = () => {
                     <video autoPlay muted loop controls={true} className={"mt-6 w-full mx-auto"}>
                         <source src={"assets/Musikvideoreel_01.mp4"} type="video/mp4" />
                     </video>
-                    <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
+                    <p className="text-left my-3 text-lg text-gray-600 leading-relaxed sm:my-6">
                         Kreative Musikvideos, die die Botschaft eines Künstlers oder einer Band visuell zum Leben erwecken.
                     </p>
                     <div className={"grid grid-cols-2 sm:grid-cols-3 gap-3"}>
@@ -23,17 +23,17 @@ export const Musikvideo: React.FC = () => {
                     </div>
                     <div className={"grid grid-cols-2 sm:grid-cols-4 gap-3"}>
                     </div>
-                    <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
-                        Wir bieten maßgeschneiderte Videokonzepte  für Künstler und Bands, um ihre Musik visuell zum
+                    <p className="text-left my-3 text-lg text-gray-600 leading-relaxed sm:my-6">
+                        Wir bieten maßgeschneiderte Videokonzepte  für Künstler und Bands, um deine Musik visuell zum
                         Leben zu erwecken. Ein Musikvideo dient an erster Stelle zur Visualisierung und Vermarktung eines
                         Liedes.
                     </p>
                     <video autoPlay muted loop controls={true} className={"mt-6 w-full mx-auto"}>
                         <source src={"assets/Cale.mp4"} type="video/mp4" />
                     </video>
-                    <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
-                    Versetzen Sie ihren Zuschauer in eine von Ihnen gewünschte Atmosphäre und erschaffen
-                    Sie zusammen mit Sharkz Media einen einzigartigen Style.
+                    <p className="text-left my-3 text-lg text-gray-600 leading-relaxed sm:my-6">
+                    Versetze deine Zuschauer in eine von dir gewünschte Atmosphäre und erschaffe
+                        zusammen mit Sharkz Media einen einzigartigen Style.
                     </p>
 
                     <div className={"grid grid-cols-2 sm:grid-cols-3 gap-3 my-3 sm:my-6"}>

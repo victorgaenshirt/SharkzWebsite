@@ -27,30 +27,30 @@ export const Produktvideo:React.FC = () => {
                     <p className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">
                         Produktfotos und -videos
                     </p>
-                    <p className="text-left mt-6 text-lg leading-relaxed">
+                    <p className="text-left mt-6 text-lg text-gray-600 leading-relaxed">
                         Unser erfahrenes Team ist mit unterschiedlichen Materialeigenschaften von Produkten vertraut
                         und beherrscht die Techniken, um diese gekonnt in Szene zu setzen und die besten Aufnahmen zu erzielen.
                         <br/>
                         Wir verstehen die Bedeutung von präziser Kontrolle und Inszenierung, besonders wenn es um komplexe
                         Bewegungen oder Effekte geht, um sicherzustellen, dass Dein Produkt optimal präsentiert wird.
                     </p>
-                    <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
-                        <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
-                            {produkte1.map((produkt, index) => (
-                                <img key={index} src={produkt.image} alt={"produkt" + index} className={""}></img>
-                            ))}
-                        </dl>
-                    </div>
-                    <video autoPlay muted loop={true} className={"w-full mx-auto"}>
-                        <source src={"assets/Produktvideo.mp4"} type="video/mp4" />
-                    </video>
-                    <div className="mx-auto my-8 max-w-xs sm:mt-20 lg:my-8 sm:max-w-4xl">
-                        <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
-                            {produkte2.map((produkt, index) => (
-                                <img key={index} src={produkt.image}  alt={"produkt2" + index} className={""}></img>
-                            ))}
-                        </dl>
-                    </div>
+                        <div className="mx-auto my-3 max-w-xs sm:my-6 lg:my-8 sm:max-w-4xl">
+                            <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3">
+                                {produkte1.map((produkt, index) => (
+                                    <img key={index} src={produkt.image} alt={"produkt" + index} className={""}></img>
+                                ))}
+                            </dl>
+                        </div>
+                        <video autoPlay muted loop={true} className={"w-full mx-auto"}>
+                            <source src={"assets/Produktvideo.mp4"} type="video/mp4" />
+                        </video>
+                        <div className="mx-auto my-3 max-w-xs sm:my-6 sm:max-w-4xl">
+                            <dl className="grid grid-cols-1 lg:max-w-none sm:grid-cols-3 gap-3 sm:gap-6">
+                                {produkte2.map((produkt, index) => (
+                                    <img key={index} src={produkt.image}  alt={"produkt2" + index} className={""}></img>
+                                ))}
+                            </dl>
+                        </div>
                 </div>
             </div>
         </div>
@@ -61,15 +61,16 @@ export const Produktvideo:React.FC = () => {
                         Sharkz Media Studio
                     </p>
                     <p className="text-left my-6 text-lg leading-8 text-gray-600">
-                        Unser neues Studio ist für uns eine Art Werkstatt der Kreativität.  Spezialisierung Maschinenbau.
-                        Wir haben uns auch eine stabile Werkbank errichtet, mit der wir unsere eigenen Kameravorrichtungen
-                        vor Ort bauen können. Mit unserem Gerüst aus Aluprofilen ist es nicht nur möglich Lampen über der
+                        Unser neues Studio ist für uns eine Werkstatt der Kreativität.  Durch Fachwissen im Bereich
+                        Maschinenbau eröffnen sich uns neue Möglichkeiten.
+                        Mit unserer Werkbank, können wir unsere eigenen Kameravorrichtungen
+                        vor Ort bauen. Mit unserem Gerüst aus Aluprofilen ist es nicht nur möglich Lampen über der
                         Maschine zu montieren, sondern auch eine Vorrichtung anzubringen, mit der wir Dinge in die Mitte
                         der Kulisse fallen lassen können.
 
                     </p>
                     <div className="mx-auto max-w-xs sm:max-w-4xl">
-                        <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none sm:grid-cols-3 lg:gap-y-16">
+                        <dl className="grid grid-cols-1 gap-x-8 gap-y-3 lg:max-w-none sm:grid-cols-3 sm:gap-y-6">
                             {studio.map((stu, index) => (
                                 <img key={index} src={stu.image} alt={"studio" + index} ></img>
                             ))}

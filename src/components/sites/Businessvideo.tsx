@@ -5,7 +5,7 @@ export const Businessvideo: React.FC = () => {
 
     const options = [
         {
-            name: 'Tiefere Einblicke in die Prozesse',
+            name: 'Einblicke in Prozesse',
             role: 'Videos statt lange Erklärungen',
             imageUrl: "assets/BTS.jpg",
         },
@@ -39,11 +39,11 @@ export const Businessvideo: React.FC = () => {
     const benefits = [
         {
             heading: "Alles aus einer Hand",
-            text: "Unser besonderer Vorteil liegt darin, dass wir die Produktion von Videos und Fotos nahtlos miteinander verbinden können. Dadurch bieten wir dir eine ganzheitliche Lösung aus einer Hand",
+            text: "Unser besonderer Vorteil liegt darin, dass wir die Produktion von Videos und Fotos nahtlos miteinander verbinden können. Dadurch bieten wir dir eine ganzheitliche Lösung aus einer Hand.",
         },
         {
             heading: "Wir kennen deine Bedürfnisse",
-            text: "Nachdem wir schon viele Firmen mit profesionellem Videomaterial versorgt haben, wissen wir genau worauf es ankommt.",
+            text: "Nachdem wir schon viele Firmen mit professionellem Videomaterial versorgt haben, wissen wir genau worauf es ankommt.",
         },
         {
             heading: "Innovative Konzepte",
@@ -79,12 +79,12 @@ export const Businessvideo: React.FC = () => {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl lg:text-center">
                     <h1 className="text-left text-3xl font-customFont text-gray-900 sm:text-4xl tracking-wide">Businessvideo</h1>
-                        <p className="text-left mt-6 text-lg leading-8">
+                        <p className="text-left mt-6 text-lg text-gray-600 leading-8">
                             Das Imagevideo fungiert als digitale Visitenkarte des Unternehmens. Es präsentiert Produkte und Dienstleistungen,
                             transportiert die Unternehmenswerte und vermittelt einen Eindruck vom Betriebsklima. Dadurch werden Kunden effektiv angesprochen und neue Bewerber angezogen.
                         </p>
                         <video
-                        autoPlay muted loop controls={true}
+                        autoPlay muted loop controls={false}
                         className="mt-6 w-full mx-auto">
                         <source src={"assets/Business_03.mp4"}/>
                         </video>
@@ -115,8 +115,8 @@ export const Businessvideo: React.FC = () => {
                                     <div key={index}>
                                         <img className="" src={option.imageUrl} alt="" />
                                         <div className="">
-                                            <div className={"text-blue hover:text-primary font-light text-left"}>{option.name}</div>
-                                            <div  className="text-xs mb-6 font-semibold text-left">{option.role}</div>
+                                            <div className={"text-blue font-light text-left"}>{option.name}</div>
+                                            <div  className="text-xs font-semibold text-gray-600 text-left">{option.role}</div>
                                         </div>
                                     </div>
                             ))}
@@ -130,7 +130,7 @@ export const Businessvideo: React.FC = () => {
                         <h1 className="text-left text-3xl font-bold text-gray-900 sm:text-4xl tracking-wide font-customFont">Fotos</h1>
                         <p className="text-left my-6 mb-16 text-lg leading-8">
                             Vertrauen auf den ersten Blick: Mit unseren Businessfotos verleihst du deinem Unternehmen
-                            Glaubwürdigkeit und Authentizität. Wir erfassen die Atmosphäre Ihrer Geschäftsräume und das
+                            Glaubwürdigkeit und Authentizität. Wir erfassen die Atmosphäre deiner Geschäftsräume und das
                             Engagement deines Teams, um ein Bild zu schaffen, das Vertrauen und Sympathie weckt.
                         </p>
                         <div role="list" className="flex gap-3 justify-center flex-col sm:flex-row">

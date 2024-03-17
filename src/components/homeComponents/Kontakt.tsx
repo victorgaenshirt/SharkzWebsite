@@ -36,7 +36,6 @@ export const Kontakt: React.FC = () => {
             tel: telHTML.value,
             message: nachrichtHTML.value,
         };
-
         emailjs.send(serviceId!, templateId!, templateParams).then((res) => {
             console.log('SUCCESS!', res.text, res.status);
             // Textfelder leeren
@@ -53,14 +52,14 @@ export const Kontakt: React.FC = () => {
         }
 
     return (
-        <div className="bg-white py-16 sm:py-24 lg:py-32 mx-3">
+        <div className="bg-white py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide">Schreib uns!</h2>
-                <p className="mt-2 text-lg leading-8 text-gray-600">
+                <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl font-customFont tracking-wide mx-6">Schreib uns!</h2>
+                <p className="mt-2 text-lg leading-8 text-gray-600 mx-6">
                     Kontaktiere uns jetzt und erhalte einen Gratis Kostenvoranschlag
                 </p>
             </div>
-            <form action="" id={"contact_form"} method="POST" className="mx-auto mt-3 max-w-xl sm:mt-6">
+            <form action="" id={"contact_form"} method="POST" className="ss:mx-auto mt-3 max-w-xl sm:mt-6 mx-6">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="vorname" aria-required={true} className="block text-sm font-semibold leading-6 text-gray-900">
@@ -72,7 +71,7 @@ export const Kontakt: React.FC = () => {
                                 name="from_name"
                                 id="vorname_id"
                                 autoComplete="given-name"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                                className="bg-white block w-full rounded-md border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -86,7 +85,7 @@ export const Kontakt: React.FC = () => {
                                 name="last-name"
                                 id="nachname_id"
                                 autoComplete="family-name"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                                className="bg-white block w-full rounded-md border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -100,7 +99,7 @@ export const Kontakt: React.FC = () => {
                                 name="company"
                                 id="unternehmen_id"
                                 autoComplete="organization"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                                className="bg-white block w-full rounded-md border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -110,11 +109,12 @@ export const Kontakt: React.FC = () => {
                         </label>
                         <div className="mt-2.5">
                             <input
+                                required={true}
                                 type="email"
                                 name="mail_from"
                                 id="mail_id"
                                 autoComplete="email"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                                className="bg-white block w-full rounded-md border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -124,11 +124,12 @@ export const Kontakt: React.FC = () => {
                         </label>
                         <div className="mt-2.5">
                             <input
+                                required={true}
                                 type="tel"
                                 name="phone-number"
                                 id="tel_id"
                                 autoComplete="tel"
-                                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                                className="bg-white block w-full rounded-md border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -141,7 +142,7 @@ export const Kontakt: React.FC = () => {
                   name="message"
                   id="nachricht_id"
                   rows={4}
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
+                  className="bg-white block w-full rounded-md border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6"
                   defaultValue={''}
               />
                         </div>

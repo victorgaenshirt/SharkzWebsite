@@ -55,32 +55,32 @@
       "answer": "Die Kosten für eine Videoproduktion variieren je nach den individuellen Anforderungen und dem Umfang des Projekts. Wir bieten maßgeschneiderte Pakete an, um unseren Kunden eine klare Vorstellung davon zu geben, welche Leistungen sie zu welchem Preis erwarten können."
     },
     {
-      "question": "Wo ist Ihr Unternehmen ansässig?",
+      "question": "Wo Sharkz Media ansässig?",
       "answer": "Unser Unternehmen hat seinen Sitz in Rastatt, Deutschland, und unsere Dienstleistungen/Produkte stehen Kunden europaweit zur Verfügung."
     },
     {
-      "question": "Wie kann ich mit Ihrem Kundendienst in Kontakt treten?",
-      "answer": "Sie können uns über unser Kontaktformular, per E-Mail unter sharkzmediagroup@gmail.com oder telefonisch unter +49 152 34222959 erreichen. Wir stehen Ihnen gerne zur Verfügung."
+      "question": "Wie kann ich mit dem Kundendienst in Kontakt treten?",
+      "answer": "Du kannst uns über unser Kontaktformular, per E-Mail unter sharkzmediagroup@gmail.com oder telefonisch unter +49 152 34222959 erreichen. Wir stehen dir gerne zur Verfügung."
     },
     {
       "question": "Wie erfolgt die Bezahlung für Ihre Dienstleistungen/Produkte?",
-      "answer": "Wir akzeptieren [Paypal und Direktüberweisung]. Weitere Details zur Bezahlung finden Sie während des Bestellvorgangs."
+      "answer": "Wir akzeptieren Paypal und Direktüberweisung. Weitere Details zur Bezahlung finden Sie während des Bestellvorgangs."
     },
     {
-      "question": "Wie lange ein Video dauern?",
-      "answer": "In der heutigen Welt sollte ein Video so kurz und prägnant wie möglich sein, um die Aufmerksamkeit der Zuschauer zu halten. Wir bieten individuelle Lösungen an, die optimal auf die Bedürfnisse und das Ziel Ihres Projekts abgestimmt sind."
+      "question": "Wie lange sollte ein Video dauern?",
+      "answer": "In der heutigen Welt sollte ein Video so kurz und prägnant wie möglich sein, um die Aufmerksamkeit der Zuschauer zu halten. Wir bieten individuelle Lösungen an, die optimal auf die Bedürfnisse und das Ziel deines Projekts abgestimmt sind."
     },
     {
-      "question": "Welche Sicherheitsmaßnahmen haben Sie getroffen, um meine persönlichen Daten zu schützen?",
-      "answer": "Die Sicherheit Ihrer Daten hat für uns oberste Priorität. Wir setzen modernste Sicherheitsmaßnahmen ein, um Ihre Daten zu schützen."
+      "question": "Welche Sicherheitsmaßnahmen wurden getroffen, um meine persönlichen Daten zu schützen?",
+      "answer": "Die Sicherheit deiner Daten hat für uns oberste Priorität. Wir sorgen dafür, dass weder Videomaterial noch deine persönlichen Daten in die Hände Dritter gelangen. Wir nutzen einen lokalen Server um dir dein Videomaterial zur Vefügung zu stellen."
     },
     {
       "question": "Wie funktioniert der Bestellvorgang?",
-      "answer": "Der Bestellvorgang ist einfach und benutzerfreundlich. Auf unserer 'Ablauf'-Seite finden Sie weitere Informationen zum Bestellvorgang."
+      "answer": "Der Bestellvorgang ist einfach und benutzerfreundlich. Auf unserer 'Workflow'-Seite findest du weitere Informationen zum Ablauf eines Auftrags."
     },
     {
-      "question": "Bieten Sie Pakete an, mit denen Ich Geld sparen kann?",
-      "answer": "Ja, wir bieten spezielle Pakete an, die es Kunden ermöglichen, Geld zu sparen. Bitte besuchen Sie unsere Paketangebote, um die aktuellen Kombinationsmöglichkeiten zu erkunden."
+      "question": "Werden Pakete angeboten, mit denen Ich Geld sparen kann?",
+      "answer": "Ja, wir bieten spezielle Pakete an, die es Kunden ermöglichen, Geld zu sparen. Bitte besuche unsere 'Paket'-Seite, um die aktuellen Kombinationsmöglichkeiten zu erkunden."
     }
   ],
   "checkliste" : [

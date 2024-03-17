@@ -1,40 +1,32 @@
 import {CheckOutlined} from "@ant-design/icons";
 
 const Pakete = [
-    {name: "Socialmedia Story",
-        beschreibung: "Knappe Aufmerksamkeit erfordert prägnante Storys für deine Markenbotschaft\n",
-        preis: "500",
-            features: ["3h Kameramann",
-                        "5h Nachbearbeitung",
-                        "Kameraequipment",
-                        "Länge: bis zu 15 sec."]},
     {name: "Starterpaket / Reel",
         beschreibung: "Bleibe im Trend des schnellen Swipens mit 1-minütigen Reels bietest du deiner Zielgruppe zum " +
             "Beispiel einen Mehrwert durch dein Fachwissen.\n",
-        preis: "1000",
+        preis: "1299",
         features: ["5h Kameramann",
             "10h Nachbearbeitung",
             "Kameraequipment",
             "Länge bis zu 1 min."]},
     {name: "Komplettpaket",
         beschreibung: "Präsentiere dich professionell mit unserem Komplettpaket für Imagevideos und beeindrucke deine Zielgruppe nachhaltig.\n",
-        preis: "4500",
-        features: ["2 x 8h Kameramann",
+        preis: "4999",
+        features: ["16h Kameramann",
             "40h Nachbearbeitung",
             "Kameraequipment & Lichtequipment",
             "Länge: 1-2 min.",
             "Socialmedia Anpassung & Trailer"]},
     {name: "Premiumpaket",
         beschreibung: "Erreichen Sie mit unserem Premiumpaket ein neues Level und schöpfen Sie das volle Potenzial einer Produktion aus, um Ihre Marke optimal zu präsentieren und Ihre Zielgruppe zu begeistern.",
-        preis: "8000",
-        features: ["2 x 10h Kameramann",
-            "10h Tontechniker",
+        preis: "7999",
+        features: ["20h Kameramann und Kameraassistent",
             "60h Nachbearbeitung",
             "Kameraequipment & Lichtequipment",
-            "Socialmedia Anpassung & Trailer",
-            "4h Drohnenaufnahmen",
-            "Behind the scences Fotos",
             "Länge: bis zu 4min.",
+            "Socialmedia Anpassung & Trailer",
+            "10h Tontechniker",
+            "Behind the scences Fotos",
         ]},
 ]
 
@@ -44,11 +36,11 @@ export const PaketeView = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
                     <h2 className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Pakete</h2>
-                    <p className="text-left mt-6 text-lg leading-8 text-gray-900">
+                    <p className="text-left mt-6 text-lg leading-8 text-gray-600">
                         Mit unseren festen Preispaketen behalten Sie den klaren Überblick über die Kosten.
                     </p>
                     <p className="text-left mt-6 text-xl leading-8 text-blue">
-                        Alle Pakete beinhalten die Beratung & Planung sowie Lizenzfreie Musik.
+                        Alle Pakete beinhalten die Beratung & Planung sowie lizenzfreie Musik.
                     </p>
                 {Pakete.map((paket, index) =>
                     <div key={index}>
@@ -81,7 +73,7 @@ export const PaketeView = () => {
                                             <span className="text-5xl font-bold tracking-tight text-gray-900">{paket.preis}</span>
                                             <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">EUR</span>
                                         </p>
-                                        <p className="text-xs font-semibold text-gray-600">zzgl. 19% MwSt. <br/> und Anfahrtskosten 75 ct/km</p>
+                                        <p className="text-xs font-semibold text-gray-600">zzgl. 19% MwSt. <br/> und Anfahrtskosten 45 ct/km</p>
                                     </div>
                                 </div>
                             </div>

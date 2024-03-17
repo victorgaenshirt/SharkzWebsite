@@ -4,7 +4,7 @@ const links = [
     { name: 'Für Einzelpersonen oder Gruppen', href: '#', info: "bis zu 10 Teilnehmer" },
     { name: '20 Stunden', href: '#', info:"pro Thema 2 Stunden" },
     { name: 'Flexibler Zeitraum', href: '#', info:"von 3 bis 10 Tagen" },
-    { name: '75 € / Stunde ', href: '#', info: "zzgl. 19% MwSt. und Anfahrtskosten 75 ct/km" },
+    { name: '75 € / Stunde ', href: '#', info: "zzgl. 19% MwSt. und Anfahrtskosten 45 ct/km" },
 ]
 const stats = [
     { name: 'Erfahre, warum Videomarketing so wichtig ist, welche Ziele damit erreicht werden können und erhalte anhand von Beispielen einen Einblick in erfolgreiche Videomarketingstrategien.', value: 'Einführung in Videomarketing' },
@@ -25,7 +25,7 @@ export const Workshops:React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
                     <h2 className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Der Sharkz Media Workshop</h2>
-                    <p className="text-left my-3 text-lg leading-relaxed sm:my-6">
+                    <p className="text-left my-3 text-lg text-gray-600 leading-relaxed sm:my-6">
                         Buche unseren Workshop, um professionelles Wissen zur Videoproduktion<br/> aus erster Hand zu erhalten und sofort praktische Erfahrungen zu sammeln.
                     </p>
                     <img className={"my-10"} src={"assets/Workshop_13.jpg"}></img>
@@ -46,7 +46,7 @@ export const Workshops:React.FC = () => {
                             {stats.map((stat, index) => (
                                 <div key={index} className="flex flex-col bg-white shadow-xl border-gray-700 rounded-lg p-3">
                                     <dd className="text-left sm:text-xl text-lg font-bold leading-relaxed tracking-tight text-gray-900">{stat.value}</dd>
-                                    <dt className="text-left my-1 text-sm sm:text-lg leading-relaxed">{stat.name}</dt>
+                                    <dt className="text-left my-1 text-gray-600 text-sm sm:text-lg leading-relaxed">{stat.name}</dt>
                                 </div>
                             ))}
                         </dl>

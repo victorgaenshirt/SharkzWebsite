@@ -13,7 +13,7 @@ export const FAQ:React.FC = () => {
                 <Disclosure key={index} as="div" className="mt-2">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium text-blue hover:bg-lightBlue focus:outline-none focus-visible:ring focus-visible:ring-primary">
+                            <Disclosure.Button className="bg-gray-100 flex w-full justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-blue hover:bg-lightBlue focus:outline-none focus-visible:ring focus-visible:ring-primary">
                                 <span>{item.question}</span>
                                 <UpOutlined
                                     className={`${
