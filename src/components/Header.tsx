@@ -17,7 +17,6 @@ const navigation = [
     { id: "musikvideo", name: 'Musikvideo', href: '#', current: false },
     { id: "hochzeit", name: 'Hochzeiten', href: '#', current: false },
     { id: "workshop", name: 'Workshop', href: '#', current: false },
-    { id: "pakete", name: 'Pakete', href: '#', current: false },
 ]
 
 function classNames(...classes: any[]) {
@@ -26,9 +25,11 @@ function classNames(...classes: any[]) {
 
 export const Header: React.FC = () => {
     return (
+                <div>
+                    <img alt="Headerdesign" src={"assets/Headerdesign_02.png"}/>
         <Disclosure as="nav" className="bg-primary">
             {({ open }) => (
-                <div className="bg-primary mx-auto">
+                    <div className="bg-primary mx-auto">
                         <div className="relative flex h-16 items-center justify-between ml-6">
                             <div className="absolute inset-y-0 left-0 flex items-center lgx:hidden">
                                 {/* Mobile menu button*/}
@@ -112,5 +113,6 @@ export const Header: React.FC = () => {
                 </div>
             )}
         </Disclosure>
+            </div>
     )
 }

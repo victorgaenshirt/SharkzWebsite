@@ -54,6 +54,12 @@ const callouts = [
 export const Dienstleistungen: React.FC = () => {
     return (
         <div className="bg-white">
+            <div className={"bg-gray-100"}>
+            <div className="max-w-4xl text-center mx-auto py-10 sm:py-16">
+                <div className="text-4xl sm:text-6xl font-sharkzFont text-primary mb-2">SHARKZ<br/>MEDIA</div>
+                <div className="text-sm sm:text-2xl font-customFont tracking-wide">Videoproduktion und Fotografie aus Rastatt</div>
+            </div>
+            </div>
             <div className=" max-w-4xl text-center mx-auto py-10 sm:py-16">
                 <video autoPlay muted controls={true} className={"w-full text-center mx-auto"}>
                     <source src={"../../assets/Startseite-Reel_08.mp4"} type="video/mp4" />

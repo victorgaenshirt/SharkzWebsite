@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export const WorkflowTeaser: React.FC = () => {
     return (
-        <div className="bg-gray-100">
+        <div className="bg-white">
             <div className="max-w-2xl mx-auto py-16 sm:py-24  px-4">
                 <div className="text-center">
                     <h1 className="text-center text-2xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">

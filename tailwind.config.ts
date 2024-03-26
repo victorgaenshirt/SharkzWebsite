@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         customFont: ["CustomFont", "sans-serif"],
+        sharkzFont: ["SharkzFont", "sans-serif"],
       },
     },
     screens: {
