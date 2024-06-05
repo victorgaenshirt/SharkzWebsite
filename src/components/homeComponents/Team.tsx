@@ -5,19 +5,19 @@ const people = [
         firstname: 'Joshua',
         surname: 'Jung',
         role: 'Geschäftsführung / Regie',
-        imageUrl: "assets/Joshuax720p.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Joshuax720p.jpg?alt=media&token=9843792a-4052-4311-a714-d2d193cc5047",
     },
     {
         firstname: 'Nicolai',
         surname: 'Strack',
         role: 'Kameramann / Maschinenbau',
-        imageUrl: "assets/Nicolaix720p_02.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Nicolaix720p_02.jpg?alt=media&token=6961a566-e3ee-4c89-9cd9-0ae44a29ca14",
     },
     {
         firstname: 'Marco',
         surname: 'Zacharias',
         role: 'Tonmann / Sounddesign',
-        imageUrl: "assets/Marcox720p.jpg"
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Marcox720p.jpg?alt=media&token=4e423589-a108-4758-8cf0-7350bd282efe"
     }
 ]
 export const Team: React.FC = () => {
@@ -44,8 +44,14 @@ export const Team: React.FC = () => {
                     ))}
                 </ul>
             </div>
-                <video autoPlay muted controls={true} className={"max-w-3xl mt-24 w-full mx-auto"}>
-                    <source src={"assets/ÜberunsVideo_02.mp4"} type="video/mp4" />
+                <video
+                    autoPlay
+                    muted
+                    preload="auto"
+                    controls={true}
+                    className={"max-w-3xl mt-24 w-full mx-auto"}
+                >
+                    <source src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/U%CC%88berunsVideo.mp4?alt=media&token=7c634ef9-20a7-4c70-b877-e2106550a0cc" type="video/mp4" />
                 </video>
         </div>
         </div>

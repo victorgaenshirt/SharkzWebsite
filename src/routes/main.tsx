@@ -8,7 +8,7 @@ import {
 import {
     Workshops,
     Impressum,
-    Businessvideo, Hochzeitsvideo, Produktvideo, PaketeView, Musikvideo, Workflow, FAQ
+    Businessvideo, Hochzeitsvideo, Produktvideo, Musikvideo, Workflow, PaketeView,
 } from "../components";
 import ErrorPage from "../ErrorPage.tsx";
 import Layout from "../Layout.tsx";
@@ -19,11 +19,6 @@ const router = createBrowserRouter([
     {
         path: "",
         element: <Layout><Home/></Layout>,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/faq",
-        element: <Layout><FAQ /></Layout>,
         errorElement: <ErrorPage />
     },
     {
@@ -47,12 +42,12 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/hochzeit",
+        path: "/hochzeiten",
         element: <Layout><Hochzeitsvideo /></Layout>,
         errorElement: <ErrorPage />
     },
     {
-        path: "/social",
+        path: "/socialmedia",
         element: <Layout><SocialMedia /></Layout>,
         errorElement: <ErrorPage />
     },

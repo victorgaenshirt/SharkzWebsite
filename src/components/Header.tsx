@@ -12,10 +12,10 @@ import {Link} from "react-router-dom";
 const navigation = [
     { id: "", name: 'Home', href: '#', current: false },
     { id: "business", name: 'Business', href: '#', current: false },
-    { id: "social", name: 'Social Media', href: '#', current: false },
+    { id: "socialmedia", name: 'Social Media', href: '#', current: false },
     { id: "produkte", name: 'Produkte', href: '#', current: false },
     { id: "musikvideo", name: 'Musikvideo', href: '#', current: false },
-    { id: "hochzeit", name: 'Hochzeiten', href: '#', current: false },
+    { id: "hochzeiten", name: 'Hochzeiten', href: '#', current: false },
     { id: "workshop", name: 'Workshop', href: '#', current: false },
 ]
 
@@ -25,8 +25,8 @@ function classNames(...classes: any[]) {
 
 export const Header: React.FC = () => {
     return (
-                <div>
-                    <img alt="Headerdesign" src={"assets/Headerdesign_02.png"}/>
+    <div>
+        <img alt="Headerdesign" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Headerdesign_02.png?alt=media&token=d56e4911-878f-4d08-98b1-3c743ba63647"/>
         <Disclosure as="nav" className="bg-primary">
             {({ open }) => (
                     <div className="bg-primary mx-auto">
@@ -47,11 +47,13 @@ export const Header: React.FC = () => {
                             </div>
                             <div className="flex flex-1 items-center lgx:items-stretch justify-start">
                                     <div className="flex items-center ml-12">
-                                        <img
-                                            className="h-8 w-8 hover:fill-current fill-current text-blue-500"
-                                            src={"assets/jj_shark_logo_Vector-black.svg"}
-                                            alt="sharkzMediaLogo"
-                                        />
+                                        <Link to={"/"} >
+                                            <img
+                                                className="h-8 w-8 hover:fill-current fill-current text-blue-500"
+                                                src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/jj_shark_logo_Vector-black.svg?alt=media&token=ca213d68-123a-48c4-a56d-864c5a933593"
+                                                alt="sharkzMediaLogo"
+                                            />
+                                        </Link>
                                     </div>
                                 <div className="hidden lgx:ml-6 lgx:block">
                                     <div className="flex space-x-4">
@@ -113,6 +115,6 @@ export const Header: React.FC = () => {
                 </div>
             )}
         </Disclosure>
-            </div>
+    </div>
     )
 }

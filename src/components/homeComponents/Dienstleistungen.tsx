@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from "react-router-dom";
 
 const callouts = [
     {
         name: 'Business',
         description: 'Präsentiere dein Unternehmen professionell und zeitgemäß',
-        imageSrc: "assets/Businessfoto_01.jpg",
+        imageSrc: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Businessfoto_01.jpg?alt=media&token=fafad156-57d2-40bd-8e17-5c6bfbfb6ef5",
         imageAlt: '',
         href: '#',
         id: "/business",
@@ -13,15 +13,15 @@ const callouts = [
     {
         name: 'Social Media Content',
         description: 'Angepasste Inhalte für Storys, Reels oder Posts',
-        imageSrc: "assets/Social Media_02.jpg",
+        imageSrc: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Social%20Media_02.jpg?alt=media&token=0b1d99a1-34bc-4331-9074-d196bc166c78",
         imageAlt: '',
         href: '#',
-        id: "/social",
+        id: "/socialmedia",
     },
     {
         name: 'Produkte',
         description: 'Zeige dein Produkt im besten Licht',
-        imageSrc: "assets/Produkt_19.jpg",
+        imageSrc: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Produkt_19.jpg?alt=media&token=48058f76-1716-4f12-89a9-9a7151c29a4b",
         imageAlt: '',
         href: '#',
         id: "/produkte",
@@ -29,7 +29,7 @@ const callouts = [
     {
         name: 'Musikvideo',
         description: 'Kreative Konzepte gemeinsam umsetzen',
-        imageSrc: "assets/musicvid.jpg",
+        imageSrc: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/musicvid.jpg?alt=media&token=992f3c04-2f50-417a-b309-e4d4e79deb8d",
         imageAlt: '',
         href: '#',
         id: "/musikvideo",
@@ -37,32 +37,51 @@ const callouts = [
     {
         name: 'Hochzeit',
         description: 'Emotionale Momente perfekt eingefangen',
-        imageSrc: "assets/Hochzeit_22.jpg",
+        imageSrc: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_22.jpg?alt=media&token=9d695c37-a764-4daa-add0-5495f989408f",
         imageAlt: '',
         href: '#',
-        id: "/hochzeit",
+        id: "/hochzeiten",
     },
     {
         name: 'Workshops',
         description: 'Praxisnahes Wissen für dein Videomarketing',
-        imageSrc: "assets/Workshop01.jpg",
+        imageSrc: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Workshop01.jpg?alt=media&token=cd122df4-9b61-475a-8764-46e4d5365296",
         imageAlt: '',
         href: '#',
         id: "/workshop",
     },
 ]
+
+
 export const Dienstleistungen: React.FC = () => {
+    const [videoEnded, setVideoEnded] = useState(false);
+
+    const handleVideoEnd = () => {
+        setVideoEnded(true);
+    };
+
+    const handleVideoPlay = () => {
+        setVideoEnded(false); // Reset the video ended flag when video starts playing again
+    };
+
     return (
         <div className="bg-white">
             <div className={"bg-gray-100"}>
-            <div className="max-w-4xl text-center mx-auto py-10 sm:py-16">
+            {!videoEnded ? <div className="max-w-4xl text-center mx-auto py-10 sm:py-16">
                 <div className="text-4xl sm:text-6xl font-sharkzFont text-primary mb-2">SHARKZ<br/>MEDIA</div>
-                <div className="text-sm sm:text-2xl font-customFont tracking-wide">Videoproduktion und Fotografie aus Rastatt</div>
-            </div>
+                <div className="text-sm sm:text-2xl font-customFont text-gray-600 tracking-wide">Videoproduktion und Fotografie aus Rastatt</div>
+            </div> : null}
             </div>
             <div className=" max-w-4xl text-center mx-auto py-10 sm:py-16">
-                <video autoPlay muted controls={true} className={"w-full text-center mx-auto"}>
-                    <source src={"../../assets/Startseite-Reel_08.mp4"} type="video/mp4" />
+                <video autoPlay
+                       muted
+                       preload="auto"
+                       controls={true}
+                       className={"w-full text-center mx-auto"}
+                       onEnded={handleVideoEnd}
+                       onPlay={handleVideoPlay}
+                >
+                    <source src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/StartVid.mp4?alt=media&token=99474bd6-0981-41ce-b9a2-0a9282e4f449" type="video/mp4" />
                 </video>
             </div>
             <div className={"bg-gray-100 py-10 sm:py-16"}>

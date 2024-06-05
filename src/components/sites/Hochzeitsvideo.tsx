@@ -55,8 +55,15 @@ export const Hochzeitsvideo: React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl lg:text-center">
                     <h2 className="text-left text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl font-customFont">Hochzeitsvideo</h2>
-                    <video autoPlay muted loop controls={true} className={"mt-6 w-full mx-auto my-8"}>
-                        <source src={"assets/Hochzeitreel_07.mp4"} type="video/mp4" />
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        controls={true}
+                        className={"mt-6 w-full mx-auto my-8"}
+                        preload="auto"
+                    >
+                        <source src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeitreel_07.mp4?alt=media&token=65f1606d-57fc-4d16-8597-52f77a7fedc2" type="video/mp4" />
                     </video>
                     <p className="text-left text-gray-600 my-3 text-lg leading-relaxed sm:my-6">
                         Tauche ein in die emotionale Welt der Liebe und Romantik, während wir die schönsten
@@ -64,11 +71,11 @@ export const Hochzeitsvideo: React.FC = () => {
                     </p>
                     <div className="flex max-w-7xl mx-auto flex-1 items-stretch my-8">
                         <div className="flex-col w-3/5 pr-3">
-                            <img className="pb-3" src={"assets/blumenm.jpg"} alt="" />
-                            <img src={"assets/hochzeit.jpg"} alt="" />
+                            <img className="pb-3" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/blumenm.jpg?alt=media&token=f49959af-9b8f-4021-aa05-7351d186d3fe" alt="" />
+                            <img src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/hochzeit.jpg?alt=media&token=a9277202-bd68-40a8-a756-15436e15a795" alt="" />
                         </div>
                         <div className="w-2/5 flex flex-col justify-between">
-                            <img className="flex flex-1" src={"assets/Hochzeit_12.jpg"} alt="" />
+                            <img className="flex flex-1" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_12.jpg?alt=media&token=714c1346-67e6-46e4-bc65-dafc85bde5e1" alt="" />
                         </div>
                     </div>
                 <p className="text-left my-3 text-gray-600 text-lg leading-relaxed sm:my-6">
@@ -78,19 +85,26 @@ export const Hochzeitsvideo: React.FC = () => {
                     zeitlosen Erinnerungen zu machen.
                 </p>
                 <div className={"grid grid-cols-2 sm:grid-cols-3 gap-3 my-8"}>
-                    <img src={"assets/Hochzeit_08.jpg"} alt="" />
-                    <img src={"assets/Hochzeit_15.jpg"} alt="" />
-                    <img src={"assets/Hochzeit_16.1.jpg"} alt="" />
-                    <img src={"assets/Hochzeit_14.jpg"} alt="" />
-                    <img src={"assets/Hochzeit_17.jpg"} alt="" />
-                    <img src={"assets/Hochzeit_19.jpg"} alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_08.jpg?alt=media&token=c5a199a5-c69d-4593-8964-0d6454f8be8f" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_15.jpg?alt=media&token=492ac095-c559-45c7-95fa-8a1dcf67bf27" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_16.1.jpg?alt=media&token=d0bbbc9b-23fe-4f59-9909-f28994d86c90" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_14.jpg?alt=media&token=a9bdb608-0851-4322-9714-a341cc8e32c8" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_17.jpg?alt=media&token=23cee55d-e424-4245-829e-28b660f43539" alt="" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeit_19.jpg?alt=media&token=93531ae4-e5aa-4ca7-adb3-535f7edb9e51" alt="" />
                 </div>
                 <p className="text-left my-3 text-gray-600 text-lg leading-relaxed sm:my-6">
                 Unsere Hochzeitsvideos sind mehr als nur Aufnahmen - sie sind gefühlvolle Erinnerungen an den
                 schönsten Tag in Ihrem Leben.
                 </p>
-                <video autoPlay muted loop controls={true} className={"w-full mx-auto my-8"}>
-                    <source src={"assets/Hochzeitreel_06.mp4"} type="video/mp4" />
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    controls={true}
+                    className={"w-full mx-auto my-8"}
+                    preload="auto"
+                >
+                    <source src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Hochzeitreel_06.mp4?alt=media&token=a8456774-e49e-4dcb-90ad-2673c58759c0" type="video/mp4" />
                 </video>
             </div>
         </div>

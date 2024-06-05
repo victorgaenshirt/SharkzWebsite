@@ -13,7 +13,7 @@ export const BottomBar: React.FC = () => {
                             Copyright © by Sharkz Media
                         </p>
                 </div>
-                <img alt="Headerdesign" src={"assets/Headerdesign_03.png"}/>
+                <img alt="Headerdesign" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Headerdesign_03.png?alt=media&token=f6c3c8d1-f3bb-435a-8456-8cf2f0c5a061"/>
             </div>
     )
 }

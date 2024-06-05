@@ -57,7 +57,7 @@ export const Workflow: React.FC = () => {
                         Das erwartet dich wenn du unsere Dienstleistungen in Anspruch nimmst.
                     </p>
                     <div className={"grid grid-cols-1 sm:grid-flow-row gap-1 sm:gap-6 sm:grid-cols-3 my-6"}>
-                        <img className="sm:col-span-1" src={"assets/Vorproduktion_01.jpg"} alt="" />
+                        <img className="sm:col-span-1" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Vorproduktion_01.jpg?alt=media&token=a09516bb-2282-4575-8975-78b061e6feea" alt="" />
                         <div className="sm:col-span-2 my-auto">
                             <h2 className=" text-center sm:text-left text-lg sm:text-xl tracking-wide text-blue font-light">Vorproduktion</h2>
                             <p className="sm:text-left text-center ">
@@ -66,7 +66,7 @@ export const Workflow: React.FC = () => {
                         </div>
                     </div>
                     <div className={"grid grid-cols-1 sm:grid-flow-row gap-1 sm:gap-6 sm:grid-cols-3 my-6"}>
-                        <img className="sm:col-span-1" src={"assets/Dreharbeiten_01.jpg"} alt="" />
+                        <img className="sm:col-span-1" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Dreharbeiten_01.jpg?alt=media&token=3caf8fc5-3534-4d66-8c34-dcd02c4054c4" alt="" />
                         <div className="sm:col-span-2 my-auto">
                             <h2 className=" text-center sm:text-left text-lg sm:text-xl tracking-wide text-blue font-light ">Dreharbeiten</h2>
                             <p className="sm:text-left text-center">
@@ -79,7 +79,7 @@ export const Workflow: React.FC = () => {
                         </div>
                     </div>
                     <div className={"grid grid-cols-1 sm:grid-flow-row gap-1 sm:gap-6 sm:grid-cols-3 my-6"}>
-                        <img className="sm:col-span-1" src={"assets/Nachbearbeitung.jpg"} alt="" />
+                        <img className="sm:col-span-1" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Nachbearbeitung_05.jpg?alt=media&token=ecc238b1-6ec7-4517-977f-2b300ecf8c5f" alt="" />
                         <div className="sm:col-span-2 my-auto">
                             <h2 className=" text-center sm:text-left text-lg sm:text-xl tracking-wide text-blue font-light">Nachbearbeitung</h2>
                             <p className="sm:text-left text-center ">

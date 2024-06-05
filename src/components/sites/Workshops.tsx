@@ -28,7 +28,7 @@ export const Workshops:React.FC = () => {
                     <p className="text-left my-3 text-lg text-gray-600 leading-relaxed sm:my-6">
                         Buche unseren Workshop, um professionelles Wissen zur Videoproduktion<br/> aus erster Hand zu erhalten und sofort praktische Erfahrungen zu sammeln.
                     </p>
-                    <img className={"my-10"} src={"assets/Workshop_13.jpg"}></img>
+                    <img className={"my-10"} src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Workshop_13.jpg?alt=media&token=b967e00b-b307-4fd0-8a9a-83b7a8f894bc"></img>
                         <div className="grid grid-cols-1 gap-8 text-base sm:grid-cols-2">
                             {links.map((link, index) => (
                                 <div key={index}>

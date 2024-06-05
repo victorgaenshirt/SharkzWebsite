@@ -7,32 +7,32 @@ export const Businessvideo: React.FC = () => {
         {
             name: 'Einblicke in Prozesse',
             role: 'Videos statt lange Erklärungen',
-            imageUrl: "assets/BTS.jpg",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/BTS.jpg?alt=media&token=6dd6b34b-df79-4ca0-8e72-5ff50c67948c",
         },
         {
             name: 'Mitarbeiterinterviews',
             role: 'Glückliche Mitarbeiter ziehen weitere Bewerber an',
-            imageUrl: "assets/Interview.jpg",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Interview.jpg?alt=media&token=04f37e0f-dbf8-4347-9b6b-b75f0ffe7429",
         },
         {
             name: 'Veranstaltung',
             role: 'Zeige deine Firmenveranstaltung / Messeauftritt etc.',
-            imageUrl: "assets/Event_02.jpg",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Event_02.jpg?alt=media&token=097b4a9e-7fd5-4f4a-a6e9-c46f5d297e2e",
         },
         {
             name: 'Erklärvideos',
             role: 'Erkläre Prozesse oder Produkte genauer',
-            imageUrl: "assets/erklaer.jpg",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/erklaer.jpg?alt=media&token=d8c7bb8a-ae23-4edc-aa72-75727a2e4829",
         },
         {
             name: 'Testimonials',
             role: 'Lass deine Kunden sprechen',
-            imageUrl: "assets/typ.jpg",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/typ.jpg?alt=media&token=dd82c6d0-27c7-4ea8-a744-6f51a9c937c9",
         },
         {
             name: 'Kampagnenwerbung',
             role: 'Kurze auffällige Werbefilme',
-            imageUrl: "assets/Kampagnenwerbung_02.jpg",
+            imageUrl: "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Kampagnenwerbung_02.jpg?alt=media&token=2068cccb-a887-48ca-915f-a76e17530343",
         },
     ]
 
@@ -59,18 +59,18 @@ export const Businessvideo: React.FC = () => {
 
 
     const partners = [
-        "assets/partner_logos/Nuno.jpg",
-        "assets/partner_logos/DDD.jpg",
-        "assets/partner_logos/ENBW.jpg",
-        "assets/partner_logos/hellbegeistert.jpg",
-        "assets/partner_logos/tv-bw.jpg",
-        "assets/partner_logos/Brigitte.jpg",
-        "assets/partner_logos/HWK.jpg",
-        "assets/partner_logos/Schulz.jpg",
-        "assets/partner_logos/Ötigheim.jpg",
-        "assets/partner_logos/Idendica.jpg",
-        "assets/partner_logos/Mashody.jpg",
-        "assets/partner_logos/FDL.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FNuno.jpg?alt=media&token=c48c38d8-af75-4892-8a2f-7d4c5e0f3455",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FDDD.jpg?alt=media&token=24c78b82-d13e-42ae-83a7-0edddde1dc61",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FENBW.jpg?alt=media&token=682cb0d4-349c-45cc-9080-489b9df6bd2f",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2Fhellbegeistert.jpg?alt=media&token=4b3afa09-cb66-431b-8f0d-60a2759a50f3",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2Ftv-bw.jpg?alt=media&token=a04ed441-d791-4355-8fcb-b0a8e3de3528",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FBrigitte.jpg?alt=media&token=37106956-a5c9-4ec7-bfd1-7e581ebc1bcc",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FHWK.jpg?alt=media&token=501290e8-b6d1-41ce-b6dc-f64555665c65",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FSchulz.jpg?alt=media&token=0d78c73a-9ff3-43d3-afa1-b87d587e3109",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FO%CC%88tigheim.jpg?alt=media&token=4dd53842-f44e-4d89-ab71-ab5794350348",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FIdendica.jpg?alt=media&token=3bbcae06-9da5-42f9-a3c2-c7fab4035823",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FMashody.jpg?alt=media&token=85c493ab-e7e9-4027-a370-a370f04c9f6e",
+        "https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/logos%2FFDL.jpg?alt=media&token=1d03b348-1292-4865-9fd8-b21211c313a2"
     ]
 
     return (
@@ -84,9 +84,14 @@ export const Businessvideo: React.FC = () => {
                             transportiert die Unternehmenswerte und vermittelt einen Eindruck vom Betriebsklima. Dadurch werden Kunden effektiv angesprochen und neue Bewerber angezogen.
                         </p>
                         <video
-                        autoPlay muted loop controls={false}
-                        className="mt-6 w-full mx-auto">
-                        <source src={"assets/Business_03.mp4"}/>
+                            autoPlay
+                            muted
+                            loop
+                            controls={false}
+                            preload="auto"
+                            className="mt-6 w-full mx-auto"
+                        >
+                        <source src={"https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Business_03.mp4?alt=media&token=7bcdc45f-bc36-4ca6-825f-7751f861864e"}/>
                         </video>
                         <dl className="mt-10 grid grid-cols-1 gap-3 lg:grid-cols-3">
                             {benefits.map((benefit,index) => (
@@ -134,8 +139,8 @@ export const Businessvideo: React.FC = () => {
                             Engagement deines Teams, um ein Bild zu schaffen, das Vertrauen und Sympathie weckt.
                         </p>
                         <div role="list" className="flex gap-3 justify-center flex-col sm:flex-row">
-                            <img className="flex max-h-96 mx-auto" src={"assets/Businessfoto_02-hoch.jpg"} alt="" />
-                            <img className="flex max-h-96 mx-auto" src={"assets/Businessfoto_01.jpg"} alt="" />
+                            <img className="flex max-h-96 mx-auto" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Businessfoto_02-hoch.jpg?alt=media&token=e7de56d1-0337-407e-82ba-53c3a23cd37c" alt="" />
+                            <img className="flex max-h-96 mx-auto" src="https://firebasestorage.googleapis.com/v0/b/sharkzwebsite.appspot.com/o/Businessfoto_01.jpg?alt=media&token=fafad156-57d2-40bd-8e17-5c6bfbfb6ef5" alt="" />
                         </div>
                     </div>
                 </div>
