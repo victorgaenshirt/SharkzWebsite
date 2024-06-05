@@ -32,11 +32,6 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/pakete",
-        element: <Layout><PaketeView /></Layout>,
-        errorElement: <ErrorPage />
-    },
-    {
         path: "/business",
         element: <Layout><Businessvideo /></Layout>,
         errorElement: <ErrorPage />

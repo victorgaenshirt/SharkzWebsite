@@ -6,7 +6,6 @@ const Home:React.FC = () => {
     return (
             <div>
                 <Dienstleistungen/>
-                <Pakete />
                 <Team/>
                 <Kontakt />
                 <FAQ />
