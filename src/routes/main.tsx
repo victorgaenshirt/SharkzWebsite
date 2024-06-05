@@ -8,7 +8,7 @@ import {
 import {
     Workshops,
     Impressum,
-    Businessvideo, Hochzeitsvideo, Produktvideo, Musikvideo, Workflow, PaketeView,
+    Businessvideo, Hochzeitsvideo, Produktvideo, Musikvideo, Workflow,
 } from "../components";
 import ErrorPage from "../ErrorPage.tsx";
 import Layout from "../Layout.tsx";
